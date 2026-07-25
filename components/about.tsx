@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { ChevronDown, GraduationCap, Award, Users, Languages } from "lucide-react";
 import { Reveal } from "@/components/reveal";
@@ -17,16 +18,14 @@ export function About() {
     <section id="about" className="bg-bg">
       <div className="mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6 md:grid-cols-2 md:items-start md:py-24 lg:px-8">
         <Reveal>
-          <div className="mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-[var(--radius-card)] border border-line bg-primary-tint shadow-[var(--shadow-soft)] md:mx-0">
-            <div className="flex h-full w-full items-center justify-center px-8 text-center">
-              <p className="text-sm text-ink-soft">
-                {t("imageAlt")}
-                <br />
-                <span className="text-xs">
-                  /public/images/doctor-about.jpg
-                </span>
-              </p>
-            </div>
+          <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-[var(--radius-card)] border border-line bg-primary-tint shadow-[var(--shadow-soft)] md:mx-0">
+            <Image
+              src="/images/n_photo.png"
+              alt={t("imageAlt")}
+              fill
+              sizes="(min-width: 768px) 24rem, 100vw"
+              className="object-cover object-top"
+            />
           </div>
         </Reveal>
 

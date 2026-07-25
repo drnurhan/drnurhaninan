@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { MessageCircle, Star, Sparkles as SparklesIcon, Globe2 } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
@@ -59,15 +60,14 @@ export function Hero() {
 
         <Reveal delay={150}>
           <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-t-[7rem] rounded-b-[20px] border border-line bg-primary-tint shadow-[var(--shadow-medium)]">
-            <div className="flex h-full w-full items-center justify-center px-8 text-center">
-              <p className="text-sm text-ink-soft">
-                {t("imagePlaceholder")}
-                <br />
-                <span className="text-xs">
-                  /public/images/doctor-hero.jpg
-                </span>
-              </p>
-            </div>
+            <Image
+              src="/images/n_photo.png"
+              alt={t("imageAlt")}
+              fill
+              priority
+              sizes="(min-width: 768px) 24rem, 100vw"
+              className="object-cover object-top"
+            />
           </div>
         </Reveal>
       </div>
