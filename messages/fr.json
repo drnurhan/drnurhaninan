@@ -51,8 +51,14 @@
     "kicker": "Pourquoi le Dr İnan ?",
     "title": "Sentez-vous entre de bonnes mains",
     "stats": [
-      { "value": "20+", "label": "Ans d'expérience" },
-      { "value": "1 000+", "label": "Sourires conçus" },
+      {
+        "value": "20+",
+        "label": "Ans d'expérience"
+      },
+      {
+        "value": "1 000+",
+        "label": "Sourires conçus"
+      },
       {
         "value": "100 %",
         "label": "Satisfaction des patients",
@@ -60,16 +66,8 @@
       }
     ],
     "testimonialsNote": "AVIS D'EXEMPLE — sera remplacé par de vrais avis de patients",
-    "testimonials": [
-      {
-        "quote": "Je suis venu(e) en Turquie pour me faire soigner et je me suis senti(e) en sécurité à chaque étape. Le résultat a dépassé mes attentes.",
-        "name": "A. K."
-      },
-      {
-        "quote": "Je voulais un sourire à l'aspect naturel, et il est exactement comme je l'avais imaginé.",
-        "name": "M. S."
-      }
-    ]
+    "previousLabel": "Avis précédent",
+    "nextLabel": "Avis suivant"
   },
   "Services": {
     "kicker": "Domaines d'expertise",
@@ -111,9 +109,24 @@
     "imageAlt": "Dr Nurhan İnan",
     "sectionsNote": "À FAIRE — informations réelles à ajouter",
     "sections": {
-      "education": { "title": "Formation", "items": ["À faire : détails de la formation à ajouter"] },
-      "certificates": { "title": "Certifications", "items": ["À faire : détails des certifications à ajouter"] },
-      "memberships": { "title": "Adhésions", "items": ["À faire : détails des adhésions à ajouter"] }
+      "education": {
+        "title": "Formation",
+        "items": [
+          "À faire : détails de la formation à ajouter"
+        ]
+      },
+      "certificates": {
+        "title": "Certifications",
+        "items": [
+          "À faire : détails des certifications à ajouter"
+        ]
+      },
+      "memberships": {
+        "title": "Adhésions",
+        "items": [
+          "À faire : détails des adhésions à ajouter"
+        ]
+      }
     },
     "internationalLine": "Expérience avec les patients internationaux : accueil en plusieurs langues"
   },

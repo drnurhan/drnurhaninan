@@ -51,8 +51,14 @@
     "kicker": "Why Dr. İnan?",
     "title": "Feel at ease, in trusted hands",
     "stats": [
-      { "value": "20+", "label": "Years of Experience" },
-      { "value": "1,000+", "label": "Smile Designs" },
+      {
+        "value": "20+",
+        "label": "Years of Experience"
+      },
+      {
+        "value": "1,000+",
+        "label": "Smile Designs"
+      },
       {
         "value": "100%",
         "label": "Patient Satisfaction",
@@ -60,16 +66,8 @@
       }
     ],
     "testimonialsNote": "SAMPLE TESTIMONIAL — to be replaced with real patient reviews",
-    "testimonials": [
-      {
-        "quote": "I traveled to Turkey for treatment and felt safe at every step. The result exceeded my expectations.",
-        "name": "A. K."
-      },
-      {
-        "quote": "I wanted a natural-looking smile, and it turned out exactly as I had imagined.",
-        "name": "M. S."
-      }
-    ]
+    "previousLabel": "Previous review",
+    "nextLabel": "Next review"
   },
   "Services": {
     "kicker": "Areas of Expertise",
@@ -111,9 +109,24 @@
     "imageAlt": "Dr. Nurhan İnan",
     "sectionsNote": "TODO — real information to be added",
     "sections": {
-      "education": { "title": "Education", "items": ["TODO: education details to be added"] },
-      "certificates": { "title": "Certificates", "items": ["TODO: certificate details to be added"] },
-      "memberships": { "title": "Memberships", "items": ["TODO: membership details to be added"] }
+      "education": {
+        "title": "Education",
+        "items": [
+          "TODO: education details to be added"
+        ]
+      },
+      "certificates": {
+        "title": "Certificates",
+        "items": [
+          "TODO: certificate details to be added"
+        ]
+      },
+      "memberships": {
+        "title": "Memberships",
+        "items": [
+          "TODO: membership details to be added"
+        ]
+      }
     },
     "internationalLine": "International patient experience: care in multiple languages"
   },

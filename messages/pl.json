@@ -51,8 +51,14 @@
     "kicker": "Dlaczego dr İnan?",
     "title": "Poczuj się bezpiecznie w doświadczonych rękach",
     "stats": [
-      { "value": "20+", "label": "Lat Doświadczenia" },
-      { "value": "1000+", "label": "Projektów Uśmiechu" },
+      {
+        "value": "20+",
+        "label": "Lat Doświadczenia"
+      },
+      {
+        "value": "1000+",
+        "label": "Projektów Uśmiechu"
+      },
       {
         "value": "100%",
         "label": "Zadowolenie Pacjentów",
@@ -60,16 +66,8 @@
       }
     ],
     "testimonialsNote": "PRZYKŁADOWA OPINIA — zostanie zastąpiona prawdziwymi opiniami pacjentów",
-    "testimonials": [
-      {
-        "quote": "Przyjechałem/am do Turcji na leczenie i na każdym kroku czułem/am się bezpiecznie. Efekt przerósł moje oczekiwania.",
-        "name": "A. K."
-      },
-      {
-        "quote": "Chciałem/am naturalnie wyglądający uśmiech i wyszło dokładnie tak, jak sobie wyobrażałem/am.",
-        "name": "M. S."
-      }
-    ]
+    "previousLabel": "Poprzednia opinia",
+    "nextLabel": "Następna opinia"
   },
   "Services": {
     "kicker": "Obszary Specjalizacji",
@@ -111,9 +109,24 @@
     "imageAlt": "Dr Nurhan İnan",
     "sectionsNote": "DO UZUPEŁNIENIA — zostaną dodane prawdziwe informacje",
     "sections": {
-      "education": { "title": "Wykształcenie", "items": ["Do uzupełnienia: zostaną dodane informacje o wykształceniu"] },
-      "certificates": { "title": "Certyfikaty", "items": ["Do uzupełnienia: zostaną dodane informacje o certyfikatach"] },
-      "memberships": { "title": "Członkostwa", "items": ["Do uzupełnienia: zostaną dodane informacje o członkostwach"] }
+      "education": {
+        "title": "Wykształcenie",
+        "items": [
+          "Do uzupełnienia: zostaną dodane informacje o wykształceniu"
+        ]
+      },
+      "certificates": {
+        "title": "Certyfikaty",
+        "items": [
+          "Do uzupełnienia: zostaną dodane informacje o certyfikatach"
+        ]
+      },
+      "memberships": {
+        "title": "Członkostwa",
+        "items": [
+          "Do uzupełnienia: zostaną dodane informacje o członkostwach"
+        ]
+      }
     },
     "internationalLine": "Doświadczenie z pacjentami międzynarodowymi: obsługa w wielu językach"
   },

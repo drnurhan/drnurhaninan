@@ -1,14 +1,12 @@
 import { useTranslations } from "next-intl";
-import { Star } from "lucide-react";
 import { Reveal } from "@/components/reveal";
+import { TestimonialsCarousel } from "@/components/testimonials-carousel";
 
 type Stat = { value: string; label: string; note?: string };
-type Testimonial = { quote: string; name: string };
 
 export function Trust() {
   const t = useTranslations("Trust");
   const stats = t.raw("stats") as Stat[];
-  const testimonials = t.raw("testimonials") as Testimonial[];
 
   return (
     <section id="trust" className="bg-primary text-white">
@@ -41,29 +39,13 @@ export function Trust() {
           </dl>
         </Reveal>
 
-        {/* ÖRNEK YORUM — gerçek hasta yorumlarıyla değiştirilecek: Trust.testimonials */}
         <Reveal delay={200}>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2">
-            {testimonials.map((testimonial) => (
-              <figure
-                key={testimonial.name}
-                className="rounded-[var(--radius-card)] bg-white/5 p-6 sm:p-8"
-              >
-                <div className="flex gap-1 text-accent" aria-hidden="true">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} size={16} className="fill-accent" />
-                  ))}
-                </div>
-                <blockquote className="mt-4 text-white/90">
-                  “{testimonial.quote}”
-                </blockquote>
-                <figcaption className="mt-4 text-sm font-semibold text-white/70">
-                  — {testimonial.name}
-                </figcaption>
-              </figure>
-            ))}
+          <div className="mt-10">
+            <TestimonialsCarousel />
           </div>
-          <p className="mt-3 text-xs text-white/50">{t("testimonialsNote")}</p>
+          <p className="mt-3 text-center text-xs text-white/50">
+            {t("testimonialsNote")}
+          </p>
         </Reveal>
       </div>
     </section>

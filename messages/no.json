@@ -51,8 +51,14 @@
     "kicker": "Hvorfor dr. İnan?",
     "title": "Kjenn deg trygg i erfarne hender",
     "stats": [
-      { "value": "20+", "label": "Års Erfaring" },
-      { "value": "1000+", "label": "Smiledesign" },
+      {
+        "value": "20+",
+        "label": "Års Erfaring"
+      },
+      {
+        "value": "1000+",
+        "label": "Smiledesign"
+      },
       {
         "value": "100%",
         "label": "Pasienttilfredshet",
@@ -60,16 +66,8 @@
       }
     ],
     "testimonialsNote": "EKSEMPEL PÅ OMTALE — erstattes med ekte pasientomtaler",
-    "testimonials": [
-      {
-        "quote": "Jeg reiste til Tyrkia for behandling og følte meg trygg i hvert steg. Resultatet overgikk forventningene mine.",
-        "name": "A. K."
-      },
-      {
-        "quote": "Jeg ønsket et naturlig utseende smil, og det ble akkurat slik jeg hadde sett for meg.",
-        "name": "M. S."
-      }
-    ]
+    "previousLabel": "Forrige omtale",
+    "nextLabel": "Neste omtale"
   },
   "Services": {
     "kicker": "Fagområder",
@@ -111,9 +109,24 @@
     "imageAlt": "Dr. Nurhan İnan",
     "sectionsNote": "TODO — ekte informasjon legges til",
     "sections": {
-      "education": { "title": "Utdanning", "items": ["TODO: utdanningsdetaljer legges til"] },
-      "certificates": { "title": "Sertifikater", "items": ["TODO: sertifikatdetaljer legges til"] },
-      "memberships": { "title": "Medlemskap", "items": ["TODO: medlemskapsdetaljer legges til"] }
+      "education": {
+        "title": "Utdanning",
+        "items": [
+          "TODO: utdanningsdetaljer legges til"
+        ]
+      },
+      "certificates": {
+        "title": "Sertifikater",
+        "items": [
+          "TODO: sertifikatdetaljer legges til"
+        ]
+      },
+      "memberships": {
+        "title": "Medlemskap",
+        "items": [
+          "TODO: medlemskapsdetaljer legges til"
+        ]
+      }
     },
     "internationalLine": "Erfaring med internasjonale pasienter: tjenester på flere språk"
   },

@@ -51,8 +51,14 @@
     "kicker": "Warum Dr. İnan?",
     "title": "Fühlen Sie sich in sicheren Händen",
     "stats": [
-      { "value": "20+", "label": "Jahre Erfahrung" },
-      { "value": "1.000+", "label": "Lächeln-Designs" },
+      {
+        "value": "20+",
+        "label": "Jahre Erfahrung"
+      },
+      {
+        "value": "1.000+",
+        "label": "Lächeln-Designs"
+      },
       {
         "value": "100%",
         "label": "Patientenzufriedenheit",
@@ -60,16 +66,8 @@
       }
     ],
     "testimonialsNote": "BEISPIEL-BEWERTUNG — wird durch echte Patientenbewertungen ersetzt",
-    "testimonials": [
-      {
-        "quote": "Ich bin für die Behandlung in die Türkei gereist und habe mich bei jedem Schritt sicher gefühlt. Das Ergebnis hat meine Erwartungen übertroffen.",
-        "name": "A. K."
-      },
-      {
-        "quote": "Ich wollte ein natürlich aussehendes Lächeln, und es ist genau so geworden, wie ich es mir vorgestellt habe.",
-        "name": "M. S."
-      }
-    ]
+    "previousLabel": "Vorherige Bewertung",
+    "nextLabel": "Nächste Bewertung"
   },
   "Services": {
     "kicker": "Leistungsschwerpunkte",
@@ -111,9 +109,24 @@
     "imageAlt": "Dr. Nurhan İnan",
     "sectionsNote": "TODO — echte Informationen folgen",
     "sections": {
-      "education": { "title": "Ausbildung", "items": ["TODO: Ausbildungsdetails folgen"] },
-      "certificates": { "title": "Zertifikate", "items": ["TODO: Zertifikatsdetails folgen"] },
-      "memberships": { "title": "Mitgliedschaften", "items": ["TODO: Mitgliedschaftsdetails folgen"] }
+      "education": {
+        "title": "Ausbildung",
+        "items": [
+          "TODO: Ausbildungsdetails folgen"
+        ]
+      },
+      "certificates": {
+        "title": "Zertifikate",
+        "items": [
+          "TODO: Zertifikatsdetails folgen"
+        ]
+      },
+      "memberships": {
+        "title": "Mitgliedschaften",
+        "items": [
+          "TODO: Mitgliedschaftsdetails folgen"
+        ]
+      }
     },
     "internationalLine": "Erfahrung mit internationalen Patienten: Betreuung in mehreren Sprachen"
   },

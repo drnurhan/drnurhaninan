@@ -51,8 +51,14 @@
     "kicker": "Perché la Dott.ssa İnan?",
     "title": "Sentiti in mani sicure",
     "stats": [
-      { "value": "20+", "label": "Anni di Esperienza" },
-      { "value": "1.000+", "label": "Progetti di Sorriso" },
+      {
+        "value": "20+",
+        "label": "Anni di Esperienza"
+      },
+      {
+        "value": "1.000+",
+        "label": "Progetti di Sorriso"
+      },
       {
         "value": "100%",
         "label": "Soddisfazione dei Pazienti",
@@ -60,16 +66,8 @@
       }
     ],
     "testimonialsNote": "RECENSIONE DI ESEMPIO — sarà sostituita da recensioni reali dei pazienti",
-    "testimonials": [
-      {
-        "quote": "Sono venuto/a in Turchia per il trattamento e mi sono sentito/a al sicuro in ogni fase. Il risultato ha superato le mie aspettative.",
-        "name": "A. K."
-      },
-      {
-        "quote": "Volevo un sorriso dall'aspetto naturale, ed è risultato esattamente come lo avevo immaginato.",
-        "name": "M. S."
-      }
-    ]
+    "previousLabel": "Recensione precedente",
+    "nextLabel": "Recensione successiva"
   },
   "Services": {
     "kicker": "Aree di Competenza",
@@ -111,9 +109,24 @@
     "imageAlt": "Dott.ssa Nurhan İnan",
     "sectionsNote": "DA FARE — verranno aggiunte informazioni reali",
     "sections": {
-      "education": { "title": "Formazione", "items": ["Da fare: verranno aggiunti i dettagli sulla formazione"] },
-      "certificates": { "title": "Certificati", "items": ["Da fare: verranno aggiunti i dettagli sui certificati"] },
-      "memberships": { "title": "Iscrizioni", "items": ["Da fare: verranno aggiunti i dettagli sulle iscrizioni"] }
+      "education": {
+        "title": "Formazione",
+        "items": [
+          "Da fare: verranno aggiunti i dettagli sulla formazione"
+        ]
+      },
+      "certificates": {
+        "title": "Certificati",
+        "items": [
+          "Da fare: verranno aggiunti i dettagli sui certificati"
+        ]
+      },
+      "memberships": {
+        "title": "Iscrizioni",
+        "items": [
+          "Da fare: verranno aggiunti i dettagli sulle iscrizioni"
+        ]
+      }
     },
     "internationalLine": "Esperienza con pazienti internazionali: assistenza in più lingue"
   },
