@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import { Star } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 
-type Stat = { value: string; label: string };
+type Stat = { value: string; label: string; note?: string };
 type Testimonial = { quote: string; name: string };
 
 export function Trust() {
@@ -22,9 +22,8 @@ export function Trust() {
           </h2>
         </Reveal>
 
-        {/* ÖRNEK VERİ — gerçeği gelecek: rakamlar messages/*.json > Trust.stats içinde */}
         <Reveal delay={100}>
-          <dl className="mt-12 grid grid-cols-2 gap-6 sm:gap-8 lg:grid-cols-4">
+          <dl className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-8">
             {stats.map((stat) => (
               <div
                 key={stat.label}
@@ -34,10 +33,12 @@ export function Trust() {
                   {stat.value}
                 </dd>
                 <dt className="mt-2 text-sm text-white/80">{stat.label}</dt>
+                {stat.note && (
+                  <p className="mt-1 text-xs text-white/50">{stat.note}</p>
+                )}
               </div>
             ))}
           </dl>
-          <p className="mt-3 text-xs text-white/50">{t("statsNote")}</p>
         </Reveal>
 
         {/* ÖRNEK YORUM — gerçek hasta yorumlarıyla değiştirilecek: Trust.testimonials */}

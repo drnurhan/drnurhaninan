@@ -42,12 +42,14 @@
   "Trust": {
     "kicker": "Neden Dr. İnan?",
     "title": "Kendinizi güvenli ellerde hissedin",
-    "statsNote": "ÖRNEK VERİ — gerçek rakamlar gelecek",
     "stats": [
-      { "value": "10+", "label": "Yıl Deneyim" },
-      { "value": "1.200+", "label": "Gülüş Tasarımı" },
-      { "value": "%98", "label": "Hasta Memnuniyeti" },
-      { "value": "15+", "label": "Ülkeden Hasta" }
+      { "value": "20+", "label": "Yıl Deneyim" },
+      { "value": "1.000+", "label": "Gülüş Tasarımı" },
+      {
+        "value": "%100",
+        "label": "Hasta Memnuniyeti",
+        "note": "(tedavi sonrası geri bildirimlerin tümünde)"
+      }
     ],
     "testimonialsNote": "ÖRNEK YORUM — gerçek hasta yorumlarıyla değiştirilecek",
     "testimonials": [

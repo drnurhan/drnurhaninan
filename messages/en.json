@@ -42,12 +42,14 @@
   "Trust": {
     "kicker": "Why Dr. İnan?",
     "title": "Feel at ease, in trusted hands",
-    "statsNote": "SAMPLE DATA — real figures to be added",
     "stats": [
-      { "value": "10+", "label": "Years of Experience" },
-      { "value": "1,200+", "label": "Smile Designs" },
-      { "value": "98%", "label": "Patient Satisfaction" },
-      { "value": "15+", "label": "Countries Reached" }
+      { "value": "20+", "label": "Years of Experience" },
+      { "value": "1,000+", "label": "Smile Designs" },
+      {
+        "value": "100%",
+        "label": "Patient Satisfaction",
+        "note": "(across all post-treatment feedback)"
+      }
     ],
     "testimonialsNote": "SAMPLE TESTIMONIAL — to be replaced with real patient reviews",
     "testimonials": [
