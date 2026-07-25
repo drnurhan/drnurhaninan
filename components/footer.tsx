@@ -31,7 +31,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10 px-4 py-4 text-center text-xs text-white/60 sm:px-6 lg:px-8">
+      <div className="border-t border-white/10 px-4 py-4 text-end text-xs text-white/60 sm:px-6 lg:px-8">
         {t("designedByPrefix")}{" "}
         <a
           href="mailto:ufukyilmazim@gmail.com"
