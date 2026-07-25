@@ -12,3 +12,19 @@ export const siteConfig = {
   mapEmbedUrl:
     "https://maps.google.com/maps?q=Plaza%20224%20Nil%C3%BCfer%20Bursa&output=embed",
 } as const;
+
+// Open Graph, BCP-47 tarzı düz dil kodları (tr, en...) değil resmi
+// og:locale formatını (tr_TR, en_US...) bekler.
+export const ogLocaleMap: Record<string, string> = {
+  tr: "tr_TR",
+  en: "en_US",
+  ar: "ar_AR",
+  de: "de_DE",
+  fr: "fr_FR",
+  el: "el_GR",
+  es: "es_ES",
+  it: "it_IT",
+  pl: "pl_PL",
+  no: "nb_NO",
+  ru: "ru_RU",
+};

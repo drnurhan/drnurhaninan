@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
-import { siteConfig } from "@/lib/site-config";
+import { ogLocaleMap, siteConfig } from "@/lib/site-config";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -34,7 +34,10 @@ export async function generateMetadata({
       description: t("metaDescription"),
       url: `${siteConfig.url}/${locale}/kvkk`,
       siteName: "Dr. Nurhan İnan",
-      locale,
+      locale: ogLocaleMap[locale] ?? "en_US",
+      alternateLocale: routing.locales
+        .filter((l) => l !== locale)
+        .map((l) => ogLocaleMap[l] ?? "en_US"),
       type: "website",
     },
     twitter: {

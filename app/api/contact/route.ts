@@ -1,10 +1,11 @@
-import { NextResponse } from "next/server";
+import { NextResponse, after } from "next/server";
 import nodemailer from "nodemailer";
 import { siteConfig } from "@/lib/site-config";
 
-// SMTP el sıkışması bazen varsayılan fonksiyon süresine yakın sürebiliyor;
-// bu da mail gönderilmesine rağmen tarayıcıya zamanında cevap dönmemesine
-// (ve formda "gönderilemedi" hatası görünmesine) yol açıyordu.
+// SMTP el sıkışması bazen fonksiyonun tarayıcıya cevap dönme süresine yakın
+// sürüyordu: mail Hostinger'a gönderiliyor ama yanıt zamanında dönmediği için
+// formda "gönderilemedi" hatası görünüyordu. Çözüm: tarayıcıya hemen cevap
+// dön, gerçek gönderimi `after()` ile yanıt döndükten SONRA arka planda yap.
 export const maxDuration = 30;
 
 type ContactPayload = {
@@ -43,6 +44,16 @@ export async function POST(request: Request) {
     );
   }
 
+  const smtpPassword = process.env.SMTP_PASSWORD;
+
+  if (!smtpPassword) {
+    // SMTP_PASSWORD tanımlı değil: isteği logla, kullanıcıya nazikçe bildir.
+    console.log("[contact] SMTP_PASSWORD tanımlı değil, form isteği:", {
+      ...body,
+    });
+    return NextResponse.json({ ok: true, delivered: false });
+  }
+
   const subjectLabel = subjectLabels[body.subject ?? ""] ?? body.subject ?? "-";
   const timeLabel = body.timePreference
     ? timeLabels[body.timePreference] ?? body.timePreference
@@ -62,46 +73,36 @@ export async function POST(request: Request) {
     `Gönderim Tarihi: ${submittedAt}`,
   ].join("\n");
 
-  const smtpPassword = process.env.SMTP_PASSWORD;
+  // Gerçek SMTP gönderimi, yanıt tarayıcıya döndükten sonra arka planda
+  // çalışır — tarayıcı SMTP'nin ne kadar süreceğini beklemez.
+  after(async () => {
+    try {
+      const transporter = nodemailer.createTransport({
+        host: process.env.SMTP_HOST || "smtp.hostinger.com",
+        port: Number(process.env.SMTP_PORT) || 465,
+        secure: true,
+        auth: {
+          user: process.env.SMTP_USER || siteConfig.email,
+          pass: smtpPassword,
+        },
+        connectionTimeout: 15000,
+        greetingTimeout: 15000,
+        socketTimeout: 15000,
+      });
 
-  if (!smtpPassword) {
-    // SMTP_PASSWORD henüz tanımlı değil (deploy aşamasında eklenecek): isteği logla, hata verme.
-    console.log("[contact] SMTP_PASSWORD tanımlı değil, form isteği:", {
-      ...body,
-    });
-    return NextResponse.json({ ok: true, delivered: false });
-  }
+      await transporter.sendMail({
+        from: `"drnurhaninan.com" <${process.env.SMTP_USER || siteConfig.email}>`,
+        to: siteConfig.email,
+        replyTo: body.email || undefined,
+        subject: `[drnurhaninan.com] ${subjectLabel} – ${body.name}`,
+        text: emailBody,
+      });
 
-  try {
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST || "smtp.hostinger.com",
-      port: Number(process.env.SMTP_PORT) || 465,
-      secure: true,
-      auth: {
-        user: process.env.SMTP_USER || siteConfig.email,
-        pass: smtpPassword,
-      },
-      // Hostinger yavaş yanıt verirse yığılıp fonksiyon zaman aşımına
-      // çarpmak yerine makul bir sürede net bir hata ile düşsün.
-      connectionTimeout: 15000,
-      greetingTimeout: 15000,
-      socketTimeout: 15000,
-    });
+      console.log("[contact] Mail başarıyla gönderildi:", body.name);
+    } catch (error) {
+      console.error("[contact] SMTP gönderim hatası (arka plan):", error);
+    }
+  });
 
-    await transporter.sendMail({
-      from: `"drnurhaninan.com" <${process.env.SMTP_USER || siteConfig.email}>`,
-      to: siteConfig.email,
-      replyTo: body.email || undefined,
-      subject: `[drnurhaninan.com] ${subjectLabel} – ${body.name}`,
-      text: emailBody,
-    });
-
-    return NextResponse.json({ ok: true, delivered: true });
-  } catch (error) {
-    console.error("[contact] SMTP gönderim hatası:", error);
-    return NextResponse.json(
-      { ok: false, error: "send-failed" },
-      { status: 502 }
-    );
-  }
+  return NextResponse.json({ ok: true, delivered: true });
 }

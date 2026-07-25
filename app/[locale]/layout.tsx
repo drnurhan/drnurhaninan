@@ -4,7 +4,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import { siteConfig } from "@/lib/site-config";
+import { ogLocaleMap, siteConfig } from "@/lib/site-config";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { MobileBar } from "@/components/mobile-bar";
@@ -68,7 +68,10 @@ export async function generateMetadata({
       description: t("description"),
       url: `${siteConfig.url}/${locale}`,
       siteName: "Dr. Nurhan İnan",
-      locale,
+      locale: ogLocaleMap[locale] ?? "en_US",
+      alternateLocale: routing.locales
+        .filter((l) => l !== locale)
+        .map((l) => ogLocaleMap[l] ?? "en_US"),
       type: "website",
     },
     twitter: {
