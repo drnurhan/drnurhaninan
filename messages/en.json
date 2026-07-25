@@ -169,8 +169,7 @@
       "hoursTitle": "Opening Hours",
       "hoursValue": "Weekdays 09:00–18:00 · Saturday 09:00–14:00",
       "hoursNote": "SAMPLE — real opening hours to be added",
-      "phoneTitle": "Phone & WhatsApp",
-      "phoneNote": "TODO: real number to be added"
+      "phoneTitle": "Phone & WhatsApp"
     },
     "mapTitle": "Practice location map"
   },

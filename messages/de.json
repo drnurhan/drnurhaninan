@@ -169,8 +169,7 @@
       "hoursTitle": "Öffnungszeiten",
       "hoursValue": "Wochentags 09:00–18:00 Uhr · Samstag 09:00–14:00 Uhr",
       "hoursNote": "BEISPIEL — echte Öffnungszeiten folgen",
-      "phoneTitle": "Telefon & WhatsApp",
-      "phoneNote": "TODO: echte Nummer folgt"
+      "phoneTitle": "Telefon & WhatsApp"
     },
     "mapTitle": "Standortkarte der Praxis"
   },

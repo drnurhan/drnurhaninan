@@ -67,9 +67,6 @@ export function Contact() {
                 >
                   {siteConfig.phoneDisplay}
                 </a>
-                <p className="mt-1 text-xs text-ink-soft/70">
-                  {t("info.phoneNote")}
-                </p>
               </InfoCard>
             </div>
           </Reveal>

@@ -169,8 +169,7 @@
       "hoursTitle": "Orari di Apertura",
       "hoursValue": "Feriali 09:00–18:00 · Sabato 09:00–14:00",
       "hoursNote": "ESEMPIO — verranno aggiunti gli orari reali",
-      "phoneTitle": "Telefono e WhatsApp",
-      "phoneNote": "Da fare: verrà aggiunto il numero reale"
+      "phoneTitle": "Telefono e WhatsApp"
     },
     "mapTitle": "Mappa della sede dello studio"
   },

@@ -169,8 +169,7 @@
       "hoursTitle": "Horaires d'ouverture",
       "hoursValue": "Semaine 09h00–18h00 · Samedi 09h00–14h00",
       "hoursNote": "EXEMPLE — horaires réels à ajouter",
-      "phoneTitle": "Téléphone et WhatsApp",
-      "phoneNote": "À faire : numéro réel à ajouter"
+      "phoneTitle": "Téléphone et WhatsApp"
     },
     "mapTitle": "Carte de localisation du cabinet"
   },

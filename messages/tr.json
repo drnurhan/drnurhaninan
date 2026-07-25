@@ -169,8 +169,7 @@
       "hoursTitle": "Çalışma Saatleri",
       "hoursValue": "Hafta içi 09:00–18:00 · Cumartesi 09:00–14:00",
       "hoursNote": "ÖRNEK — gerçek çalışma saatleri eklenecek",
-      "phoneTitle": "Telefon & WhatsApp",
-      "phoneNote": "TODO: gerçek numara eklenecek"
+      "phoneTitle": "Telefon & WhatsApp"
     },
     "mapTitle": "Muayenehane konumu haritası"
   },

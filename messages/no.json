@@ -169,8 +169,7 @@
       "hoursTitle": "Åpningstider",
       "hoursValue": "Hverdager 09:00–18:00 · Lørdag 09:00–14:00",
       "hoursNote": "EKSEMPEL — ekte åpningstider legges til",
-      "phoneTitle": "Telefon & WhatsApp",
-      "phoneNote": "TODO: ekte nummer legges til"
+      "phoneTitle": "Telefon & WhatsApp"
     },
     "mapTitle": "Kart over klinikkens beliggenhet"
   },

@@ -169,8 +169,7 @@
       "hoursTitle": "Godziny Otwarcia",
       "hoursValue": "Dni robocze 09:00–18:00 · Sobota 09:00–14:00",
       "hoursNote": "PRZYKŁAD — zostaną dodane prawdziwe godziny otwarcia",
-      "phoneTitle": "Telefon i WhatsApp",
-      "phoneNote": "Do uzupełnienia: zostanie dodany prawdziwy numer"
+      "phoneTitle": "Telefon i WhatsApp"
     },
     "mapTitle": "Mapa lokalizacji gabinetu"
   },

@@ -3,11 +3,10 @@ export const siteConfig = {
   domain: "drnurhaninan.com",
   url: "https://drnurhaninan.com",
   email: "info@drnurhaninan.com",
-  // TODO: gerçek telefon/WhatsApp numarası ile değiştirilecek.
-  phoneDisplay: "+90 XXX XXX XX XX",
-  phoneTel: "+90XXXXXXXXXX",
-  whatsappNumber: "90XXXXXXXXXX",
-  whatsappUrl: "https://wa.me/90XXXXXXXXXX",
+  phoneDisplay: "+90 541 682 16 16",
+  phoneTel: "+905416821616",
+  whatsappNumber: "905416821616",
+  whatsappUrl: "https://wa.me/905416821616",
   // TODO: açık adres satırı (mahalle/cadde) eklenecek.
   addressLine: "Plaza 224, Kat 4, No 24 – Nilüfer / Bursa",
   mapEmbedUrl:

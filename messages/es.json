@@ -169,8 +169,7 @@
       "hoursTitle": "Horario de Atención",
       "hoursValue": "Días laborables 09:00–18:00 · Sábados 09:00–14:00",
       "hoursNote": "EJEMPLO — se añadirá el horario real",
-      "phoneTitle": "Teléfono y WhatsApp",
-      "phoneNote": "Pendiente: se añadirá el número real"
+      "phoneTitle": "Teléfono y WhatsApp"
     },
     "mapTitle": "Mapa de ubicación de la clínica"
   },
