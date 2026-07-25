@@ -36,9 +36,13 @@ export function ContactForm() {
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    // Form elementini burada, senkron olarak yakalıyoruz: `await`den sonra
+    // event.currentTarget tarayıcı tarafından null'a çevriliyor (DOM
+    // standardı — event dispatch'i bittiğinde currentTarget sıfırlanır).
+    const form = event.currentTarget;
     setStatus("submitting");
 
-    const formData = new FormData(event.currentTarget);
+    const formData = new FormData(form);
     const payload = {
       name: formData.get("name"),
       phone: formData.get("phone"),
@@ -69,7 +73,7 @@ export function ContactForm() {
       }
 
       setStatus("success");
-      event.currentTarget.reset();
+      form.reset();
       setSubject("appointment");
       setTimePreference("");
     } catch {
