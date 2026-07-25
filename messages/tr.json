@@ -1,0 +1,176 @@
+{
+  "Metadata": {
+    "title": "Uzm. Dr. Nurhan İnan | Estetik ve Restoratif Diş Hekimliği – Bursa",
+    "description": "Bursa Nilüfer'de estetik ve restoratif diş hekimliği. Türkçe, İngilizce ve Arapça hizmet veren uluslararası bir muayenehane deneyimi.",
+    "ogAlt": "Dr. Nurhan İnan – Estetik ve Restoratif Diş Hekimliği"
+  },
+  "Header": {
+    "logoName": "Dr. Nurhan İnan",
+    "logoTagline": "Estetik & Restoratif Diş Hekimliği",
+    "nav": {
+      "trust": "Neden Biz",
+      "services": "Hizmetler",
+      "about": "Hakkında",
+      "contact": "İletişim"
+    },
+    "menuOpen": "Menüyü aç",
+    "menuClose": "Menüyü kapat"
+  },
+  "LanguageSwitcher": {
+    "tr": "Türkçe",
+    "en": "English",
+    "ar": "العربية"
+  },
+  "Hero": {
+    "kicker": "Uzm. Dr. Nurhan İnan",
+    "titlePrefix": "Gülüşünüz,",
+    "titleEmphasis": "sanatla",
+    "titleSuffix": "buluşuyor.",
+    "subtitle": "Kişiye özel estetik ve restoratif diş hekimliği. Türkçe, İngilizce ve Arapça hizmet veren uluslararası bir muayenehane deneyimi.",
+    "ctaPrimary": "Randevu Talebi",
+    "ctaWhatsapp": "WhatsApp ile Yazın",
+    "imageAlt": "Dr. Nurhan İnan portresi",
+    "imagePlaceholder": "Fotoğraf yakında eklenecek",
+    "trustBar": {
+      "rating": "4,9 Google",
+      "experience": "10+ Yıl Deneyim",
+      "languages": "3 Dilde Hizmet"
+    },
+    "trustBarNote": "ÖRNEK VERİ — gerçek Google puanı eklenecek"
+  },
+  "Trust": {
+    "kicker": "Neden Dr. İnan?",
+    "title": "Kendinizi güvenli ellerde hissedin",
+    "statsNote": "ÖRNEK VERİ — gerçek rakamlar gelecek",
+    "stats": [
+      { "value": "10+", "label": "Yıl Deneyim" },
+      { "value": "1.200+", "label": "Gülüş Tasarımı" },
+      { "value": "%98", "label": "Hasta Memnuniyeti" },
+      { "value": "15+", "label": "Ülkeden Hasta" }
+    ],
+    "testimonialsNote": "ÖRNEK YORUM — gerçek hasta yorumlarıyla değiştirilecek",
+    "testimonials": [
+      {
+        "quote": "Türkiye'ye tedavi için geldim, her adımda kendimi güvende hissettim. Sonuç beklentimin üzerinde.",
+        "name": "A. K."
+      },
+      {
+        "quote": "Doğal görünen bir gülüş istiyordum, tam da hayal ettiğim gibi oldu.",
+        "name": "M. S."
+      }
+    ]
+  },
+  "Services": {
+    "kicker": "Uzmanlık Alanları",
+    "title": "Hizmetler",
+    "subtitle": "Her tedavi, estetik ve fonksiyonu birlikte gözeten kişiye özel bir planla yürütülür.",
+    "items": {
+      "smileDesign": {
+        "title": "Gülüş Tasarımı",
+        "description": "Yüz hatlarınıza ve karakterinize uyumlu, dijital planlamayla tasarlanan doğal gülüşler."
+      },
+      "veneers": {
+        "title": "Lamina Veneer",
+        "description": "Minimal aşındırmayla uygulanan, ışık geçirgenliği doğal dişe en yakın porselen yapraklar."
+      },
+      "inlayOnlay": {
+        "title": "Estetik İnley-Onley Restorasyonlar",
+        "description": "Dolgunun yetmediği, kronun fazla olduğu durumlar için hassas ölçüyle hazırlanan restorasyonlar."
+      },
+      "rootCanal": {
+        "title": "Kanal Tedavisi",
+        "description": "Modern tekniklerle, mümkün olan en konforlu şekilde dişinizi kurtarmayı hedefleyen tedavi."
+      },
+      "implant": {
+        "title": "İmplant",
+        "description": "Eksik dişlerin yerine, doğal diş hissi veren kalıcı ve güvenilir çözümler."
+      },
+      "whitening": {
+        "title": "Diş Beyazlatma",
+        "description": "Diş yapınıza uygun, hassasiyeti gözeten klinik beyazlatma protokolleri."
+      }
+    }
+  },
+  "About": {
+    "kicker": "Hakkında",
+    "title": "Uzm. Dr. Nurhan İnan",
+    "text": "Estetik ve restoratif diş hekimliği alanında uzmanlaşan Dr. İnan, her hastasının gülüşünü yüz estetiğiyle bir bütün olarak ele alır. Tedavi felsefesinin merkezinde minimal müdahale, doğal görünüm ve uzun ömürlü sonuçlar vardır.",
+    "expandLabel": "Devamını okuyun",
+    "collapseLabel": "Daha az göster",
+    "imageAlt": "Dr. Nurhan İnan",
+    "sectionsNote": "TODO — gerçek bilgiler eklenecek",
+    "sections": {
+      "education": { "title": "Eğitim", "items": ["TODO: eğitim bilgileri eklenecek"] },
+      "certificates": { "title": "Sertifikalar", "items": ["TODO: sertifika bilgileri eklenecek"] },
+      "memberships": { "title": "Üyelikler", "items": ["TODO: üyelik bilgileri eklenecek"] }
+    },
+    "internationalLine": "Uluslararası hasta deneyimi: Türkçe, İngilizce ve Arapça hizmet"
+  },
+  "Contact": {
+    "kicker": "İletişim",
+    "title": "Bize Ulaşın",
+    "subtitle": "Formu doldurun, aynı gün içinde size dönelim – ya da tek dokunuşla arayın.",
+    "form": {
+      "name": "Ad Soyad",
+      "phone": "Telefon",
+      "email": "E-posta",
+      "subject": "Konu",
+      "subjectOptions": {
+        "appointment": "Randevu Talebi",
+        "pricing": "Tedavi ve Fiyat Bilgisi",
+        "international": "Uluslararası Hasta",
+        "general": "Genel Soru",
+        "other": "Diğer"
+      },
+      "preferredDate": "Tercih Ettiğiniz Tarih",
+      "timePreference": "Zaman Tercihi",
+      "timeOptions": {
+        "morning": "Sabah",
+        "noon": "Öğlen",
+        "evening": "Akşam"
+      },
+      "message": "Mesajınız",
+      "kvkkLabel": "Kişisel verilerimin KVKK kapsamında işlenmesine onay veriyorum.",
+      "kvkkLinkLabel": "Aydınlatma metnini okudum.",
+      "submit": "Gönder",
+      "submitting": "Gönderiliyor...",
+      "successTitle": "Teşekkürler!",
+      "successMessage": "Talebiniz alındı, en kısa sürede size döneceğiz.",
+      "errorMessage": "Şu anda gönderilemedi, lütfen WhatsApp'tan yazın.",
+      "requiredNote": "* zorunlu alan"
+    },
+    "info": {
+      "addressTitle": "Adres",
+      "addressNote": "TODO: mahalle/cadde satırı eklenecek",
+      "hoursTitle": "Çalışma Saatleri",
+      "hoursValue": "Hafta içi 09:00–18:00 · Cumartesi 09:00–14:00",
+      "hoursNote": "ÖRNEK — gerçek çalışma saatleri eklenecek",
+      "phoneTitle": "Telefon & WhatsApp",
+      "phoneNote": "TODO: gerçek numara eklenecek"
+    },
+    "mapTitle": "Muayenehane konumu haritası"
+  },
+  "Footer": {
+    "tagline": "Estetik & Restoratif Diş Hekimliği",
+    "addressColumnTitle": "İletişim",
+    "rights": "© 2026 Uzm. Dr. Nurhan İnan – Tüm hakları saklıdır."
+  },
+  "MobileBar": {
+    "call": "Ara",
+    "whatsapp": "WhatsApp"
+  },
+  "Kvkk": {
+    "title": "KVKK Aydınlatma Metni",
+    "lastUpdatedLabel": "Son güncelleme",
+    "disclaimer": "Bu metin bir taslaktır. Yayına almadan önce hukuki kontrol gerekir.",
+    "body": [
+      "6698 sayılı Kişisel Verilerin Korunması Kanunu (\"KVKK\") uyarınca, Uzm. Dr. Nurhan İnan Diş Kliniği (\"Klinik\") olarak, veri sorumlusu sıfatıyla kişisel verilerinizi aşağıda açıklanan kapsamda işlemekteyiz.",
+      "1. Veri Sorumlusu: Uzm. Dr. Nurhan İnan Diş Kliniği, Plaza 224, Kat 4, No 24, Nilüfer/Bursa.",
+      "2. İşlenen Kişisel Veriler: Ad soyad, telefon numarası, e-posta adresi, iletişim formunda paylaştığınız randevu ve mesaj içerikleri.",
+      "3. İşleme Amaçları: Randevu taleplerinin değerlendirilmesi, hasta iletişiminin sağlanması, tedavi ve fiyat bilgisi taleplerinin yanıtlanması.",
+      "4. Hukuki Sebep: KVKK m.5/2 kapsamında açık rızanızın alınması ve/veya bir sözleşmenin kurulması veya ifasıyla doğrudan doğruya ilgili olması.",
+      "5. Aktarım: Kişisel verileriniz, yasal zorunluluklar dışında üçüncü kişilerle paylaşılmaz.",
+      "6. Haklarınız: KVKK m.11 kapsamında kişisel verilerinizin işlenip işlenmediğini öğrenme, düzeltilmesini veya silinmesini talep etme haklarına sahipsiniz. Taleplerinizi info@drnurhaninan.com adresine iletebilirsiniz."
+    ]
+  }
+}

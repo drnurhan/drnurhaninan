@@ -1,0 +1,176 @@
+{
+  "Metadata": {
+    "title": "Dr. Nurhan İnan, DDS | Aesthetic & Restorative Dentistry – Bursa",
+    "description": "Aesthetic and restorative dentistry in Nilüfer, Bursa. An international practice serving patients in Turkish, English, and Arabic.",
+    "ogAlt": "Dr. Nurhan İnan – Aesthetic & Restorative Dentistry"
+  },
+  "Header": {
+    "logoName": "Dr. Nurhan İnan",
+    "logoTagline": "Aesthetic & Restorative Dentistry",
+    "nav": {
+      "trust": "Why Us",
+      "services": "Services",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu"
+  },
+  "LanguageSwitcher": {
+    "tr": "Türkçe",
+    "en": "English",
+    "ar": "العربية"
+  },
+  "Hero": {
+    "kicker": "Dr. Nurhan İnan, DDS",
+    "titlePrefix": "Your smile,",
+    "titleEmphasis": "reimagined",
+    "titleSuffix": "as art.",
+    "subtitle": "Personalized aesthetic and restorative dentistry. An international practice serving patients in Turkish, English, and Arabic.",
+    "ctaPrimary": "Request an Appointment",
+    "ctaWhatsapp": "Message on WhatsApp",
+    "imageAlt": "Portrait of Dr. Nurhan İnan",
+    "imagePlaceholder": "Photo coming soon",
+    "trustBar": {
+      "rating": "4.9 on Google",
+      "experience": "10+ Years of Experience",
+      "languages": "Care in 3 Languages"
+    },
+    "trustBarNote": "SAMPLE DATA — real Google rating to be added"
+  },
+  "Trust": {
+    "kicker": "Why Dr. İnan?",
+    "title": "Feel at ease, in trusted hands",
+    "statsNote": "SAMPLE DATA — real figures to be added",
+    "stats": [
+      { "value": "10+", "label": "Years of Experience" },
+      { "value": "1,200+", "label": "Smile Designs" },
+      { "value": "98%", "label": "Patient Satisfaction" },
+      { "value": "15+", "label": "Countries Reached" }
+    ],
+    "testimonialsNote": "SAMPLE TESTIMONIAL — to be replaced with real patient reviews",
+    "testimonials": [
+      {
+        "quote": "I traveled to Turkey for treatment and felt safe at every step. The result exceeded my expectations.",
+        "name": "A. K."
+      },
+      {
+        "quote": "I wanted a natural-looking smile, and it turned out exactly as I had imagined.",
+        "name": "M. S."
+      }
+    ]
+  },
+  "Services": {
+    "kicker": "Areas of Expertise",
+    "title": "Services",
+    "subtitle": "Every treatment follows a personalized plan that considers aesthetics and function together.",
+    "items": {
+      "smileDesign": {
+        "title": "Smile Design",
+        "description": "Natural smiles shaped by digital planning to suit your facial features and character."
+      },
+      "veneers": {
+        "title": "Porcelain Veneers",
+        "description": "Minimally invasive porcelain shells with light transmission closest to natural teeth."
+      },
+      "inlayOnlay": {
+        "title": "Aesthetic Inlay-Onlay Restorations",
+        "description": "Precisely fitted restorations for cases where a filling isn't enough and a crown is too much."
+      },
+      "rootCanal": {
+        "title": "Root Canal Treatment",
+        "description": "Treatment aimed at saving your tooth as comfortably as possible using modern techniques."
+      },
+      "implant": {
+        "title": "Dental Implants",
+        "description": "Permanent, reliable solutions for missing teeth that feel just like natural ones."
+      },
+      "whitening": {
+        "title": "Teeth Whitening",
+        "description": "Clinical whitening protocols tailored to your tooth structure, mindful of sensitivity."
+      }
+    }
+  },
+  "About": {
+    "kicker": "About",
+    "title": "Dr. Nurhan İnan, DDS",
+    "text": "Specializing in aesthetic and restorative dentistry, Dr. İnan approaches every patient's smile as part of the whole facial aesthetic. Her treatment philosophy centers on minimal intervention, natural appearance, and long-lasting results.",
+    "expandLabel": "Read more",
+    "collapseLabel": "Show less",
+    "imageAlt": "Dr. Nurhan İnan",
+    "sectionsNote": "TODO — real information to be added",
+    "sections": {
+      "education": { "title": "Education", "items": ["TODO: education details to be added"] },
+      "certificates": { "title": "Certificates", "items": ["TODO: certificate details to be added"] },
+      "memberships": { "title": "Memberships", "items": ["TODO: membership details to be added"] }
+    },
+    "internationalLine": "International patient experience: care in Turkish, English, and Arabic"
+  },
+  "Contact": {
+    "kicker": "Contact",
+    "title": "Get in Touch",
+    "subtitle": "Fill in the form and we'll get back to you the same day – or reach us with a single tap.",
+    "form": {
+      "name": "Full Name",
+      "phone": "Phone",
+      "email": "Email",
+      "subject": "Subject",
+      "subjectOptions": {
+        "appointment": "Appointment Request",
+        "pricing": "Treatment & Pricing Info",
+        "international": "International Patient",
+        "general": "General Question",
+        "other": "Other"
+      },
+      "preferredDate": "Preferred Date",
+      "timePreference": "Preferred Time",
+      "timeOptions": {
+        "morning": "Morning",
+        "noon": "Afternoon",
+        "evening": "Evening"
+      },
+      "message": "Your Message",
+      "kvkkLabel": "I consent to the processing of my personal data under KVKK (Turkish data protection law).",
+      "kvkkLinkLabel": "I have read the privacy notice.",
+      "submit": "Send",
+      "submitting": "Sending...",
+      "successTitle": "Thank you!",
+      "successMessage": "Your request has been received, we'll get back to you shortly.",
+      "errorMessage": "This couldn't be sent right now, please message us on WhatsApp instead.",
+      "requiredNote": "* required field"
+    },
+    "info": {
+      "addressTitle": "Address",
+      "addressNote": "TODO: street/neighborhood line to be added",
+      "hoursTitle": "Opening Hours",
+      "hoursValue": "Weekdays 09:00–18:00 · Saturday 09:00–14:00",
+      "hoursNote": "SAMPLE — real opening hours to be added",
+      "phoneTitle": "Phone & WhatsApp",
+      "phoneNote": "TODO: real number to be added"
+    },
+    "mapTitle": "Practice location map"
+  },
+  "Footer": {
+    "tagline": "Aesthetic & Restorative Dentistry",
+    "addressColumnTitle": "Contact",
+    "rights": "© 2026 Dr. Nurhan İnan, DDS – All rights reserved."
+  },
+  "MobileBar": {
+    "call": "Call",
+    "whatsapp": "WhatsApp"
+  },
+  "Kvkk": {
+    "title": "Privacy Notice (KVKK)",
+    "lastUpdatedLabel": "Last updated",
+    "disclaimer": "This text is a draft. Legal review is required before publishing.",
+    "body": [
+      "In accordance with Turkey's Personal Data Protection Law No. 6698 (\"KVKK\"), Dr. Nurhan İnan Dental Clinic (\"Clinic\") acts as the data controller for the personal data described below.",
+      "1. Data Controller: Dr. Nurhan İnan Dental Clinic, Plaza 224, Floor 4, No 24, Nilüfer/Bursa, Turkey.",
+      "2. Personal Data Processed: Full name, phone number, email address, and any appointment or message content shared through the contact form.",
+      "3. Purposes of Processing: Evaluating appointment requests, maintaining patient communication, responding to treatment and pricing inquiries.",
+      "4. Legal Basis: Your explicit consent under KVKK Art. 5/2, and/or necessity for the establishment or performance of a contract.",
+      "5. Data Sharing: Your personal data is not shared with third parties except where legally required.",
+      "6. Your Rights: Under KVKK Art. 11, you have the right to learn whether your data is processed, and to request correction or deletion. You may submit requests to info@drnurhaninan.com."
+    ]
+  }
+}
