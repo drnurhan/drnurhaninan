@@ -1,0 +1,187 @@
+{
+  "Metadata": {
+    "title": "Dr. Nurhan İnan | Estetisk og Restaurativ Tannbehandling – Bursa",
+    "description": "Estetisk og restaurativ tannbehandling i Nilüfer, Bursa. En internasjonal klinikk som betjener pasienter på flere språk.",
+    "ogAlt": "Dr. Nurhan İnan – Estetisk og Restaurativ Tannbehandling"
+  },
+  "Header": {
+    "logoName": "Dr. Nurhan İnan",
+    "logoTagline": "Estetisk & Restaurativ Tannbehandling",
+    "nav": {
+      "trust": "Hvorfor oss",
+      "services": "Tjenester",
+      "about": "Om oss",
+      "contact": "Kontakt"
+    },
+    "menuOpen": "Åpne meny",
+    "menuClose": "Lukk meny"
+  },
+  "LanguageSwitcher": {
+    "tr": "Türkçe",
+    "en": "English",
+    "ar": "العربية",
+    "de": "Deutsch",
+    "fr": "Français",
+    "el": "Ελληνικά",
+    "es": "Español",
+    "it": "Italiano",
+    "pl": "Polski",
+    "no": "Norsk",
+    "ru": "Русский",
+    "selectLanguage": "Velg språk"
+  },
+  "Hero": {
+    "kicker": "Dr. Nurhan İnan",
+    "titlePrefix": "Smilet ditt,",
+    "titleEmphasis": "gjenoppfunnet",
+    "titleSuffix": "som kunst.",
+    "subtitle": "Personlig tilpasset estetisk og restaurativ tannbehandling. En internasjonal klinikk som betjener pasienter på flere språk.",
+    "ctaPrimary": "Be om time",
+    "ctaWhatsapp": "Send melding på WhatsApp",
+    "imageAlt": "Portrett av dr. Nurhan İnan",
+    "imagePlaceholder": "Bilde kommer snart",
+    "trustBar": {
+      "rating": "4,9 på Google",
+      "experience": "20+ års erfaring",
+      "languages": "Tjenester på flere språk"
+    },
+    "trustBarNote": "EKSEMPELDATA — ekte Google-vurdering legges til (antall erfaringsår er oppdatert)"
+  },
+  "Trust": {
+    "kicker": "Hvorfor dr. İnan?",
+    "title": "Kjenn deg trygg i erfarne hender",
+    "stats": [
+      { "value": "20+", "label": "Års Erfaring" },
+      { "value": "1000+", "label": "Smiledesign" },
+      {
+        "value": "100%",
+        "label": "Pasienttilfredshet",
+        "note": "(blant alle tilbakemeldinger etter behandling)"
+      }
+    ],
+    "testimonialsNote": "EKSEMPEL PÅ OMTALE — erstattes med ekte pasientomtaler",
+    "testimonials": [
+      {
+        "quote": "Jeg reiste til Tyrkia for behandling og følte meg trygg i hvert steg. Resultatet overgikk forventningene mine.",
+        "name": "A. K."
+      },
+      {
+        "quote": "Jeg ønsket et naturlig utseende smil, og det ble akkurat slik jeg hadde sett for meg.",
+        "name": "M. S."
+      }
+    ]
+  },
+  "Services": {
+    "kicker": "Fagområder",
+    "title": "Tjenester",
+    "subtitle": "Hver behandling følger en personlig tilpasset plan som ivaretar både estetikk og funksjon.",
+    "items": {
+      "smileDesign": {
+        "title": "Smiledesign",
+        "description": "Naturlige smil utformet gjennom digital planlegging, tilpasset ansiktstrekkene og personligheten din."
+      },
+      "veneers": {
+        "title": "Porselensskaller (veneers)",
+        "description": "Minimalt invasive porselensskaller med en lysgjennomtrengelighet som ligger nærmest den naturlige tannen."
+      },
+      "inlayOnlay": {
+        "title": "Estetiske Inlay-Onlay-Restaureringer",
+        "description": "Presist tilpassede restaureringer for tilfeller der en fylling ikke er nok og en krone er for mye."
+      },
+      "rootCanal": {
+        "title": "Rotfylling",
+        "description": "Behandling med moderne teknikker som har som mål å redde tannen din på en så komfortabel måte som mulig."
+      },
+      "implant": {
+        "title": "Tannimplantater",
+        "description": "Permanente, pålitelige løsninger for manglende tenner som gir en naturlig følelse."
+      },
+      "whitening": {
+        "title": "Tannbleking",
+        "description": "Kliniske blekeprotokoller tilpasset tannstrukturen din, med hensyn til følsomhet."
+      }
+    }
+  },
+  "About": {
+    "kicker": "Om oss",
+    "title": "Dr. Nurhan İnan",
+    "text": "Dr. İnan er spesialist innen estetisk og restaurativ tannbehandling, og betrakter hver pasients smil som en del av den helhetlige ansiktsestetikken. Behandlingsfilosofien hennes bygger på minimal inngripen, naturlig utseende og varige resultater.",
+    "expandLabel": "Les mer",
+    "collapseLabel": "Vis mindre",
+    "imageAlt": "Dr. Nurhan İnan",
+    "sectionsNote": "TODO — ekte informasjon legges til",
+    "sections": {
+      "education": { "title": "Utdanning", "items": ["TODO: utdanningsdetaljer legges til"] },
+      "certificates": { "title": "Sertifikater", "items": ["TODO: sertifikatdetaljer legges til"] },
+      "memberships": { "title": "Medlemskap", "items": ["TODO: medlemskapsdetaljer legges til"] }
+    },
+    "internationalLine": "Erfaring med internasjonale pasienter: tjenester på flere språk"
+  },
+  "Contact": {
+    "kicker": "Kontakt",
+    "title": "Ta Kontakt",
+    "subtitle": "Fyll ut skjemaet, så svarer vi samme dag – eller kontakt oss med ett trykk.",
+    "form": {
+      "name": "Fullt Navn",
+      "phone": "Telefon",
+      "email": "E-post",
+      "subject": "Emne",
+      "subjectOptions": {
+        "appointment": "Timeforespørsel",
+        "pricing": "Behandlings- og Prisinformasjon",
+        "international": "Internasjonal Pasient",
+        "general": "Generelt Spørsmål",
+        "other": "Annet"
+      },
+      "preferredDate": "Ønsket Dato",
+      "timePreference": "Ønsket Tidspunkt",
+      "timeOptions": {
+        "morning": "Morgen",
+        "noon": "Ettermiddag",
+        "evening": "Kveld"
+      },
+      "message": "Din Melding",
+      "kvkkLabel": "Jeg samtykker til behandling av mine personopplysninger i henhold til KVKK (tyrkisk personvernlov).",
+      "kvkkLinkLabel": "Jeg har lest personvernerklæringen.",
+      "submit": "Send",
+      "submitting": "Sender...",
+      "successTitle": "Takk!",
+      "successMessage": "Forespørselen din er mottatt, vi tar kontakt med deg snart.",
+      "errorMessage": "Dette kunne ikke sendes akkurat nå, vennligst skriv til oss på WhatsApp i stedet.",
+      "requiredNote": "* obligatorisk felt"
+    },
+    "info": {
+      "addressTitle": "Adresse",
+      "addressNote": "TODO: gate/bydel legges til",
+      "hoursTitle": "Åpningstider",
+      "hoursValue": "Hverdager 09:00–18:00 · Lørdag 09:00–14:00",
+      "hoursNote": "EKSEMPEL — ekte åpningstider legges til",
+      "phoneTitle": "Telefon & WhatsApp",
+      "phoneNote": "TODO: ekte nummer legges til"
+    },
+    "mapTitle": "Kart over klinikkens beliggenhet"
+  },
+  "Footer": {
+    "tagline": "Estetisk & Restaurativ Tannbehandling",
+    "addressColumnTitle": "Kontakt",
+    "rights": "© 2026 Dr. Nurhan İnan – Alle rettigheter forbeholdt."
+  },
+  "MobileBar": {
+    "call": "Ring",
+    "whatsapp": "WhatsApp"
+  },
+  "Kvkk": {
+    "title": "Personvernerklæring (KVKK)",
+    "lastUpdatedLabel": "Sist oppdatert",
+    "disclaimer": "Denne teksten er et utkast. Juridisk gjennomgang er nødvendig før publisering.",
+    "body": [
+      "I henhold til den tyrkiske loven nr. 6698 om beskyttelse av personopplysninger (\"KVKK\") opptrer Dr. Nurhan İnan Tannklinikk (\"Klinikken\") som behandlingsansvarlig for personopplysningene beskrevet nedenfor.",
+      "1. Behandlingsansvarlig: Dr. Nurhan İnan Tannklinikk, Plaza 224, 4. etasje, Nr. 24, Nilüfer/Bursa, Tyrkia.",
+      "2. Personopplysninger som Behandles: Fullt navn, telefonnummer, e-postadresse, samt eventuelt time- eller meldingsinnhold delt gjennom kontaktskjemaet.",
+      "3. Formål med Behandlingen: Vurdering av timeforespørsler, opprettholdelse av pasientkommunikasjon, besvarelse av henvendelser om behandling og priser.",
+      "4. Rettslig Grunnlag: Ditt uttrykkelige samtykke i henhold til KVKK art. 5/2, og/eller nødvendighet for inngåelse eller oppfyllelse av en avtale.",
+      "5. Deling av Data: Dine personopplysninger deles ikke med tredjeparter, med mindre det kreves ved lov.",
+      "6. Dine Rettigheter: I henhold til KVKK art. 11 har du rett til å få vite om dine data blir behandlet, samt be om retting eller sletting. Du kan sende forespørsler til info@drnurhaninan.com."
+    ]
+  }
+}

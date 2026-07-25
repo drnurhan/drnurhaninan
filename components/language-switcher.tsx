@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Globe } from "lucide-react";
 import { routing } from "@/i18n/routing";
@@ -12,6 +12,17 @@ export function LanguageSwitcher({ className = "" }: { className?: string }) {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+
+  // Diller, görünen ad (native isim) sırasına göre alfabetik listelenir.
+  const sortedLocales = useMemo(
+    () =>
+      [...routing.locales].sort((a, b) => {
+        const labelA = t(a);
+        const labelB = t(b);
+        return labelA < labelB ? -1 : labelA > labelB ? 1 : 0;
+      }),
+    [t]
+  );
 
   useEffect(() => {
     if (!isOpen) return;
@@ -56,9 +67,9 @@ export function LanguageSwitcher({ className = "" }: { className?: string }) {
       {isOpen && (
         <div
           role="menu"
-          className="absolute end-0 top-full z-50 mt-2 w-40 overflow-hidden rounded-[var(--radius-input)] border border-line bg-surface py-1 shadow-[var(--shadow-medium)]"
+          className="absolute end-0 top-full z-50 mt-2 max-h-80 w-44 overflow-y-auto rounded-[var(--radius-input)] border border-line bg-surface py-1 shadow-[var(--shadow-medium)]"
         >
-          {routing.locales.map((locale) => {
+          {sortedLocales.map((locale) => {
             const isActive = locale === activeLocale;
             return (
               <Link

@@ -1,0 +1,187 @@
+{
+  "Metadata": {
+    "title": "Dr Nurhan İnan | Stomatologia Estetyczna i Rekonstrukcyjna – Bursa",
+    "description": "Stomatologia estetyczna i rekonstrukcyjna w Nilüfer, Bursa. Międzynarodowy gabinet obsługujący pacjentów w wielu językach.",
+    "ogAlt": "Dr Nurhan İnan – Stomatologia Estetyczna i Rekonstrukcyjna"
+  },
+  "Header": {
+    "logoName": "Dr Nurhan İnan",
+    "logoTagline": "Stomatologia Estetyczna i Rekonstrukcyjna",
+    "nav": {
+      "trust": "Dlaczego my",
+      "services": "Usługi",
+      "about": "O nas",
+      "contact": "Kontakt"
+    },
+    "menuOpen": "Otwórz menu",
+    "menuClose": "Zamknij menu"
+  },
+  "LanguageSwitcher": {
+    "tr": "Türkçe",
+    "en": "English",
+    "ar": "العربية",
+    "de": "Deutsch",
+    "fr": "Français",
+    "el": "Ελληνικά",
+    "es": "Español",
+    "it": "Italiano",
+    "pl": "Polski",
+    "no": "Norsk",
+    "ru": "Русский",
+    "selectLanguage": "Wybierz język"
+  },
+  "Hero": {
+    "kicker": "Dr Nurhan İnan",
+    "titlePrefix": "Twój uśmiech,",
+    "titleEmphasis": "na nowo odkryty",
+    "titleSuffix": "jako sztuka.",
+    "subtitle": "Spersonalizowana stomatologia estetyczna i rekonstrukcyjna. Międzynarodowy gabinet obsługujący pacjentów w wielu językach.",
+    "ctaPrimary": "Umów wizytę",
+    "ctaWhatsapp": "Napisz na WhatsApp",
+    "imageAlt": "Portret dr Nurhan İnan",
+    "imagePlaceholder": "Zdjęcie wkrótce",
+    "trustBar": {
+      "rating": "4,9 w Google",
+      "experience": "Ponad 20 lat doświadczenia",
+      "languages": "Obsługa w wielu językach"
+    },
+    "trustBarNote": "PRZYKŁADOWE DANE — prawdziwa ocena Google zostanie dodana (liczba lat doświadczenia jest aktualna)"
+  },
+  "Trust": {
+    "kicker": "Dlaczego dr İnan?",
+    "title": "Poczuj się bezpiecznie w doświadczonych rękach",
+    "stats": [
+      { "value": "20+", "label": "Lat Doświadczenia" },
+      { "value": "1000+", "label": "Projektów Uśmiechu" },
+      {
+        "value": "100%",
+        "label": "Zadowolenie Pacjentów",
+        "note": "(we wszystkich opiniach po zabiegu)"
+      }
+    ],
+    "testimonialsNote": "PRZYKŁADOWA OPINIA — zostanie zastąpiona prawdziwymi opiniami pacjentów",
+    "testimonials": [
+      {
+        "quote": "Przyjechałem/am do Turcji na leczenie i na każdym kroku czułem/am się bezpiecznie. Efekt przerósł moje oczekiwania.",
+        "name": "A. K."
+      },
+      {
+        "quote": "Chciałem/am naturalnie wyglądający uśmiech i wyszło dokładnie tak, jak sobie wyobrażałem/am.",
+        "name": "M. S."
+      }
+    ]
+  },
+  "Services": {
+    "kicker": "Obszary Specjalizacji",
+    "title": "Usługi",
+    "subtitle": "Każde leczenie przebiega według indywidualnego planu, uwzględniającego zarówno estetykę, jak i funkcję.",
+    "items": {
+      "smileDesign": {
+        "title": "Projektowanie Uśmiechu",
+        "description": "Naturalne uśmiechy zaprojektowane cyfrowo, dopasowane do rysów twarzy i charakteru."
+      },
+      "veneers": {
+        "title": "Licówki Porcelanowe",
+        "description": "Minimalnie inwazyjne licówki porcelanowe o przezierności światła najbardziej zbliżonej do naturalnego zęba."
+      },
+      "inlayOnlay": {
+        "title": "Estetyczne Odbudowy Inlay-Onlay",
+        "description": "Precyzyjnie dopasowane odbudowy dla przypadków, w których wypełnienie nie wystarcza, a korona to zbyt wiele."
+      },
+      "rootCanal": {
+        "title": "Leczenie Kanałowe",
+        "description": "Leczenie nowoczesnymi technikami, którego celem jest uratowanie zęba w możliwie najbardziej komfortowy sposób."
+      },
+      "implant": {
+        "title": "Implanty Zębowe",
+        "description": "Trwałe i niezawodne rozwiązania dla brakujących zębów, dające naturalne odczucie."
+      },
+      "whitening": {
+        "title": "Wybielanie Zębów",
+        "description": "Kliniczne protokoły wybielania dopasowane do budowy zębów, z uwzględnieniem wrażliwości."
+      }
+    }
+  },
+  "About": {
+    "kicker": "O nas",
+    "title": "Dr Nurhan İnan",
+    "text": "Specjalizując się w stomatologii estetycznej i rekonstrukcyjnej, dr İnan traktuje uśmiech każdego pacjenta jako część całościowej estetyki twarzy. W centrum jej filozofii leczenia znajdują się minimalna ingerencja, naturalny wygląd i trwałe efekty.",
+    "expandLabel": "Czytaj więcej",
+    "collapseLabel": "Pokaż mniej",
+    "imageAlt": "Dr Nurhan İnan",
+    "sectionsNote": "DO UZUPEŁNIENIA — zostaną dodane prawdziwe informacje",
+    "sections": {
+      "education": { "title": "Wykształcenie", "items": ["Do uzupełnienia: zostaną dodane informacje o wykształceniu"] },
+      "certificates": { "title": "Certyfikaty", "items": ["Do uzupełnienia: zostaną dodane informacje o certyfikatach"] },
+      "memberships": { "title": "Członkostwa", "items": ["Do uzupełnienia: zostaną dodane informacje o członkostwach"] }
+    },
+    "internationalLine": "Doświadczenie z pacjentami międzynarodowymi: obsługa w wielu językach"
+  },
+  "Contact": {
+    "kicker": "Kontakt",
+    "title": "Skontaktuj się z nami",
+    "subtitle": "Wypełnij formularz, a odpowiemy jeszcze tego samego dnia — lub skontaktuj się z nami jednym dotknięciem.",
+    "form": {
+      "name": "Imię i nazwisko",
+      "phone": "Telefon",
+      "email": "E-mail",
+      "subject": "Temat",
+      "subjectOptions": {
+        "appointment": "Prośba o Wizytę",
+        "pricing": "Informacje o Leczeniu i Cenach",
+        "international": "Pacjent Międzynarodowy",
+        "general": "Pytanie Ogólne",
+        "other": "Inne"
+      },
+      "preferredDate": "Preferowana Data",
+      "timePreference": "Preferowana Pora",
+      "timeOptions": {
+        "morning": "Rano",
+        "noon": "Popołudnie",
+        "evening": "Wieczór"
+      },
+      "message": "Twoja Wiadomość",
+      "kvkkLabel": "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z KVKK (turecką ustawą o ochronie danych osobowych).",
+      "kvkkLinkLabel": "Przeczytałem/am informację o prywatności.",
+      "submit": "Wyślij",
+      "submitting": "Wysyłanie...",
+      "successTitle": "Dziękujemy!",
+      "successMessage": "Twoje zgłoszenie zostało odebrane, wkrótce się z Tobą skontaktujemy.",
+      "errorMessage": "Nie udało się teraz wysłać wiadomości, napisz do nas przez WhatsApp.",
+      "requiredNote": "* pole wymagane"
+    },
+    "info": {
+      "addressTitle": "Adres",
+      "addressNote": "Do uzupełnienia: zostanie dodana ulica/dzielnica",
+      "hoursTitle": "Godziny Otwarcia",
+      "hoursValue": "Dni robocze 09:00–18:00 · Sobota 09:00–14:00",
+      "hoursNote": "PRZYKŁAD — zostaną dodane prawdziwe godziny otwarcia",
+      "phoneTitle": "Telefon i WhatsApp",
+      "phoneNote": "Do uzupełnienia: zostanie dodany prawdziwy numer"
+    },
+    "mapTitle": "Mapa lokalizacji gabinetu"
+  },
+  "Footer": {
+    "tagline": "Stomatologia Estetyczna i Rekonstrukcyjna",
+    "addressColumnTitle": "Kontakt",
+    "rights": "© 2026 Dr Nurhan İnan – Wszelkie prawa zastrzeżone."
+  },
+  "MobileBar": {
+    "call": "Zadzwoń",
+    "whatsapp": "WhatsApp"
+  },
+  "Kvkk": {
+    "title": "Informacja o Ochronie Danych Osobowych (KVKK)",
+    "lastUpdatedLabel": "Ostatnia aktualizacja",
+    "disclaimer": "Ten tekst jest wersją roboczą. Przed publikacją wymagana jest weryfikacja prawna.",
+    "body": [
+      "Zgodnie z turecką Ustawą nr 6698 o Ochronie Danych Osobowych (\"KVKK\"), Klinika Stomatologiczna Dr Nurhan İnan (\"Klinika\") działa jako administrator danych osobowych opisanych poniżej.",
+      "1. Administrator Danych: Klinika Stomatologiczna Dr Nurhan İnan, Plaza 224, Piętro 4, Nr 24, Nilüfer/Bursa, Turcja.",
+      "2. Przetwarzane Dane Osobowe: Imię i nazwisko, numer telefonu, adres e-mail oraz treść zgłoszeń wizyt lub wiadomości przesłanych za pośrednictwem formularza kontaktowego.",
+      "3. Cele Przetwarzania: Ocena próśb o wizytę, utrzymywanie komunikacji z pacjentami, odpowiadanie na pytania dotyczące leczenia i cen.",
+      "4. Podstawa Prawna: Twoja wyraźna zgoda na podstawie art. 5/2 KVKK i/lub konieczność zawarcia lub wykonania umowy.",
+      "5. Udostępnianie Danych: Twoje dane osobowe nie są udostępniane osobom trzecim, chyba że wymaga tego prawo.",
+      "6. Twoje Prawa: Na podstawie art. 11 KVKK masz prawo dowiedzieć się, czy Twoje dane są przetwarzane, oraz zażądać ich sprostowania lub usunięcia. Swoje wnioski możesz przesyłać na adres info@drnurhaninan.com."
+    ]
+  }
+}

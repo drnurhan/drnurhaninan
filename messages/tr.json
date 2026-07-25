@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Uzm. Dr. Nurhan İnan | Estetik ve Restoratif Diş Hekimliği – Bursa",
-    "description": "Bursa Nilüfer'de estetik ve restoratif diş hekimliği. Türkçe, İngilizce ve Arapça hizmet veren uluslararası bir muayenehane deneyimi.",
+    "description": "Bursa Nilüfer'de estetik ve restoratif diş hekimliği. Birçok dilde hizmet veren uluslararası bir muayenehane deneyimi.",
     "ogAlt": "Dr. Nurhan İnan – Estetik ve Restoratif Diş Hekimliği"
   },
   "Header": {
@@ -20,6 +20,14 @@
     "tr": "Türkçe",
     "en": "English",
     "ar": "العربية",
+    "de": "Deutsch",
+    "fr": "Français",
+    "el": "Ελληνικά",
+    "es": "Español",
+    "it": "Italiano",
+    "pl": "Polski",
+    "no": "Norsk",
+    "ru": "Русский",
     "selectLanguage": "Dil seçin"
   },
   "Hero": {
@@ -27,17 +35,17 @@
     "titlePrefix": "Gülüşünüz,",
     "titleEmphasis": "sanatla",
     "titleSuffix": "buluşuyor.",
-    "subtitle": "Kişiye özel estetik ve restoratif diş hekimliği. Türkçe, İngilizce ve Arapça hizmet veren uluslararası bir muayenehane deneyimi.",
+    "subtitle": "Kişiye özel estetik ve restoratif diş hekimliği. Birçok dilde hizmet veren uluslararası bir muayenehane deneyimi.",
     "ctaPrimary": "Randevu Talebi",
     "ctaWhatsapp": "WhatsApp ile Yazın",
     "imageAlt": "Dr. Nurhan İnan portresi",
     "imagePlaceholder": "Fotoğraf yakında eklenecek",
     "trustBar": {
       "rating": "4,9 Google",
-      "experience": "10+ Yıl Deneyim",
-      "languages": "3 Dilde Hizmet"
+      "experience": "20+ Yıl Deneyim",
+      "languages": "Çok Dilde Hizmet"
     },
-    "trustBarNote": "ÖRNEK VERİ — gerçek Google puanı eklenecek"
+    "trustBarNote": "ÖRNEK VERİ — gerçek Google puanı eklenecek (deneyim yılı güncel)"
   },
   "Trust": {
     "kicker": "Neden Dr. İnan?",
@@ -107,7 +115,7 @@
       "certificates": { "title": "Sertifikalar", "items": ["TODO: sertifika bilgileri eklenecek"] },
       "memberships": { "title": "Üyelikler", "items": ["TODO: üyelik bilgileri eklenecek"] }
     },
-    "internationalLine": "Uluslararası hasta deneyimi: Türkçe, İngilizce ve Arapça hizmet"
+    "internationalLine": "Uluslararası hasta deneyimi: birçok dilde hizmet"
   },
   "Contact": {
     "kicker": "İletişim",

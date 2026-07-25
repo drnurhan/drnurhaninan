@@ -11,13 +11,13 @@ import { MobileBar } from "@/components/mobile-bar";
 import "../globals.css";
 
 const fraunces = Fraunces({
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
   variable: "--font-fraunces",
   display: "swap",
 });
 
 const inter = Inter({
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext", "greek", "cyrillic"],
   variable: "--font-inter",
   display: "swap",
 });
@@ -30,7 +30,7 @@ const plexArabic = IBM_Plex_Sans_Arabic({
 });
 
 const urbanist = Urbanist({
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
   weight: ["500", "600", "700"],
   variable: "--font-urbanist",
   display: "swap",

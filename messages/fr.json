@@ -1,0 +1,187 @@
+{
+  "Metadata": {
+    "title": "Dr Nurhan İnan | Dentisterie Esthétique et Restauratrice – Bursa",
+    "description": "Dentisterie esthétique et restauratrice à Nilüfer, Bursa. Un cabinet international accueillant des patients en plusieurs langues.",
+    "ogAlt": "Dr Nurhan İnan – Dentisterie Esthétique et Restauratrice"
+  },
+  "Header": {
+    "logoName": "Dr Nurhan İnan",
+    "logoTagline": "Dentisterie Esthétique et Restauratrice",
+    "nav": {
+      "trust": "Pourquoi nous",
+      "services": "Services",
+      "about": "À propos",
+      "contact": "Contact"
+    },
+    "menuOpen": "Ouvrir le menu",
+    "menuClose": "Fermer le menu"
+  },
+  "LanguageSwitcher": {
+    "tr": "Türkçe",
+    "en": "English",
+    "ar": "العربية",
+    "de": "Deutsch",
+    "fr": "Français",
+    "el": "Ελληνικά",
+    "es": "Español",
+    "it": "Italiano",
+    "pl": "Polski",
+    "no": "Norsk",
+    "ru": "Русский",
+    "selectLanguage": "Choisir la langue"
+  },
+  "Hero": {
+    "kicker": "Dr Nurhan İnan",
+    "titlePrefix": "Votre sourire,",
+    "titleEmphasis": "réinventé",
+    "titleSuffix": "comme un art.",
+    "subtitle": "Dentisterie esthétique et restauratrice personnalisée. Un cabinet international accueillant des patients en plusieurs langues.",
+    "ctaPrimary": "Demander un rendez-vous",
+    "ctaWhatsapp": "Écrire sur WhatsApp",
+    "imageAlt": "Portrait du Dr Nurhan İnan",
+    "imagePlaceholder": "Photo à venir",
+    "trustBar": {
+      "rating": "4,9 sur Google",
+      "experience": "20+ ans d'expérience",
+      "languages": "Accueil multilingue"
+    },
+    "trustBarNote": "DONNÉES D'EXEMPLE — la note Google réelle sera ajoutée (années d'expérience à jour)"
+  },
+  "Trust": {
+    "kicker": "Pourquoi le Dr İnan ?",
+    "title": "Sentez-vous entre de bonnes mains",
+    "stats": [
+      { "value": "20+", "label": "Ans d'expérience" },
+      { "value": "1 000+", "label": "Sourires conçus" },
+      {
+        "value": "100 %",
+        "label": "Satisfaction des patients",
+        "note": "(sur l'ensemble des retours après traitement)"
+      }
+    ],
+    "testimonialsNote": "AVIS D'EXEMPLE — sera remplacé par de vrais avis de patients",
+    "testimonials": [
+      {
+        "quote": "Je suis venu(e) en Turquie pour me faire soigner et je me suis senti(e) en sécurité à chaque étape. Le résultat a dépassé mes attentes.",
+        "name": "A. K."
+      },
+      {
+        "quote": "Je voulais un sourire à l'aspect naturel, et il est exactement comme je l'avais imaginé.",
+        "name": "M. S."
+      }
+    ]
+  },
+  "Services": {
+    "kicker": "Domaines d'expertise",
+    "title": "Services",
+    "subtitle": "Chaque traitement suit un plan personnalisé qui allie esthétique et fonction.",
+    "items": {
+      "smileDesign": {
+        "title": "Conception du sourire",
+        "description": "Des sourires naturels façonnés par une planification numérique adaptée à vos traits et à votre personnalité."
+      },
+      "veneers": {
+        "title": "Facettes en céramique",
+        "description": "Des coques en céramique peu invasives, avec une transparence à la lumière la plus proche possible de la dent naturelle."
+      },
+      "inlayOnlay": {
+        "title": "Restaurations esthétiques inlay-onlay",
+        "description": "Des restaurations ajustées avec précision pour les cas où un plombage ne suffit pas et une couronne serait excessive."
+      },
+      "rootCanal": {
+        "title": "Traitement de canal",
+        "description": "Un traitement utilisant des techniques modernes visant à sauver votre dent avec le plus de confort possible."
+      },
+      "implant": {
+        "title": "Implants dentaires",
+        "description": "Des solutions permanentes et fiables pour les dents manquantes, offrant une sensation naturelle."
+      },
+      "whitening": {
+        "title": "Blanchiment dentaire",
+        "description": "Des protocoles de blanchiment clinique adaptés à la structure de vos dents, en tenant compte de la sensibilité."
+      }
+    }
+  },
+  "About": {
+    "kicker": "À propos",
+    "title": "Dr Nurhan İnan",
+    "text": "Spécialisée en dentisterie esthétique et restauratrice, le Dr İnan considère le sourire de chaque patient comme faisant partie intégrante de l'esthétique du visage. Sa philosophie de traitement repose sur une intervention minimale, un rendu naturel et des résultats durables.",
+    "expandLabel": "Lire la suite",
+    "collapseLabel": "Réduire",
+    "imageAlt": "Dr Nurhan İnan",
+    "sectionsNote": "À FAIRE — informations réelles à ajouter",
+    "sections": {
+      "education": { "title": "Formation", "items": ["À faire : détails de la formation à ajouter"] },
+      "certificates": { "title": "Certifications", "items": ["À faire : détails des certifications à ajouter"] },
+      "memberships": { "title": "Adhésions", "items": ["À faire : détails des adhésions à ajouter"] }
+    },
+    "internationalLine": "Expérience avec les patients internationaux : accueil en plusieurs langues"
+  },
+  "Contact": {
+    "kicker": "Contact",
+    "title": "Contactez-nous",
+    "subtitle": "Remplissez le formulaire et nous vous répondrons le jour même – ou contactez-nous en un seul geste.",
+    "form": {
+      "name": "Nom complet",
+      "phone": "Téléphone",
+      "email": "E-mail",
+      "subject": "Objet",
+      "subjectOptions": {
+        "appointment": "Demande de rendez-vous",
+        "pricing": "Informations sur les traitements et tarifs",
+        "international": "Patient international",
+        "general": "Question générale",
+        "other": "Autre"
+      },
+      "preferredDate": "Date souhaitée",
+      "timePreference": "Créneau souhaité",
+      "timeOptions": {
+        "morning": "Matin",
+        "noon": "Après-midi",
+        "evening": "Soir"
+      },
+      "message": "Votre message",
+      "kvkkLabel": "J'accepte le traitement de mes données personnelles conformément au KVKK (loi turque sur la protection des données).",
+      "kvkkLinkLabel": "J'ai lu la notice d'information.",
+      "submit": "Envoyer",
+      "submitting": "Envoi en cours...",
+      "successTitle": "Merci !",
+      "successMessage": "Votre demande a été reçue, nous vous recontacterons rapidement.",
+      "errorMessage": "L'envoi n'a pas pu aboutir pour le moment, merci de nous écrire plutôt sur WhatsApp.",
+      "requiredNote": "* champ obligatoire"
+    },
+    "info": {
+      "addressTitle": "Adresse",
+      "addressNote": "À faire : ligne rue/quartier à ajouter",
+      "hoursTitle": "Horaires d'ouverture",
+      "hoursValue": "Semaine 09h00–18h00 · Samedi 09h00–14h00",
+      "hoursNote": "EXEMPLE — horaires réels à ajouter",
+      "phoneTitle": "Téléphone et WhatsApp",
+      "phoneNote": "À faire : numéro réel à ajouter"
+    },
+    "mapTitle": "Carte de localisation du cabinet"
+  },
+  "Footer": {
+    "tagline": "Dentisterie Esthétique et Restauratrice",
+    "addressColumnTitle": "Contact",
+    "rights": "© 2026 Dr Nurhan İnan – Tous droits réservés."
+  },
+  "MobileBar": {
+    "call": "Appeler",
+    "whatsapp": "WhatsApp"
+  },
+  "Kvkk": {
+    "title": "Notice d'information (KVKK)",
+    "lastUpdatedLabel": "Dernière mise à jour",
+    "disclaimer": "Ce texte est une ébauche. Une vérification juridique est nécessaire avant publication.",
+    "body": [
+      "Conformément à la loi turque n° 6698 relative à la protection des données personnelles (« KVKK »), le Cabinet Dentaire Dr Nurhan İnan (« le Cabinet ») agit en tant que responsable du traitement des données personnelles décrites ci-dessous.",
+      "1. Responsable du traitement : Cabinet Dentaire Dr Nurhan İnan, Plaza 224, étage 4, n° 24, Nilüfer/Bursa, Turquie.",
+      "2. Données personnelles traitées : nom complet, numéro de téléphone, adresse e-mail, ainsi que tout contenu de rendez-vous ou de message partagé via le formulaire de contact.",
+      "3. Finalités du traitement : évaluation des demandes de rendez-vous, maintien de la communication avec les patients, réponse aux demandes relatives aux traitements et aux tarifs.",
+      "4. Base légale : votre consentement explicite en vertu de l'article 5/2 du KVKK, et/ou la nécessité pour la conclusion ou l'exécution d'un contrat.",
+      "5. Partage des données : vos données personnelles ne sont partagées avec des tiers que dans les cas requis par la loi.",
+      "6. Vos droits : en vertu de l'article 11 du KVKK, vous avez le droit de savoir si vos données sont traitées, et de demander leur rectification ou leur suppression. Vous pouvez adresser vos demandes à info@drnurhaninan.com."
+    ]
+  }
+}

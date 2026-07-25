@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Dr. Nurhan İnan, DDS | Aesthetic & Restorative Dentistry – Bursa",
-    "description": "Aesthetic and restorative dentistry in Nilüfer, Bursa. An international practice serving patients in Turkish, English, and Arabic.",
+    "description": "Aesthetic and restorative dentistry in Nilüfer, Bursa. An international practice serving patients in multiple languages.",
     "ogAlt": "Dr. Nurhan İnan – Aesthetic & Restorative Dentistry"
   },
   "Header": {
@@ -20,6 +20,14 @@
     "tr": "Türkçe",
     "en": "English",
     "ar": "العربية",
+    "de": "Deutsch",
+    "fr": "Français",
+    "el": "Ελληνικά",
+    "es": "Español",
+    "it": "Italiano",
+    "pl": "Polski",
+    "no": "Norsk",
+    "ru": "Русский",
     "selectLanguage": "Select language"
   },
   "Hero": {
@@ -27,17 +35,17 @@
     "titlePrefix": "Your smile,",
     "titleEmphasis": "reimagined",
     "titleSuffix": "as art.",
-    "subtitle": "Personalized aesthetic and restorative dentistry. An international practice serving patients in Turkish, English, and Arabic.",
+    "subtitle": "Personalized aesthetic and restorative dentistry. An international practice serving patients in multiple languages.",
     "ctaPrimary": "Request an Appointment",
     "ctaWhatsapp": "Message on WhatsApp",
     "imageAlt": "Portrait of Dr. Nurhan İnan",
     "imagePlaceholder": "Photo coming soon",
     "trustBar": {
       "rating": "4.9 on Google",
-      "experience": "10+ Years of Experience",
-      "languages": "Care in 3 Languages"
+      "experience": "20+ Years of Experience",
+      "languages": "Multilingual Care"
     },
-    "trustBarNote": "SAMPLE DATA — real Google rating to be added"
+    "trustBarNote": "SAMPLE DATA — real Google rating to be added (experience figure is current)"
   },
   "Trust": {
     "kicker": "Why Dr. İnan?",
@@ -107,7 +115,7 @@
       "certificates": { "title": "Certificates", "items": ["TODO: certificate details to be added"] },
       "memberships": { "title": "Memberships", "items": ["TODO: membership details to be added"] }
     },
-    "internationalLine": "International patient experience: care in Turkish, English, and Arabic"
+    "internationalLine": "International patient experience: care in multiple languages"
   },
   "Contact": {
     "kicker": "Contact",
