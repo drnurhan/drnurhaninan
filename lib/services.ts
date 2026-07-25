@@ -1,4 +1,4 @@
-import { Activity, Anchor, Component, Layers, Sparkles, Sun, type LucideIcon } from "lucide-react";
+import { Sparkles, type LucideIcon } from "lucide-react";
 
 export const serviceIds = [
   "smileDesign",
@@ -11,12 +11,12 @@ export const serviceIds = [
 
 export type ServiceId = (typeof serviceIds)[number];
 
-// İkon eşleşmeleri tek bu dosyadan yönetilir; metinler messages/*.json içindedir.
+// Bu bölümdeki tüm kartlarda kullanıcı isteğiyle tek bir ikon (Sparkles) kullanılıyor.
 export const serviceIcons: Record<ServiceId, LucideIcon> = {
   smileDesign: Sparkles,
-  veneers: Layers,
-  inlayOnlay: Component,
-  rootCanal: Activity,
-  implant: Anchor,
-  whitening: Sun,
+  veneers: Sparkles,
+  inlayOnlay: Sparkles,
+  rootCanal: Sparkles,
+  implant: Sparkles,
+  whitening: Sparkles,
 };
