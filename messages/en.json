@@ -19,7 +19,8 @@
   "LanguageSwitcher": {
     "tr": "Türkçe",
     "en": "English",
-    "ar": "العربية"
+    "ar": "العربية",
+    "selectLanguage": "Select language"
   },
   "Hero": {
     "kicker": "Dr. Nurhan İnan, DDS",

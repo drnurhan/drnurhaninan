@@ -19,7 +19,8 @@
   "LanguageSwitcher": {
     "tr": "Türkçe",
     "en": "English",
-    "ar": "العربية"
+    "ar": "العربية",
+    "selectLanguage": "Dil seçin"
   },
   "Hero": {
     "kicker": "Uzm. Dr. Nurhan İnan",

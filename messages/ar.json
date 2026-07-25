@@ -19,7 +19,8 @@
   "LanguageSwitcher": {
     "tr": "Türkçe",
     "en": "English",
-    "ar": "العربية"
+    "ar": "العربية",
+    "selectLanguage": "اختر اللغة"
   },
   "Hero": {
     "kicker": "د. نورهان إينان",

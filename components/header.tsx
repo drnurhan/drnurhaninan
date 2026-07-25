@@ -35,8 +35,7 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-4">
-          <LanguageSwitcher className="hidden sm:flex" />
+        <div className="flex items-center gap-2">
           <button
             type="button"
             onClick={() => setIsMenuOpen((open) => !open)}
@@ -46,6 +45,7 @@ export function Header() {
           >
             {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
+          <LanguageSwitcher />
         </div>
       </div>
 
@@ -63,7 +63,6 @@ export function Header() {
               </a>
             ))}
           </nav>
-          <LanguageSwitcher className="mt-4 sm:hidden" />
         </div>
       )}
     </header>
