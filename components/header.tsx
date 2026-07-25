@@ -14,12 +14,18 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line/80 bg-bg/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <a href="#top" className="flex flex-col leading-tight">
-          <span className="font-serif text-lg text-ink sm:text-xl">
-            {t("logoName")}
-          </span>
-          <span className="text-xs text-ink-soft sm:text-sm">
-            {t("logoTagline")}
+        <a href="#top" className="flex items-center gap-3">
+          <span
+            aria-hidden="true"
+            className="brand-mark h-9 w-9 shrink-0 sm:h-10 sm:w-10"
+          />
+          <span className="flex flex-col leading-tight">
+            <span className="font-urbanist text-lg font-semibold text-ink sm:text-xl">
+              {t("logoName")}
+            </span>
+            <span className="text-xs text-ink-soft sm:text-sm">
+              {t("logoTagline")}
+            </span>
           </span>
         </a>
 

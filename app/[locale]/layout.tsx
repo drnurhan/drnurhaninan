@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter, IBM_Plex_Sans_Arabic } from "next/font/google";
+import { Fraunces, Inter, IBM_Plex_Sans_Arabic, Urbanist } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -26,6 +26,13 @@ const plexArabic = IBM_Plex_Sans_Arabic({
   subsets: ["arabic"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-plex-arabic",
+  display: "swap",
+});
+
+const urbanist = Urbanist({
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  variable: "--font-urbanist",
   display: "swap",
 });
 
@@ -95,7 +102,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={dir}>
       <body
-        className={`${fraunces.variable} ${inter.variable} ${plexArabic.variable} bg-bg text-ink font-sans antialiased pb-20 md:pb-0`}
+        className={`${fraunces.variable} ${inter.variable} ${plexArabic.variable} ${urbanist.variable} bg-bg text-ink font-sans antialiased pb-20 md:pb-0`}
       >
         <NextIntlClientProvider>
           <Header />
