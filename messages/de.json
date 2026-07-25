@@ -167,8 +167,7 @@
       "addressTitle": "Adresse",
       "addressNote": "TODO: Straße/Stadtteil folgt",
       "hoursTitle": "Öffnungszeiten",
-      "hoursValue": "Wochentags 09:00–18:00 Uhr · Samstag 09:00–14:00 Uhr",
-      "hoursNote": "BEISPIEL — echte Öffnungszeiten folgen",
+      "hoursValue": "Wochentags 10:00–19:00 Uhr · Samstag 10:00–15:00 Uhr · Sonntag geschlossen",
       "phoneTitle": "Telefon & WhatsApp"
     },
     "mapTitle": "Standortkarte der Praxis"

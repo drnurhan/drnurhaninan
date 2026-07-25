@@ -167,8 +167,7 @@
       "addressTitle": "Adresse",
       "addressNote": "TODO: gate/bydel legges til",
       "hoursTitle": "Åpningstider",
-      "hoursValue": "Hverdager 09:00–18:00 · Lørdag 09:00–14:00",
-      "hoursNote": "EKSEMPEL — ekte åpningstider legges til",
+      "hoursValue": "Hverdager 10:00–19:00 · Lørdag 10:00–15:00 · Søndag stengt",
       "phoneTitle": "Telefon & WhatsApp"
     },
     "mapTitle": "Kart over klinikkens beliggenhet"

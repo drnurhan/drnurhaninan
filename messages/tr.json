@@ -167,8 +167,7 @@
       "addressTitle": "Adres",
       "addressNote": "TODO: mahalle/cadde satırı eklenecek",
       "hoursTitle": "Çalışma Saatleri",
-      "hoursValue": "Hafta içi 09:00–18:00 · Cumartesi 09:00–14:00",
-      "hoursNote": "ÖRNEK — gerçek çalışma saatleri eklenecek",
+      "hoursValue": "Hafta içi 10:00–19:00 · Cumartesi 10:00–15:00 · Pazar kapalı",
       "phoneTitle": "Telefon & WhatsApp"
     },
     "mapTitle": "Muayenehane konumu haritası"

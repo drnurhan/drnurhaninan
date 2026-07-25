@@ -167,8 +167,7 @@
       "addressTitle": "Adresse",
       "addressNote": "À faire : ligne rue/quartier à ajouter",
       "hoursTitle": "Horaires d'ouverture",
-      "hoursValue": "Semaine 09h00–18h00 · Samedi 09h00–14h00",
-      "hoursNote": "EXEMPLE — horaires réels à ajouter",
+      "hoursValue": "Semaine 10h00–19h00 · Samedi 10h00–15h00 · Dimanche fermé",
       "phoneTitle": "Téléphone et WhatsApp"
     },
     "mapTitle": "Carte de localisation du cabinet"

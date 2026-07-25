@@ -167,8 +167,7 @@
       "addressTitle": "Address",
       "addressNote": "TODO: street/neighborhood line to be added",
       "hoursTitle": "Opening Hours",
-      "hoursValue": "Weekdays 09:00–18:00 · Saturday 09:00–14:00",
-      "hoursNote": "SAMPLE — real opening hours to be added",
+      "hoursValue": "Weekdays 10:00–19:00 · Saturday 10:00–15:00 · Sunday closed",
       "phoneTitle": "Phone & WhatsApp"
     },
     "mapTitle": "Practice location map"

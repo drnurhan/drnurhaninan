@@ -52,9 +52,6 @@ export function Contact() {
                 title={t("info.hoursTitle")}
               >
                 <p>{t("info.hoursValue")}</p>
-                <p className="mt-1 text-xs text-ink-soft/70">
-                  {t("info.hoursNote")}
-                </p>
               </InfoCard>
 
               <InfoCard
