@@ -43,9 +43,6 @@ export function Trust() {
           <div className="mt-10">
             <TestimonialsCarousel />
           </div>
-          <p className="mt-3 text-center text-xs text-white/70">
-            {t("testimonialsNote")}
-          </p>
         </Reveal>
       </div>
     </section>

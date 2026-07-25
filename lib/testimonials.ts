@@ -92,7 +92,7 @@ export const testimonials: Testimonial[] = [
       "From the first consultation to the final result, everything was handled with real care. Highly recommend it.",
     name: "Rachel M.",
   },
-  // Français (2)
+  // Français (6)
   {
     quote:
       "J'avais peur de me faire soigner à l'étranger, mais tout s'est passé à la perfection. Mon sourire a complètement changé ma confiance en moi.",
@@ -102,6 +102,48 @@ export const testimonials: Testimonial[] = [
     quote:
       "Un résultat vraiment naturel, et une équipe adorable du début à la fin. Je recommande sans hésiter.",
     name: "Nicolas D.",
+  },
+  {
+    quote:
+      "Je redoutais les soins dentaires depuis des années, mais toute l'équipe m'a mis en confiance dès la première visite. Résultat magnifique.",
+    name: "Sophie L.",
+  },
+  {
+    quote:
+      "Mon implant a été posé avec beaucoup de précision, aucune douleur et un résultat qui semble tout à fait naturel.",
+    name: "Julien P.",
+  },
+  {
+    quote:
+      "J'ai enfin un sourire dont je suis fière, et tout s'est déroulé exactement comme on me l'avait expliqué.",
+    name: "Amandine R.",
+  },
+  {
+    quote:
+      "Je recommande vivement, le suivi après le traitement a été aussi sérieux que le traitement lui-même.",
+    name: "Thomas G.",
+  },
+  // Polski (2)
+  {
+    quote:
+      "Długo zwlekałam z wizytą, ale cały proces przebiegł spokojnie i bezboleśnie. Efekt przeszedł moje oczekiwania.",
+    name: "Magdalena W.",
+  },
+  {
+    quote:
+      "Miałem złamany ząb i obawiałem się efektu, a wyszło tak naturalnie, że nikt nie zauważa różnicy.",
+    name: "Tomasz N.",
+  },
+  // Русский (2)
+  {
+    quote:
+      "Долго откладывала визит к стоматологу, но здесь весь процесс прошёл спокойно и без лишнего стресса. Результатом очень довольна.",
+    name: "Виктория П.",
+  },
+  {
+    quote:
+      "Обратился со сколотым зубом, восстановили так, что не отличить от остальных. Очень аккуратная работа.",
+    name: "Дмитрий С.",
   },
   // العربية (2)
   {
