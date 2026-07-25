@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 import { siteConfig } from "@/lib/site-config";
 
 type ContactPayload = {
@@ -57,28 +57,38 @@ export async function POST(request: Request) {
     `Gönderim Tarihi: ${submittedAt}`,
   ].join("\n");
 
-  const resendApiKey = process.env.RESEND_API_KEY;
+  const smtpPassword = process.env.SMTP_PASSWORD;
 
-  if (!resendApiKey) {
-    // RESEND_API_KEY henüz tanımlı değil (deploy aşamasında eklenecek): isteği logla, hata verme.
-    console.log("[contact] RESEND_API_KEY tanımlı değil, form isteği:", {
+  if (!smtpPassword) {
+    // SMTP_PASSWORD henüz tanımlı değil (deploy aşamasında eklenecek): isteği logla, hata verme.
+    console.log("[contact] SMTP_PASSWORD tanımlı değil, form isteği:", {
       ...body,
     });
     return NextResponse.json({ ok: true, delivered: false });
   }
 
   try {
-    const resend = new Resend(resendApiKey);
-    await resend.emails.send({
-      from: `drnurhaninan.com <onboarding@resend.dev>`,
+    const transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST || "smtp.hostinger.com",
+      port: Number(process.env.SMTP_PORT) || 465,
+      secure: true,
+      auth: {
+        user: process.env.SMTP_USER || siteConfig.email,
+        pass: smtpPassword,
+      },
+    });
+
+    await transporter.sendMail({
+      from: `"drnurhaninan.com" <${process.env.SMTP_USER || siteConfig.email}>`,
       to: siteConfig.email,
+      replyTo: body.email || undefined,
       subject: `[drnurhaninan.com] ${subjectLabel} – ${body.name}`,
       text: emailBody,
     });
 
     return NextResponse.json({ ok: true, delivered: true });
   } catch (error) {
-    console.error("[contact] Resend gönderim hatası:", error);
+    console.error("[contact] SMTP gönderim hatası:", error);
     return NextResponse.json(
       { ok: false, error: "send-failed" },
       { status: 502 }
