@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { MessageCircle, Star, Sparkles as SparklesIcon, Globe2 } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
@@ -58,11 +59,14 @@ export function Hero() {
         </Reveal>
 
         <Reveal delay={150}>
-          <div className="hero-gradient relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-t-[7rem] rounded-b-[20px] border border-line shadow-[var(--shadow-medium)]">
-            <span
-              aria-hidden="true"
-              className="brand-mark absolute inset-0 m-auto h-2/3 w-2/3 opacity-15"
-              style={{ backgroundColor: "var(--color-accent-light)" }}
+          <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-t-[7rem] rounded-b-[20px] border border-line bg-primary-tint shadow-[var(--shadow-medium)]">
+            <Image
+              src="/images/n_photo.png"
+              alt={t("imageAlt")}
+              fill
+              priority
+              sizes="(min-width: 768px) 24rem, 100vw"
+              className="object-cover object-top"
             />
           </div>
         </Reveal>

@@ -2,6 +2,11 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import { siteConfig } from "@/lib/site-config";
 
+// SMTP el sıkışması bazen varsayılan fonksiyon süresine yakın sürebiliyor;
+// bu da mail gönderilmesine rağmen tarayıcıya zamanında cevap dönmemesine
+// (ve formda "gönderilemedi" hatası görünmesine) yol açıyordu.
+export const maxDuration = 30;
+
 type ContactPayload = {
   name: string;
   phone: string;
@@ -76,6 +81,11 @@ export async function POST(request: Request) {
         user: process.env.SMTP_USER || siteConfig.email,
         pass: smtpPassword,
       },
+      // Hostinger yavaş yanıt verirse yığılıp fonksiyon zaman aşımına
+      // çarpmak yerine makul bir sürede net bir hata ile düşsün.
+      connectionTimeout: 15000,
+      greetingTimeout: 15000,
+      socketTimeout: 15000,
     });
 
     await transporter.sendMail({
