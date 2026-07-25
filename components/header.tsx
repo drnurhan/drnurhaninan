@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { Menu, X } from "lucide-react";
+import { Menu, Phone, X } from "lucide-react";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { siteConfig } from "@/lib/site-config";
 
 const navItems = ["trust", "services", "about", "contact"] as const;
 
@@ -42,6 +43,13 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <a
+            href={`tel:${siteConfig.phoneTel}`}
+            className="hidden items-center gap-1.5 rounded-full border border-primary/30 px-3 py-1.5 text-sm font-semibold text-primary transition-colors hover:bg-primary-tint md:flex"
+          >
+            <Phone size={15} />
+            {siteConfig.phoneDisplay}
+          </a>
           <button
             type="button"
             onClick={() => setIsMenuOpen((open) => !open)}
