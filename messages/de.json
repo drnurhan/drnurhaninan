@@ -38,7 +38,6 @@
     "subtitle": "Digitale Planung und minimale Eingriffe in der ästhetischen und restaurativen Zahnheilkunde. Dr. Nurhan İnan — Bursa.",
     "ctaPrimary": "Termin anfragen",
     "ctaWhatsapp": "Per WhatsApp schreiben",
-    "imageAlt": "Porträt von Dr. Nurhan İnan",
     "trustBar": {
       "rating": "4,9 bei Google",
       "experience": "20+ Jahre Erfahrung",
@@ -102,32 +101,34 @@
   "About": {
     "kicker": "Über uns",
     "title": "Dr. Nurhan İnan",
-    "text": "Dr. İnan ist auf ästhetische und restaurative Zahnheilkunde spezialisiert und betrachtet das Lächeln jedes Patienten als Teil der gesamten Gesichtsästhetik. Im Mittelpunkt ihrer Behandlungsphilosophie stehen minimale Eingriffe, ein natürliches Erscheinungsbild und langlebige Ergebnisse.",
+    "text": "Dr. Nurhan İnan schloss 2007 ihr Studium an der Zahnmedizinischen Fakultät Çapa der Universität Istanbul ab und beendete 2016 an derselben Fakultät ihre Facharztausbildung. Ihre Expertise in der restaurativen Zahnheilkunde vertiefte sie am Acıbadem Maslak Krankenhaus und in ihrer eigenen Praxis in Nişantaşı; heute verbindet sie ihre akademische Laufbahn mit der klinischen Praxis.",
     "expandLabel": "Mehr erfahren",
     "collapseLabel": "Weniger anzeigen",
     "imageAlt": "Dr. Nurhan İnan",
-    "sectionsNote": "TODO — echte Informationen folgen",
     "sections": {
-      "education": {
-        "title": "Ausbildung",
+      "expertiseAreas": {
+        "title": "Fachgebiete",
         "items": [
-          "TODO: Ausbildungsdetails folgen"
+          "Smile Design",
+          "Keramikveneer-Restaurationen",
+          "Diastemaschluss",
+          "Ästhetische Restaurationen",
+          "Wurzelkanalbehandlung"
         ]
       },
-      "certificates": {
-        "title": "Zertifikate",
+      "featuredProcedures": {
+        "title": "Besondere Leistungen",
         "items": [
-          "TODO: Zertifikatsdetails folgen"
-        ]
-      },
-      "memberships": {
-        "title": "Mitgliedschaften",
-        "items": [
-          "TODO: Mitgliedschaftsdetails folgen"
+          "Digitales Smile Design",
+          "Inlay-/Onlay-Füllungen",
+          "Biokompatible Restaurationen",
+          "Laserunterstützte Behandlungen"
         ]
       }
     },
-    "internationalLine": "Erfahrung mit internationalen Patienten: Betreuung in mehreren Sprachen"
+    "internationalLine": "Erfahrung mit internationalen Patienten: Betreuung in mehreren Sprachen",
+    "focusText": "Ihr Schwerpunkt liegt insbesondere auf Smile Design und Keramikveneer-Restaurationen, mit einem Ansatz, der auf natürlich wirkende und langlebige Ergebnisse abzielt.",
+    "philosophyText": "Nach der Philosophie „minimaler Eingriff, maximale Wirkung“ ist es ihr Grundsatz, bei jeder Behandlung möglichst viel der natürlichen Zahnstruktur zu erhalten und dem Patienten das ästhetischste und langlebigste Ergebnis zu bieten."
   },
   "Contact": {
     "kicker": "Kontakt",
@@ -169,12 +170,14 @@
       "hoursValue": "Wochentags 10:00–19:00 Uhr · Samstag 10:00–15:00 Uhr · Sonntag geschlossen",
       "phoneTitle": "Telefon & WhatsApp"
     },
-    "mapTitle": "Standortkarte der Praxis"
+    "mapTitle": "Standortkarte der Praxis",
+    "mapLoadLabel": "Karte laden"
   },
   "Footer": {
     "tagline": "Ästhetische & Restaurative Zahnheilkunde",
     "addressColumnTitle": "Kontakt",
-    "rights": "© 2026 Dr. Nurhan İnan – Alle Rechte vorbehalten."
+    "rights": "© 2026 Dr. Nurhan İnan – Alle Rechte vorbehalten.",
+    "designedByPrefix": "Design:"
   },
   "MobileBar": {
     "call": "Anrufen",
@@ -192,6 +195,7 @@
       "4. Rechtsgrundlage: Ihre ausdrückliche Einwilligung gemäß Art. 5/2 KVKK und/oder die Erforderlichkeit zur Begründung oder Erfüllung eines Vertrags.",
       "5. Datenweitergabe: Ihre personenbezogenen Daten werden nicht an Dritte weitergegeben, außer wenn dies gesetzlich vorgeschrieben ist.",
       "6. Ihre Rechte: Gemäß Art. 11 KVKK haben Sie das Recht zu erfahren, ob Ihre Daten verarbeitet werden, sowie deren Berichtigung oder Löschung zu verlangen. Anfragen können Sie an info@drnurhaninan.com richten."
-    ]
+    ],
+    "metaDescription": "KVKK-Datenschutzhinweis der Zahnklinik Dr. Nurhan İnan und Informationen zum Schutz personenbezogener Daten."
   }
 }

@@ -30,6 +30,16 @@ export function Footer() {
           <p className="text-sm">{t("rights")}</p>
         </div>
       </div>
+
+      <div className="border-t border-white/10 px-4 py-4 text-center text-xs text-white/60 sm:px-6 lg:px-8">
+        {t("designedByPrefix")}{" "}
+        <a
+          href="mailto:ufukyilmazim@gmail.com"
+          className="underline underline-offset-2 hover:text-white"
+        >
+          Ufuk Yılmaz
+        </a>
+      </div>
     </footer>
   );
 }

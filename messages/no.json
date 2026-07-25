@@ -38,7 +38,6 @@
     "subtitle": "Digital planlegging og minimal inngripen innen estetisk og restaurativ tannbehandling. Dr. Nurhan İnan — Bursa.",
     "ctaPrimary": "Be om time",
     "ctaWhatsapp": "Send melding på WhatsApp",
-    "imageAlt": "Portrett av dr. Nurhan İnan",
     "trustBar": {
       "rating": "4,9 på Google",
       "experience": "20+ års erfaring",
@@ -102,32 +101,34 @@
   "About": {
     "kicker": "Om oss",
     "title": "Dr. Nurhan İnan",
-    "text": "Dr. İnan er spesialist innen estetisk og restaurativ tannbehandling, og betrakter hver pasients smil som en del av den helhetlige ansiktsestetikken. Behandlingsfilosofien hennes bygger på minimal inngripen, naturlig utseende og varige resultater.",
+    "text": "Dr. Nurhan İnan ble uteksaminert fra Istanbul Universitets tannlegefakultet Çapa i 2007, og fullførte sin spesialistutdanning ved samme fakultet i 2016. Hun videreutviklet sin ekspertise innen restaurativ tannbehandling ved Acıbadem Maslak sykehus og sin private klinikk i Nişantaşı, og kombinerer i dag sin akademiske karriere med klinisk praksis.",
     "expandLabel": "Les mer",
     "collapseLabel": "Vis mindre",
     "imageAlt": "Dr. Nurhan İnan",
-    "sectionsNote": "TODO — ekte informasjon legges til",
     "sections": {
-      "education": {
-        "title": "Utdanning",
+      "expertiseAreas": {
+        "title": "Fagområder",
         "items": [
-          "TODO: utdanningsdetaljer legges til"
+          "Smiledesign",
+          "Restaureringer med porselensskaller",
+          "Lukking av diastema",
+          "Estetiske restaureringer",
+          "Rotfylling"
         ]
       },
-      "certificates": {
-        "title": "Sertifikater",
+      "featuredProcedures": {
+        "title": "Utvalgte Behandlinger",
         "items": [
-          "TODO: sertifikatdetaljer legges til"
-        ]
-      },
-      "memberships": {
-        "title": "Medlemskap",
-        "items": [
-          "TODO: medlemskapsdetaljer legges til"
+          "Digital smiledesign",
+          "Inlay-/onlay-fyllinger",
+          "Biokompatible restaureringer",
+          "Laserassisterte behandlinger"
         ]
       }
     },
-    "internationalLine": "Erfaring med internasjonale pasienter: tjenester på flere språk"
+    "internationalLine": "Erfaring med internasjonale pasienter: tjenester på flere språk",
+    "focusText": "Arbeidet hennes fokuserer særlig på smiledesign og restaureringer med porselensskaller, med en tilnærming som sikter mot naturlig utseende og varige resultater.",
+    "philosophyText": "Med en filosofi om minimal inngripen for maksimal effekt, er hennes prinsipp å bevare mest mulig av tannens naturlige struktur samtidig som hun gir hver pasient det mest estetiske og varige resultatet."
   },
   "Contact": {
     "kicker": "Kontakt",
@@ -169,12 +170,14 @@
       "hoursValue": "Hverdager 10:00–19:00 · Lørdag 10:00–15:00 · Søndag stengt",
       "phoneTitle": "Telefon & WhatsApp"
     },
-    "mapTitle": "Kart over klinikkens beliggenhet"
+    "mapTitle": "Kart over klinikkens beliggenhet",
+    "mapLoadLabel": "Last inn kart"
   },
   "Footer": {
     "tagline": "Estetisk & Restaurativ Tannbehandling",
     "addressColumnTitle": "Kontakt",
-    "rights": "© 2026 Dr. Nurhan İnan – Alle rettigheter forbeholdt."
+    "rights": "© 2026 Dr. Nurhan İnan – Alle rettigheter forbeholdt.",
+    "designedByPrefix": "Design:"
   },
   "MobileBar": {
     "call": "Ring",
@@ -192,6 +195,7 @@
       "4. Rettslig Grunnlag: Ditt uttrykkelige samtykke i henhold til KVKK art. 5/2, og/eller nødvendighet for inngåelse eller oppfyllelse av en avtale.",
       "5. Deling av Data: Dine personopplysninger deles ikke med tredjeparter, med mindre det kreves ved lov.",
       "6. Dine Rettigheter: I henhold til KVKK art. 11 har du rett til å få vite om dine data blir behandlet, samt be om retting eller sletting. Du kan sende forespørsler til info@drnurhaninan.com."
-    ]
+    ],
+    "metaDescription": "KVKK-personvernerklæring fra Dr. Nurhan İnan Tannklinikk og informasjon om beskyttelse av personopplysninger."
   }
 }

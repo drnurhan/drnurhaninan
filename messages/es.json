@@ -38,7 +38,6 @@
     "subtitle": "Planificación digital e intervención mínima en odontología estética y restauradora. Dra. Nurhan İnan — Bursa.",
     "ctaPrimary": "Solicitar una cita",
     "ctaWhatsapp": "Escríbanos por WhatsApp",
-    "imageAlt": "Retrato de la Dra. Nurhan İnan",
     "trustBar": {
       "rating": "4,9 en Google",
       "experience": "Más de 20 años de experiencia",
@@ -102,32 +101,34 @@
   "About": {
     "kicker": "Sobre nosotros",
     "title": "Dra. Nurhan İnan",
-    "text": "Especializada en odontología estética y restauradora, la Dra. İnan aborda la sonrisa de cada paciente como parte de la estética facial en su conjunto. Su filosofía de tratamiento se centra en la intervención mínima, el aspecto natural y los resultados duraderos.",
+    "text": "La Dra. Nurhan İnan se graduó en la Facultad de Odontología Çapa de la Universidad de Estambul en 2007 y completó su especialización en la misma facultad en 2016. Desarrolló su experiencia en odontología restauradora en el Hospital Acıbadem Maslak y en su clínica privada de Nişantaşı, y hoy combina su carrera académica con la práctica clínica.",
     "expandLabel": "Leer más",
     "collapseLabel": "Mostrar menos",
     "imageAlt": "Dra. Nurhan İnan",
-    "sectionsNote": "PENDIENTE — se añadirá información real",
     "sections": {
-      "education": {
-        "title": "Formación",
+      "expertiseAreas": {
+        "title": "Áreas de Especialización",
         "items": [
-          "Pendiente: se añadirán los detalles de formación"
+          "Diseño de sonrisa",
+          "Restauraciones con carillas de porcelana",
+          "Cierre de diastemas",
+          "Restauraciones estéticas",
+          "Tratamiento de conducto"
         ]
       },
-      "certificates": {
-        "title": "Certificados",
+      "featuredProcedures": {
+        "title": "Procedimientos Destacados",
         "items": [
-          "Pendiente: se añadirán los detalles de certificados"
-        ]
-      },
-      "memberships": {
-        "title": "Membresías",
-        "items": [
-          "Pendiente: se añadirán los detalles de membresías"
+          "Diseño digital de sonrisa",
+          "Obturaciones inlay/onlay",
+          "Restauraciones biocompatibles",
+          "Tratamientos asistidos por láser"
         ]
       }
     },
-    "internationalLine": "Experiencia con pacientes internacionales: atención en varios idiomas"
+    "internationalLine": "Experiencia con pacientes internacionales: atención en varios idiomas",
+    "focusText": "Su trabajo se centra especialmente en el diseño de sonrisa y las restauraciones con carillas de porcelana, con un enfoque orientado a resultados de aspecto natural y duraderos.",
+    "philosophyText": "Con una filosofía de mínima intervención y máximo efecto, tiene como principio preservar al máximo la estructura natural del diente, ofreciendo a cada paciente el resultado más estético y duradero."
   },
   "Contact": {
     "kicker": "Contacto",
@@ -169,12 +170,14 @@
       "hoursValue": "Días laborables 10:00–19:00 · Sábados 10:00–15:00 · Domingos cerrado",
       "phoneTitle": "Teléfono y WhatsApp"
     },
-    "mapTitle": "Mapa de ubicación de la clínica"
+    "mapTitle": "Mapa de ubicación de la clínica",
+    "mapLoadLabel": "Cargar mapa"
   },
   "Footer": {
     "tagline": "Odontología Estética y Restauradora",
     "addressColumnTitle": "Contacto",
-    "rights": "© 2026 Dra. Nurhan İnan – Todos los derechos reservados."
+    "rights": "© 2026 Dra. Nurhan İnan – Todos los derechos reservados.",
+    "designedByPrefix": "Diseño:"
   },
   "MobileBar": {
     "call": "Llamar",
@@ -192,6 +195,7 @@
       "4. Base Legal: Su consentimiento explícito conforme al artículo 5/2 del KVKK, y/o la necesidad para la celebración o ejecución de un contrato.",
       "5. Cesión de Datos: Sus datos personales no se comparten con terceros, salvo que la ley lo exija.",
       "6. Sus Derechos: Conforme al artículo 11 del KVKK, tiene derecho a saber si sus datos están siendo tratados, y a solicitar su rectificación o eliminación. Puede enviar sus solicitudes a info@drnurhaninan.com."
-    ]
+    ],
+    "metaDescription": "Aviso de privacidad KVKK de la Clínica Dental Dra. Nurhan İnan e información sobre la protección de datos personales."
   }
 }

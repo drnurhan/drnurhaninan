@@ -3,6 +3,7 @@ import { MapPin, Clock, Phone } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 import { Reveal } from "@/components/reveal";
 import { ContactForm } from "@/components/contact-form";
+import { MapEmbed } from "@/components/map-embed";
 
 export function Contact() {
   const t = useTranslations("Contact");
@@ -11,7 +12,7 @@ export function Contact() {
     <section id="contact" className="bg-surface">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 md:py-24 lg:px-8">
         <Reveal className="max-w-xl">
-          <p className="font-semibold uppercase tracking-wide text-accent">
+          <p className="font-semibold uppercase tracking-wide text-accent-strong">
             {t("kicker")}
           </p>
           <h2 className="mt-4 font-serif text-3xl leading-tight text-ink sm:text-4xl">
@@ -27,13 +28,7 @@ export function Contact() {
 
           <Reveal delay={120} className="space-y-6">
             <div className="overflow-hidden rounded-[var(--radius-card)] border border-line shadow-[var(--shadow-soft)]">
-              <iframe
-                src={siteConfig.mapEmbedUrl}
-                title={t("mapTitle")}
-                loading="lazy"
-                className="h-72 w-full sm:h-80"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+              <MapEmbed title={t("mapTitle")} loadLabel={t("mapLoadLabel")} />
             </div>
 
             <div className="grid gap-4 sm:grid-cols-3">
@@ -42,7 +37,7 @@ export function Contact() {
                 title={t("info.addressTitle")}
               >
                 <p>{siteConfig.addressLine}</p>
-                <p className="mt-1 text-xs text-ink-soft/70">
+                <p className="mt-1 text-xs text-ink-soft">
                   {t("info.addressNote")}
                 </p>
               </InfoCard>

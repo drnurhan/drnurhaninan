@@ -56,7 +56,7 @@ export function TestimonialsCarousel() {
         </button>
       </div>
 
-      <div className="mt-4 text-center text-xs text-white/50">
+      <div className="mt-4 text-center text-xs text-white/70">
         {index + 1} / {total}
       </div>
     </div>

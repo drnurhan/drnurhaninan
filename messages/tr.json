@@ -38,7 +38,6 @@
     "subtitle": "Estetik ve restoratif diş hekimliğinde dijital planlama ve minimal müdahale. Uzm. Dr. Nurhan İnan — Bursa.",
     "ctaPrimary": "Randevu Talebi",
     "ctaWhatsapp": "WhatsApp ile Yazın",
-    "imageAlt": "Dr. Nurhan İnan portresi",
     "trustBar": {
       "rating": "4,9 Google",
       "experience": "20+ Yıl Deneyim",
@@ -102,32 +101,34 @@
   "About": {
     "kicker": "Hakkında",
     "title": "Uzm. Dr. Nurhan İnan",
-    "text": "Estetik ve restoratif diş hekimliği alanında uzmanlaşan Dr. İnan, her hastasının gülüşünü yüz estetiğiyle bir bütün olarak ele alır. Tedavi felsefesinin merkezinde minimal müdahale, doğal görünüm ve uzun ömürlü sonuçlar vardır.",
+    "text": "Uzm. Dr. Nurhan İnan, İstanbul Üniversitesi Çapa Diş Hekimliği Fakültesi'nden 2007 yılında mezun oldu, uzmanlık eğitimini aynı fakültede 2016'da tamamladı. Restoratif diş hekimliği alanındaki uzmanlığını Acıbadem Maslak Hastanesi ve Nişantaşı'ndaki özel kliniğinde sürdürmüş, günümüzde akademik kariyerini klinik pratikle birleştirmektedir.",
     "expandLabel": "Devamını okuyun",
     "collapseLabel": "Daha az göster",
     "imageAlt": "Dr. Nurhan İnan",
-    "sectionsNote": "TODO — gerçek bilgiler eklenecek",
     "sections": {
-      "education": {
-        "title": "Eğitim",
+      "expertiseAreas": {
+        "title": "Uzmanlık Alanları",
         "items": [
-          "TODO: eğitim bilgileri eklenecek"
+          "Gülüş tasarımı",
+          "Lamina vener restorasyonlar",
+          "Diastema kapama",
+          "Estetik restorasyonlar",
+          "Kanal tedavisi"
         ]
       },
-      "certificates": {
-        "title": "Sertifikalar",
+      "featuredProcedures": {
+        "title": "Öne Çıkan Uygulamalar",
         "items": [
-          "TODO: sertifika bilgileri eklenecek"
-        ]
-      },
-      "memberships": {
-        "title": "Üyelikler",
-        "items": [
-          "TODO: üyelik bilgileri eklenecek"
+          "Dijital gülüş tasarımı",
+          "İnley/Onley dolgular",
+          "Biyouyumlu restorasyonlar",
+          "Lazer destekli tedaviler"
         ]
       }
     },
-    "internationalLine": "Uluslararası hasta deneyimi: birçok dilde hizmet"
+    "internationalLine": "Uluslararası hasta deneyimi: birçok dilde hizmet",
+    "focusText": "Çalışmalarını özellikle gülüş tasarımı ve lamina vener restorasyonları üzerine yoğunlaştırmıştır; doğal görünümlü ve uzun ömürlü sonuçlar hedefleyen bir yaklaşımı benimser.",
+    "philosophyText": "Minimal müdahale, maksimum etki felsefesiyle çalışan hekim, her tedavide dişin doğal yapısını en fazla korumayı ve hastaya en estetik, en dayanıklı sonucu sunmayı ilke edinmiştir."
   },
   "Contact": {
     "kicker": "İletişim",
@@ -169,12 +170,14 @@
       "hoursValue": "Hafta içi 10:00–19:00 · Cumartesi 10:00–15:00 · Pazar kapalı",
       "phoneTitle": "Telefon & WhatsApp"
     },
-    "mapTitle": "Muayenehane konumu haritası"
+    "mapTitle": "Muayenehane konumu haritası",
+    "mapLoadLabel": "Haritayı Yükle"
   },
   "Footer": {
     "tagline": "Estetik & Restoratif Diş Hekimliği",
     "addressColumnTitle": "İletişim",
-    "rights": "© 2026 Uzm. Dr. Nurhan İnan – Tüm hakları saklıdır."
+    "rights": "© 2026 Uzm. Dr. Nurhan İnan – Tüm hakları saklıdır.",
+    "designedByPrefix": "Tasarım:"
   },
   "MobileBar": {
     "call": "Ara",
@@ -192,6 +195,7 @@
       "4. Hukuki Sebep: KVKK m.5/2 kapsamında açık rızanızın alınması ve/veya bir sözleşmenin kurulması veya ifasıyla doğrudan doğruya ilgili olması.",
       "5. Aktarım: Kişisel verileriniz, yasal zorunluluklar dışında üçüncü kişilerle paylaşılmaz.",
       "6. Haklarınız: KVKK m.11 kapsamında kişisel verilerinizin işlenip işlenmediğini öğrenme, düzeltilmesini veya silinmesini talep etme haklarına sahipsiniz. Taleplerinizi info@drnurhaninan.com adresine iletebilirsiniz."
-    ]
+    ],
+    "metaDescription": "Uzm. Dr. Nurhan İnan Diş Kliniği KVKK aydınlatma metni ve kişisel verilerin korunmasına ilişkin bilgilendirme."
   }
 }

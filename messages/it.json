@@ -38,7 +38,6 @@
     "subtitle": "Pianificazione digitale e intervento minimo in odontoiatria estetica e restaurativa. Dott.ssa Nurhan İnan — Bursa.",
     "ctaPrimary": "Richiedi un appuntamento",
     "ctaWhatsapp": "Scrivici su WhatsApp",
-    "imageAlt": "Ritratto della Dott.ssa Nurhan İnan",
     "trustBar": {
       "rating": "4,9 su Google",
       "experience": "20+ Anni di Esperienza",
@@ -102,32 +101,34 @@
   "About": {
     "kicker": "Chi siamo",
     "title": "Dott.ssa Nurhan İnan",
-    "text": "Specializzata in odontoiatria estetica e restaurativa, la Dott.ssa İnan considera il sorriso di ogni paziente parte integrante dell'estetica del viso nel suo insieme. La sua filosofia di trattamento si basa su un intervento minimo, un aspetto naturale e risultati duraturi.",
+    "text": "La Dott.ssa Nurhan İnan si è laureata presso la Facoltà di Odontoiatria Çapa dell'Università di Istanbul nel 2007 e ha completato la sua specializzazione presso la stessa facoltà nel 2016. Ha approfondito la sua competenza in odontoiatria restaurativa presso l'Ospedale Acıbadem Maslak e nel suo studio privato a Nişantaşı, e oggi unisce la carriera accademica alla pratica clinica.",
     "expandLabel": "Leggi di più",
     "collapseLabel": "Mostra meno",
     "imageAlt": "Dott.ssa Nurhan İnan",
-    "sectionsNote": "DA FARE — verranno aggiunte informazioni reali",
     "sections": {
-      "education": {
-        "title": "Formazione",
+      "expertiseAreas": {
+        "title": "Aree di Competenza",
         "items": [
-          "Da fare: verranno aggiunti i dettagli sulla formazione"
+          "Progettazione del sorriso",
+          "Restaurazioni con faccette in ceramica",
+          "Chiusura del diastema",
+          "Restaurazioni estetiche",
+          "Terapia canalare"
         ]
       },
-      "certificates": {
-        "title": "Certificati",
+      "featuredProcedures": {
+        "title": "Trattamenti in Evidenza",
         "items": [
-          "Da fare: verranno aggiunti i dettagli sui certificati"
-        ]
-      },
-      "memberships": {
-        "title": "Iscrizioni",
-        "items": [
-          "Da fare: verranno aggiunti i dettagli sulle iscrizioni"
+          "Progettazione digitale del sorriso",
+          "Otturazioni inlay/onlay",
+          "Restaurazioni biocompatibili",
+          "Trattamenti assistiti da laser"
         ]
       }
     },
-    "internationalLine": "Esperienza con pazienti internazionali: assistenza in più lingue"
+    "internationalLine": "Esperienza con pazienti internazionali: assistenza in più lingue",
+    "focusText": "Il suo lavoro si concentra in particolare sulla progettazione del sorriso e sulle restaurazioni con faccette in ceramica, con un approccio orientato a risultati dall'aspetto naturale e duraturi.",
+    "philosophyText": "Con una filosofia di intervento minimo e massimo effetto, il suo principio è preservare il più possibile la struttura naturale del dente, offrendo a ogni paziente il risultato più estetico e duraturo."
   },
   "Contact": {
     "kicker": "Contatti",
@@ -169,12 +170,14 @@
       "hoursValue": "Feriali 10:00–19:00 · Sabato 10:00–15:00 · Domenica chiuso",
       "phoneTitle": "Telefono e WhatsApp"
     },
-    "mapTitle": "Mappa della sede dello studio"
+    "mapTitle": "Mappa della sede dello studio",
+    "mapLoadLabel": "Carica mappa"
   },
   "Footer": {
     "tagline": "Odontoiatria Estetica e Restaurativa",
     "addressColumnTitle": "Contatti",
-    "rights": "© 2026 Dott.ssa Nurhan İnan – Tutti i diritti riservati."
+    "rights": "© 2026 Dott.ssa Nurhan İnan – Tutti i diritti riservati.",
+    "designedByPrefix": "Design:"
   },
   "MobileBar": {
     "call": "Chiama",
@@ -192,6 +195,7 @@
       "4. Base Giuridica: Il tuo consenso esplicito ai sensi dell'art. 5/2 del KVKK, e/o la necessità per la conclusione o l'esecuzione di un contratto.",
       "5. Condivisione dei Dati: I tuoi dati personali non vengono condivisi con terzi, salvo quando richiesto dalla legge.",
       "6. I Tuoi Diritti: Ai sensi dell'art. 11 del KVKK, hai il diritto di sapere se i tuoi dati sono trattati, e di richiederne la rettifica o la cancellazione. Puoi inviare le tue richieste a info@drnurhaninan.com."
-    ]
+    ],
+    "metaDescription": "Informativa sulla privacy KVKK dello Studio Odontoiatrico Dott.ssa Nurhan İnan e informazioni sulla protezione dei dati personali."
   }
 }

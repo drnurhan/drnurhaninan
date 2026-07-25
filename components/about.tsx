@@ -3,16 +3,15 @@
 import { useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { ChevronDown, GraduationCap, Award, Users, Languages } from "lucide-react";
+import { ChevronDown, Stethoscope, Zap, Target, Languages } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 
 export function About() {
   const t = useTranslations("About");
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const educationItems = t.raw("sections.education.items") as string[];
-  const certificateItems = t.raw("sections.certificates.items") as string[];
-  const membershipItems = t.raw("sections.memberships.items") as string[];
+  const expertiseItems = t.raw("sections.expertiseAreas.items") as string[];
+  const procedureItems = t.raw("sections.featuredProcedures.items") as string[];
 
   return (
     <section id="about" className="bg-bg">
@@ -30,13 +29,14 @@ export function About() {
         </Reveal>
 
         <Reveal delay={120}>
-          <p className="font-semibold uppercase tracking-wide text-accent">
+          <p className="font-semibold uppercase tracking-wide text-accent-strong">
             {t("kicker")}
           </p>
           <h2 className="mt-4 font-serif text-3xl leading-tight text-ink sm:text-4xl">
             {t("title")}
           </h2>
           <p className="mt-6 text-ink-soft">{t("text")}</p>
+          <p className="mt-4 text-ink-soft">{t("focusText")}</p>
 
           <button
             type="button"
@@ -58,15 +58,14 @@ export function About() {
           >
             <div className="overflow-hidden">
             <div className="mt-6 space-y-5 border-t border-line pt-6">
-              {/* TODO — gerçek bilgiler eklenecek: About.sections içinde */}
               <div className="flex gap-3">
-                <GraduationCap size={20} className="mt-0.5 shrink-0 text-primary" />
+                <Stethoscope size={20} className="mt-0.5 shrink-0 text-primary" />
                 <div>
                   <h3 className="font-semibold text-ink">
-                    {t("sections.education.title")}
+                    {t("sections.expertiseAreas.title")}
                   </h3>
                   <ul className="mt-1 text-sm text-ink-soft">
-                    {educationItems.map((item) => (
+                    {expertiseItems.map((item) => (
                       <li key={item}>{item}</li>
                     ))}
                   </ul>
@@ -74,13 +73,13 @@ export function About() {
               </div>
 
               <div className="flex gap-3">
-                <Award size={20} className="mt-0.5 shrink-0 text-primary" />
+                <Zap size={20} className="mt-0.5 shrink-0 text-primary" />
                 <div>
                   <h3 className="font-semibold text-ink">
-                    {t("sections.certificates.title")}
+                    {t("sections.featuredProcedures.title")}
                   </h3>
                   <ul className="mt-1 text-sm text-ink-soft">
-                    {certificateItems.map((item) => (
+                    {procedureItems.map((item) => (
                       <li key={item}>{item}</li>
                     ))}
                   </ul>
@@ -88,17 +87,8 @@ export function About() {
               </div>
 
               <div className="flex gap-3">
-                <Users size={20} className="mt-0.5 shrink-0 text-primary" />
-                <div>
-                  <h3 className="font-semibold text-ink">
-                    {t("sections.memberships.title")}
-                  </h3>
-                  <ul className="mt-1 text-sm text-ink-soft">
-                    {membershipItems.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
+                <Target size={20} className="mt-0.5 shrink-0 text-primary" />
+                <p className="text-sm text-ink-soft">{t("philosophyText")}</p>
               </div>
 
               <div className="flex gap-3">

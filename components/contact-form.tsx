@@ -242,7 +242,7 @@ function Field({
     <div>
       <label htmlFor={htmlFor} className="mb-1.5 block text-sm font-medium text-ink">
         {label}
-        {required && <span className="text-accent"> *</span>}
+        {required && <span className="text-accent-strong"> *</span>}
       </label>
       {children}
     </div>

@@ -38,7 +38,6 @@
     "subtitle": "Cyfrowe planowanie i minimalna ingerencja w stomatologii estetycznej i rekonstrukcyjnej. Dr Nurhan İnan — Bursa.",
     "ctaPrimary": "Umów wizytę",
     "ctaWhatsapp": "Napisz na WhatsApp",
-    "imageAlt": "Portret dr Nurhan İnan",
     "trustBar": {
       "rating": "4,9 w Google",
       "experience": "Ponad 20 lat doświadczenia",
@@ -102,32 +101,34 @@
   "About": {
     "kicker": "O nas",
     "title": "Dr Nurhan İnan",
-    "text": "Specjalizując się w stomatologii estetycznej i rekonstrukcyjnej, dr İnan traktuje uśmiech każdego pacjenta jako część całościowej estetyki twarzy. W centrum jej filozofii leczenia znajdują się minimalna ingerencja, naturalny wygląd i trwałe efekty.",
+    "text": "Dr Nurhan İnan ukończyła Wydział Stomatologii Çapa Uniwersytetu Stambulskiego w 2007 roku, a specjalizację na tym samym wydziale zakończyła w 2016 roku. Swoje kompetencje w zakresie stomatologii rekonstrukcyjnej rozwijała w Szpitalu Acıbadem Maslak oraz w swoim prywatnym gabinecie w Nişantaşı; obecnie łączy karierę akademicką z praktyką kliniczną.",
     "expandLabel": "Czytaj więcej",
     "collapseLabel": "Pokaż mniej",
     "imageAlt": "Dr Nurhan İnan",
-    "sectionsNote": "DO UZUPEŁNIENIA — zostaną dodane prawdziwe informacje",
     "sections": {
-      "education": {
-        "title": "Wykształcenie",
+      "expertiseAreas": {
+        "title": "Obszary Specjalizacji",
         "items": [
-          "Do uzupełnienia: zostaną dodane informacje o wykształceniu"
+          "Projektowanie uśmiechu",
+          "Odbudowy za pomocą licówek porcelanowych",
+          "Zamykanie diastemy",
+          "Odbudowy estetyczne",
+          "Leczenie kanałowe"
         ]
       },
-      "certificates": {
-        "title": "Certyfikaty",
+      "featuredProcedures": {
+        "title": "Wyróżnione Zabiegi",
         "items": [
-          "Do uzupełnienia: zostaną dodane informacje o certyfikatach"
-        ]
-      },
-      "memberships": {
-        "title": "Członkostwa",
-        "items": [
-          "Do uzupełnienia: zostaną dodane informacje o członkostwach"
+          "Cyfrowe projektowanie uśmiechu",
+          "Wypełnienia inlay/onlay",
+          "Odbudowy biokompatybilne",
+          "Zabiegi wspomagane laserem"
         ]
       }
     },
-    "internationalLine": "Doświadczenie z pacjentami międzynarodowymi: obsługa w wielu językach"
+    "internationalLine": "Doświadczenie z pacjentami międzynarodowymi: obsługa w wielu językach",
+    "focusText": "Jej praca koncentruje się szczególnie na projektowaniu uśmiechu i odbudowach za pomocą licówek porcelanowych, zgodnie z podejściem nastawionym na naturalnie wyglądające i trwałe efekty.",
+    "philosophyText": "Pracując zgodnie z filozofią „minimalna ingerencja, maksymalny efekt”, jej zasadą jest zachowanie jak największej części naturalnej struktury zęba przy jednoczesnym zapewnieniu pacjentowi najbardziej estetycznego i trwałego efektu."
   },
   "Contact": {
     "kicker": "Kontakt",
@@ -169,12 +170,14 @@
       "hoursValue": "Dni robocze 10:00–19:00 · Sobota 10:00–15:00 · Niedziela nieczynne",
       "phoneTitle": "Telefon i WhatsApp"
     },
-    "mapTitle": "Mapa lokalizacji gabinetu"
+    "mapTitle": "Mapa lokalizacji gabinetu",
+    "mapLoadLabel": "Wczytaj mapę"
   },
   "Footer": {
     "tagline": "Stomatologia Estetyczna i Rekonstrukcyjna",
     "addressColumnTitle": "Kontakt",
-    "rights": "© 2026 Dr Nurhan İnan – Wszelkie prawa zastrzeżone."
+    "rights": "© 2026 Dr Nurhan İnan – Wszelkie prawa zastrzeżone.",
+    "designedByPrefix": "Projekt:"
   },
   "MobileBar": {
     "call": "Zadzwoń",
@@ -192,6 +195,7 @@
       "4. Podstawa Prawna: Twoja wyraźna zgoda na podstawie art. 5/2 KVKK i/lub konieczność zawarcia lub wykonania umowy.",
       "5. Udostępnianie Danych: Twoje dane osobowe nie są udostępniane osobom trzecim, chyba że wymaga tego prawo.",
       "6. Twoje Prawa: Na podstawie art. 11 KVKK masz prawo dowiedzieć się, czy Twoje dane są przetwarzane, oraz zażądać ich sprostowania lub usunięcia. Swoje wnioski możesz przesyłać na adres info@drnurhaninan.com."
-    ]
+    ],
+    "metaDescription": "Informacja o ochronie danych osobowych (KVKK) Kliniki Stomatologicznej Dr Nurhan İnan."
   }
 }

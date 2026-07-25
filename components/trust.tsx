@@ -12,7 +12,7 @@ export function Trust() {
     <section id="trust" className="bg-primary text-white">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 md:py-24 lg:px-8">
         <Reveal className="max-w-xl">
-          <p className="font-semibold uppercase tracking-wide text-accent">
+          <p className="font-semibold uppercase tracking-wide text-accent-light">
             {t("kicker")}
           </p>
           <h2 className="mt-4 font-serif text-3xl leading-tight sm:text-4xl">
@@ -32,7 +32,7 @@ export function Trust() {
                 </dd>
                 <dt className="mt-2 text-sm text-white/80">{stat.label}</dt>
                 {stat.note && (
-                  <p className="mt-1 text-xs text-white/50">{stat.note}</p>
+                  <p className="mt-1 text-xs text-white/70">{stat.note}</p>
                 )}
               </div>
             ))}
@@ -43,7 +43,7 @@ export function Trust() {
           <div className="mt-10">
             <TestimonialsCarousel />
           </div>
-          <p className="mt-3 text-center text-xs text-white/50">
+          <p className="mt-3 text-center text-xs text-white/70">
             {t("testimonialsNote")}
           </p>
         </Reveal>

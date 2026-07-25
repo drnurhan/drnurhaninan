@@ -38,7 +38,6 @@
     "subtitle": "Digital planning and minimal intervention in aesthetic and restorative dentistry. Dr. Nurhan İnan, DDS — Bursa.",
     "ctaPrimary": "Request an Appointment",
     "ctaWhatsapp": "Message on WhatsApp",
-    "imageAlt": "Portrait of Dr. Nurhan İnan",
     "trustBar": {
       "rating": "4.9 on Google",
       "experience": "20+ Years of Experience",
@@ -102,32 +101,34 @@
   "About": {
     "kicker": "About",
     "title": "Dr. Nurhan İnan, DDS",
-    "text": "Specializing in aesthetic and restorative dentistry, Dr. İnan approaches every patient's smile as part of the whole facial aesthetic. Her treatment philosophy centers on minimal intervention, natural appearance, and long-lasting results.",
+    "text": "Dr. Nurhan İnan graduated from Istanbul University's Çapa Faculty of Dentistry in 2007 and completed her specialization at the same faculty in 2016. She built her expertise in restorative dentistry at Acıbadem Maslak Hospital and her private clinic in Nişantaşı, and today combines her academic career with clinical practice.",
     "expandLabel": "Read more",
     "collapseLabel": "Show less",
     "imageAlt": "Dr. Nurhan İnan",
-    "sectionsNote": "TODO — real information to be added",
     "sections": {
-      "education": {
-        "title": "Education",
+      "expertiseAreas": {
+        "title": "Areas of Expertise",
         "items": [
-          "TODO: education details to be added"
+          "Smile design",
+          "Porcelain veneer restorations",
+          "Diastema closure",
+          "Aesthetic restorations",
+          "Root canal treatment"
         ]
       },
-      "certificates": {
-        "title": "Certificates",
+      "featuredProcedures": {
+        "title": "Featured Procedures",
         "items": [
-          "TODO: certificate details to be added"
-        ]
-      },
-      "memberships": {
-        "title": "Memberships",
-        "items": [
-          "TODO: membership details to be added"
+          "Digital smile design",
+          "Inlay/onlay fillings",
+          "Biocompatible restorations",
+          "Laser-assisted treatments"
         ]
       }
     },
-    "internationalLine": "International patient experience: care in multiple languages"
+    "internationalLine": "International patient experience: care in multiple languages",
+    "focusText": "Her work focuses particularly on smile design and porcelain veneer restorations, following an approach aimed at natural-looking, long-lasting results.",
+    "philosophyText": "Working with a philosophy of minimal intervention for maximum effect, she is committed to preserving as much of the tooth's natural structure as possible while delivering the most aesthetic, durable result for every patient."
   },
   "Contact": {
     "kicker": "Contact",
@@ -169,12 +170,14 @@
       "hoursValue": "Weekdays 10:00–19:00 · Saturday 10:00–15:00 · Sunday closed",
       "phoneTitle": "Phone & WhatsApp"
     },
-    "mapTitle": "Practice location map"
+    "mapTitle": "Practice location map",
+    "mapLoadLabel": "Load Map"
   },
   "Footer": {
     "tagline": "Aesthetic & Restorative Dentistry",
     "addressColumnTitle": "Contact",
-    "rights": "© 2026 Dr. Nurhan İnan, DDS – All rights reserved."
+    "rights": "© 2026 Dr. Nurhan İnan, DDS – All rights reserved.",
+    "designedByPrefix": "Designed by"
   },
   "MobileBar": {
     "call": "Call",
@@ -192,6 +195,7 @@
       "4. Legal Basis: Your explicit consent under KVKK Art. 5/2, and/or necessity for the establishment or performance of a contract.",
       "5. Data Sharing: Your personal data is not shared with third parties except where legally required.",
       "6. Your Rights: Under KVKK Art. 11, you have the right to learn whether your data is processed, and to request correction or deletion. You may submit requests to info@drnurhaninan.com."
-    ]
+    ],
+    "metaDescription": "Dr. Nurhan İnan Dental Clinic's KVKK privacy notice and information on the protection of personal data."
   }
 }

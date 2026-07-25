@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import { siteConfig } from "@/lib/site-config";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -13,7 +14,39 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Kvkk" });
-  return { title: t("title") };
+
+  const languages = Object.fromEntries(
+    routing.locales.map((l) => [l, `${siteConfig.url}/${l}/kvkk`])
+  );
+
+  return {
+    title: t("title"),
+    description: t("metaDescription"),
+    alternates: {
+      canonical: `${siteConfig.url}/${locale}/kvkk`,
+      languages: {
+        ...languages,
+        "x-default": `${siteConfig.url}/${routing.defaultLocale}/kvkk`,
+      },
+    },
+    openGraph: {
+      title: t("title"),
+      description: t("metaDescription"),
+      url: `${siteConfig.url}/${locale}/kvkk`,
+      siteName: "Dr. Nurhan İnan",
+      locale,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("metaDescription"),
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
 }
 
 export default async function KvkkPage({
