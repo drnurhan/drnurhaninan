@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Phone, MessageCircle } from "lucide-react";
+import { InstagramIcon } from "@/components/instagram-icon";
 import { siteConfig } from "@/lib/site-config";
 
 export function MobileBar() {
@@ -22,6 +23,15 @@ export function MobileBar() {
       >
         <MessageCircle size={18} />
         {t("whatsapp")}
+      </a>
+      <a
+        href={siteConfig.instagramUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={t("instagramAria")}
+        className="flex shrink-0 items-center justify-center rounded-full border border-primary/30 px-4 py-3 text-primary"
+      >
+        <InstagramIcon size={18} />
       </a>
     </div>
   );

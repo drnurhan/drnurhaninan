@@ -14,7 +14,8 @@
       "contact": "Contact"
     },
     "menuOpen": "Ouvrir le menu",
-    "menuClose": "Fermer le menu"
+    "menuClose": "Fermer le menu",
+    "instagramLabel": "Suivez-nous sur Instagram"
   },
   "LanguageSwitcher": {
     "tr": "Türkçe",
@@ -176,11 +177,13 @@
   "Footer": {
     "tagline": "Dentisterie Esthétique et Restauratrice",
     "addressColumnTitle": "Contact",
-    "rights": "© 2026 Dr Nurhan İnan – Tous droits réservés."
+    "rights": "© 2026 Dr Nurhan İnan – Tous droits réservés.",
+    "instagramAria": "Suivez-nous sur Instagram"
   },
   "MobileBar": {
     "call": "Appeler",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "instagramAria": "Suivez-nous sur Instagram"
   },
   "Kvkk": {
     "title": "Notice d'information (KVKK)",

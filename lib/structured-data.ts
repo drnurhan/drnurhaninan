@@ -3,8 +3,8 @@ import { siteConfig } from "@/lib/site-config";
 
 // schema.org Dentist (LocalBusiness) yapısal verisi — Google'ın yerel işletme
 // zengin sonuçları (rich results) için kullanılır. Sadece doğrulanmış gerçek
-// verileri içerir; bilinmeyen alanlar (geo, sameAs, aggregateRating vb.)
-// gerçek veri gelene kadar bilinçli olarak eklenmez.
+// verileri içerir; bilinmeyen alanlar (geo, aggregateRating vb.) gerçek veri
+// gelene kadar bilinçli olarak eklenmez.
 export function getDentistSchema(locale: string) {
   return {
     "@context": "https://schema.org",
@@ -43,7 +43,7 @@ export function getDentistSchema(locale: string) {
         closes: "15:00",
       },
     ],
-    sameAs: [siteConfig.whatsappUrl],
+    sameAs: [siteConfig.whatsappUrl, siteConfig.instagramUrl],
     inLanguage: routing.locales,
     availableLanguage: routing.locales,
     hasMap: siteConfig.mapEmbedUrl,

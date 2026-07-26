@@ -14,7 +14,8 @@
       "contact": "Contact"
     },
     "menuOpen": "Open menu",
-    "menuClose": "Close menu"
+    "menuClose": "Close menu",
+    "instagramLabel": "Follow on Instagram"
   },
   "LanguageSwitcher": {
     "tr": "Türkçe",
@@ -176,11 +177,13 @@
   "Footer": {
     "tagline": "Aesthetic & Restorative Dentistry",
     "addressColumnTitle": "Contact",
-    "rights": "© 2026 Dr. Nurhan İnan, DDS – All rights reserved."
+    "rights": "© 2026 Dr. Nurhan İnan, DDS – All rights reserved.",
+    "instagramAria": "Follow on Instagram"
   },
   "MobileBar": {
     "call": "Call",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "instagramAria": "Follow on Instagram"
   },
   "Kvkk": {
     "title": "Privacy Notice (KVKK)",

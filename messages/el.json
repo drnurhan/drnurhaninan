@@ -14,7 +14,8 @@
       "contact": "Επικοινωνία"
     },
     "menuOpen": "Άνοιγμα μενού",
-    "menuClose": "Κλείσιμο μενού"
+    "menuClose": "Κλείσιμο μενού",
+    "instagramLabel": "Ακολουθήστε μας στο Instagram"
   },
   "LanguageSwitcher": {
     "tr": "Türkçe",
@@ -176,11 +177,13 @@
   "Footer": {
     "tagline": "Αισθητική & Αποκαταστατική Οδοντιατρική",
     "addressColumnTitle": "Επικοινωνία",
-    "rights": "© 2026 Δρ. Nurhan İnan – Με την επιφύλαξη παντός δικαιώματος."
+    "rights": "© 2026 Δρ. Nurhan İnan – Με την επιφύλαξη παντός δικαιώματος.",
+    "instagramAria": "Ακολουθήστε μας στο Instagram"
   },
   "MobileBar": {
     "call": "Κλήση",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "instagramAria": "Ακολουθήστε μας στο Instagram"
   },
   "Kvkk": {
     "title": "Ενημέρωση Προστασίας Δεδομένων (KVKK)",

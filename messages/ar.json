@@ -14,7 +14,8 @@
       "contact": "تواصل معنا"
     },
     "menuOpen": "فتح القائمة",
-    "menuClose": "إغلاق القائمة"
+    "menuClose": "إغلاق القائمة",
+    "instagramLabel": "تابعنا على إنستغرام"
   },
   "LanguageSwitcher": {
     "tr": "Türkçe",
@@ -176,11 +177,13 @@
   "Footer": {
     "tagline": "طب الأسنان التجميلي والترميمي",
     "addressColumnTitle": "التواصل",
-    "rights": "© 2026 د. نورهان إينان – جميع الحقوق محفوظة."
+    "rights": "© 2026 د. نورهان إينان – جميع الحقوق محفوظة.",
+    "instagramAria": "تابعنا على إنستغرام"
   },
   "MobileBar": {
     "call": "اتصال",
-    "whatsapp": "واتساب"
+    "whatsapp": "واتساب",
+    "instagramAria": "تابعنا على إنستغرام"
   },
   "Kvkk": {
     "title": "نص التوضيح الخاص بحماية البيانات الشخصية (KVKK)",

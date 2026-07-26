@@ -14,7 +14,8 @@
       "contact": "İletişim"
     },
     "menuOpen": "Menüyü aç",
-    "menuClose": "Menüyü kapat"
+    "menuClose": "Menüyü kapat",
+    "instagramLabel": "Instagram'da takip edin"
   },
   "LanguageSwitcher": {
     "tr": "Türkçe",
@@ -176,11 +177,13 @@
   "Footer": {
     "tagline": "Estetik & Restoratif Diş Hekimliği",
     "addressColumnTitle": "İletişim",
-    "rights": "© 2026 Uzm. Dr. Nurhan İnan – Tüm hakları saklıdır."
+    "rights": "© 2026 Uzm. Dr. Nurhan İnan – Tüm hakları saklıdır.",
+    "instagramAria": "Instagram'da takip edin"
   },
   "MobileBar": {
     "call": "Ara",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "instagramAria": "Instagram'da takip edin"
   },
   "Kvkk": {
     "title": "KVKK Aydınlatma Metni",

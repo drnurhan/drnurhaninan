@@ -7,6 +7,8 @@ export const siteConfig = {
   phoneTel: "+905416821616",
   whatsappNumber: "905416821616",
   whatsappUrl: "https://wa.me/905416821616",
+  instagramHandle: "@dr.nurhaninan",
+  instagramUrl: "https://www.instagram.com/dr.nurhaninan/",
   // TODO: açık adres satırı (mahalle/cadde) eklenecek.
   addressLine: "Plaza 224, Kat 4, No 24 – Nilüfer / Bursa",
   mapEmbedUrl:

@@ -14,7 +14,8 @@
       "contact": "Kontakt"
     },
     "menuOpen": "Åpne meny",
-    "menuClose": "Lukk meny"
+    "menuClose": "Lukk meny",
+    "instagramLabel": "Følg oss på Instagram"
   },
   "LanguageSwitcher": {
     "tr": "Türkçe",
@@ -176,11 +177,13 @@
   "Footer": {
     "tagline": "Estetisk & Restaurativ Tannbehandling",
     "addressColumnTitle": "Kontakt",
-    "rights": "© 2026 Dr. Nurhan İnan – Alle rettigheter forbeholdt."
+    "rights": "© 2026 Dr. Nurhan İnan – Alle rettigheter forbeholdt.",
+    "instagramAria": "Følg oss på Instagram"
   },
   "MobileBar": {
     "call": "Ring",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "instagramAria": "Følg oss på Instagram"
   },
   "Kvkk": {
     "title": "Personvernerklæring (KVKK)",

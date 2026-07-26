@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { InstagramIcon } from "@/components/instagram-icon";
 import { siteConfig } from "@/lib/site-config";
 
 export function Footer() {
@@ -10,6 +11,16 @@ export function Footer() {
         <div>
           <p className="font-serif text-lg text-white">Dr. Nurhan İnan</p>
           <p className="mt-1 text-sm">{t("tagline")}</p>
+          <a
+            href={siteConfig.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={t("instagramAria")}
+            className="mt-4 inline-flex items-center gap-2 text-sm text-white/85 transition-colors hover:text-white"
+          >
+            <InstagramIcon size={18} />
+            {siteConfig.instagramHandle}
+          </a>
         </div>
 
         <div>

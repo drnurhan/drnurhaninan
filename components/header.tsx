@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Menu, Phone, X } from "lucide-react";
+import { InstagramIcon } from "@/components/instagram-icon";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { siteConfig } from "@/lib/site-config";
 
@@ -77,6 +78,15 @@ export function Header() {
               </a>
             ))}
           </nav>
+          <a
+            href={siteConfig.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 flex items-center gap-2 border-t border-line pt-4 text-base text-ink-soft transition-colors hover:text-primary"
+          >
+            <InstagramIcon size={18} />
+            {t("instagramLabel")}
+          </a>
         </div>
       )}
     </header>

@@ -14,7 +14,8 @@
       "contact": "Kontakt"
     },
     "menuOpen": "Menü öffnen",
-    "menuClose": "Menü schließen"
+    "menuClose": "Menü schließen",
+    "instagramLabel": "Auf Instagram folgen"
   },
   "LanguageSwitcher": {
     "tr": "Türkçe",
@@ -176,11 +177,13 @@
   "Footer": {
     "tagline": "Ästhetische & Restaurative Zahnheilkunde",
     "addressColumnTitle": "Kontakt",
-    "rights": "© 2026 Dr. Nurhan İnan – Alle Rechte vorbehalten."
+    "rights": "© 2026 Dr. Nurhan İnan – Alle Rechte vorbehalten.",
+    "instagramAria": "Auf Instagram folgen"
   },
   "MobileBar": {
     "call": "Anrufen",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "instagramAria": "Auf Instagram folgen"
   },
   "Kvkk": {
     "title": "Datenschutzhinweis (KVKK)",

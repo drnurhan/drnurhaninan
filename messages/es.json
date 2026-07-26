@@ -14,7 +14,8 @@
       "contact": "Contacto"
     },
     "menuOpen": "Abrir menú",
-    "menuClose": "Cerrar menú"
+    "menuClose": "Cerrar menú",
+    "instagramLabel": "Síguenos en Instagram"
   },
   "LanguageSwitcher": {
     "tr": "Türkçe",
@@ -176,11 +177,13 @@
   "Footer": {
     "tagline": "Odontología Estética y Restauradora",
     "addressColumnTitle": "Contacto",
-    "rights": "© 2026 Dra. Nurhan İnan – Todos los derechos reservados."
+    "rights": "© 2026 Dra. Nurhan İnan – Todos los derechos reservados.",
+    "instagramAria": "Síguenos en Instagram"
   },
   "MobileBar": {
     "call": "Llamar",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "instagramAria": "Síguenos en Instagram"
   },
   "Kvkk": {
     "title": "Aviso de Privacidad (KVKK)",
