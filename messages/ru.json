@@ -197,11 +197,6 @@
     "rights": "© 2026 Др. Нурхан Инан – Все права защищены.",
     "instagramAria": "Подписывайтесь на Instagram"
   },
-  "MobileBar": {
-    "call": "Позвонить",
-    "whatsapp": "WhatsApp",
-    "instagramAria": "Подписывайтесь на Instagram"
-  },
   "Kvkk": {
     "title": "Уведомление о Защите Данных (KVKK)",
     "lastUpdatedLabel": "Последнее обновление",
@@ -233,5 +228,11 @@
     "shareWhatsappLabel": "Поделиться в WhatsApp",
     "copyLinkLabel": "Скопировать ссылку",
     "linkCopiedLabel": "Ссылка скопирована"
+  },
+  "WhatsappBubble": {
+    "ariaLabel": "Свяжитесь с нами в WhatsApp",
+    "chatLabel": "Написать в WhatsApp",
+    "callLabel": "Позвонить сейчас",
+    "message": "Здравствуйте, хочу узнать информацию о своей улыбке."
   }
 }

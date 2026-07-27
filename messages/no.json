@@ -197,11 +197,6 @@
     "rights": "© 2026 Dr. Nurhan İnan – Alle rettigheter forbeholdt.",
     "instagramAria": "Følg oss på Instagram"
   },
-  "MobileBar": {
-    "call": "Ring",
-    "whatsapp": "WhatsApp",
-    "instagramAria": "Følg oss på Instagram"
-  },
   "Kvkk": {
     "title": "Personvernerklæring (KVKK)",
     "lastUpdatedLabel": "Sist oppdatert",
@@ -233,5 +228,11 @@
     "shareWhatsappLabel": "Del på WhatsApp",
     "copyLinkLabel": "Kopier lenke",
     "linkCopiedLabel": "Lenke kopiert"
+  },
+  "WhatsappBubble": {
+    "ariaLabel": "Kontakt oss på WhatsApp",
+    "chatLabel": "Skriv på WhatsApp",
+    "callLabel": "Ring nå",
+    "message": "Hei, jeg vil gjerne ha informasjon om smilet mitt."
   }
 }

@@ -197,11 +197,6 @@
     "rights": "© 2026 Δρ. Nurhan İnan – Με την επιφύλαξη παντός δικαιώματος.",
     "instagramAria": "Ακολουθήστε μας στο Instagram"
   },
-  "MobileBar": {
-    "call": "Κλήση",
-    "whatsapp": "WhatsApp",
-    "instagramAria": "Ακολουθήστε μας στο Instagram"
-  },
   "Kvkk": {
     "title": "Ενημέρωση Προστασίας Δεδομένων (KVKK)",
     "lastUpdatedLabel": "Τελευταία ενημέρωση",
@@ -233,5 +228,11 @@
     "shareWhatsappLabel": "Κοινοποίηση στο WhatsApp",
     "copyLinkLabel": "Αντιγραφή συνδέσμου",
     "linkCopiedLabel": "Ο σύνδεσμος αντιγράφηκε"
+  },
+  "WhatsappBubble": {
+    "ariaLabel": "Επικοινωνήστε μαζί μας στο WhatsApp",
+    "chatLabel": "Γράψτε στο WhatsApp",
+    "callLabel": "Καλέστε τώρα",
+    "message": "Γεια σας, θα ήθελα να λάβω πληροφορίες σχετικά με το χαμόγελό μου."
   }
 }

@@ -197,11 +197,6 @@
     "rights": "© 2026 Dr. Nurhan İnan, DDS – All rights reserved.",
     "instagramAria": "Follow on Instagram"
   },
-  "MobileBar": {
-    "call": "Call",
-    "whatsapp": "WhatsApp",
-    "instagramAria": "Follow on Instagram"
-  },
   "Kvkk": {
     "title": "Privacy Notice (KVKK)",
     "lastUpdatedLabel": "Last updated",
@@ -233,5 +228,11 @@
     "shareWhatsappLabel": "Share on WhatsApp",
     "copyLinkLabel": "Copy link",
     "linkCopiedLabel": "Link copied"
+  },
+  "WhatsappBubble": {
+    "ariaLabel": "Contact us on WhatsApp",
+    "chatLabel": "Message on WhatsApp",
+    "callLabel": "Call now",
+    "message": "Hello, I'd like to get information about my smile."
   }
 }

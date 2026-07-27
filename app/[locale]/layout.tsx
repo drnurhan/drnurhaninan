@@ -7,7 +7,7 @@ import { routing } from "@/i18n/routing";
 import { ogLocaleMap, siteConfig } from "@/lib/site-config";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-import { MobileBar } from "@/components/mobile-bar";
+import { WhatsappBubble } from "@/components/whatsapp-bubble";
 import { themeInitScript } from "@/lib/theme-script";
 import "../globals.css";
 
@@ -115,13 +115,13 @@ export default async function LocaleLayout({
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
       <body
-        className={`${fraunces.variable} ${inter.variable} ${plexArabic.variable} ${urbanist.variable} bg-bg text-ink font-sans antialiased pb-20 md:pb-0`}
+        className={`${fraunces.variable} ${inter.variable} ${plexArabic.variable} ${urbanist.variable} bg-bg text-ink font-sans antialiased pb-6 md:pb-0`}
       >
         <NextIntlClientProvider>
           <Header />
           {children}
           <Footer />
-          <MobileBar />
+          <WhatsappBubble />
         </NextIntlClientProvider>
       </body>
     </html>

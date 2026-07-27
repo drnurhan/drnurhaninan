@@ -122,6 +122,18 @@ body {
   mask-position: center;
 }
 
+/* WhatsApp balonu: sayfa yüklendiğinde dikkat çeken nabız animasyonu.
+   `motion-safe:` varyantı prefers-reduced-motion'da zaten devre dışı bırakır. */
+@keyframes whatsapp-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+  }
+}
+
 /* Scroll-reveal: tek yönlü fade + yükselme. prefers-reduced-motion'da devre dışı. */
 .reveal {
   opacity: 0;

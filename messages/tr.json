@@ -197,11 +197,6 @@
     "rights": "© 2026 Uzm. Dr. Nurhan İnan – Tüm hakları saklıdır.",
     "instagramAria": "Instagram'da takip edin"
   },
-  "MobileBar": {
-    "call": "Ara",
-    "whatsapp": "WhatsApp",
-    "instagramAria": "Instagram'da takip edin"
-  },
   "Kvkk": {
     "title": "KVKK Aydınlatma Metni",
     "lastUpdatedLabel": "Son güncelleme",
@@ -233,5 +228,11 @@
     "shareWhatsappLabel": "WhatsApp'ta paylaş",
     "copyLinkLabel": "Bağlantıyı kopyala",
     "linkCopiedLabel": "Bağlantı kopyalandı"
+  },
+  "WhatsappBubble": {
+    "ariaLabel": "WhatsApp ile iletişime geçin",
+    "chatLabel": "WhatsApp'tan yazın",
+    "callLabel": "Hemen arayın",
+    "message": "Merhaba, gülüşüm hakkında bilgi almak istiyorum."
   }
 }

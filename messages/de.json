@@ -197,11 +197,6 @@
     "rights": "© 2026 Dr. Nurhan İnan – Alle Rechte vorbehalten.",
     "instagramAria": "Auf Instagram folgen"
   },
-  "MobileBar": {
-    "call": "Anrufen",
-    "whatsapp": "WhatsApp",
-    "instagramAria": "Auf Instagram folgen"
-  },
   "Kvkk": {
     "title": "Datenschutzhinweis (KVKK)",
     "lastUpdatedLabel": "Zuletzt aktualisiert",
@@ -233,5 +228,11 @@
     "shareWhatsappLabel": "Auf WhatsApp teilen",
     "copyLinkLabel": "Link kopieren",
     "linkCopiedLabel": "Link kopiert"
+  },
+  "WhatsappBubble": {
+    "ariaLabel": "Kontaktieren Sie uns über WhatsApp",
+    "chatLabel": "Auf WhatsApp schreiben",
+    "callLabel": "Jetzt anrufen",
+    "message": "Hallo, ich möchte Informationen zu meinem Lächeln erhalten."
   }
 }

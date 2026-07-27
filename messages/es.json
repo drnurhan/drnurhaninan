@@ -197,11 +197,6 @@
     "rights": "© 2026 Dra. Nurhan İnan – Todos los derechos reservados.",
     "instagramAria": "Síguenos en Instagram"
   },
-  "MobileBar": {
-    "call": "Llamar",
-    "whatsapp": "WhatsApp",
-    "instagramAria": "Síguenos en Instagram"
-  },
   "Kvkk": {
     "title": "Aviso de Privacidad (KVKK)",
     "lastUpdatedLabel": "Última actualización",
@@ -233,5 +228,11 @@
     "shareWhatsappLabel": "Compartir en WhatsApp",
     "copyLinkLabel": "Copiar enlace",
     "linkCopiedLabel": "Enlace copiado"
+  },
+  "WhatsappBubble": {
+    "ariaLabel": "Contáctenos por WhatsApp",
+    "chatLabel": "Escribir por WhatsApp",
+    "callLabel": "Llamar ahora",
+    "message": "Hola, me gustaría obtener información sobre mi sonrisa."
   }
 }

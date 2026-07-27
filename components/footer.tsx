@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { InstagramIcon } from "@/components/instagram-icon";
+import { DeveloperCredit } from "@/components/developer-credit";
 import { siteConfig } from "@/lib/site-config";
 
 export function Footer() {
@@ -42,20 +43,7 @@ export function Footer() {
           <p className="mt-1 text-xs text-white/50">
             {/* Bilinçli olarak çevrilmiyor: tasarım/geliştirme kredisi
                 site diline bakılmaksızın sabit İngilizce/Türkçe kalır. */}
-            Developed by{" "}
-            <a
-              href="mailto:ufukyilmazim@gmail.com"
-              className="underline underline-offset-2 hover:text-white/80"
-            >
-              Ufuk Yılmaz
-            </a>
-            {" · "}
-            <a
-              href="tel:+905413202300"
-              className="underline underline-offset-2 hover:text-white/80"
-            >
-              Doğrudan Ara: +90 541 320 23 00
-            </a>
+            Developed by <DeveloperCredit />
           </p>
         </div>
       </div>
