@@ -181,7 +181,8 @@
       "photoErrorSize": "Hvert bilde kan være maks 5 MB.",
       "photoErrorCount": "Du kan laste opp maks 3 bilder.",
       "photoErrorRequired": "Legg til minst 1 bilde for å fortsette.",
-      "removePhotoLabel": "Fjern"
+      "removePhotoLabel": "Fjern",
+      "photoBrowseLabel": "Velg fil"
     },
     "info": {
       "addressTitle": "Adresse",

@@ -181,7 +181,8 @@
       "photoErrorSize": "Chaque photo ne doit pas dépasser 5 Mo.",
       "photoErrorCount": "Vous pouvez télécharger jusqu'à 3 photos.",
       "photoErrorRequired": "Veuillez ajouter au moins 1 photo pour continuer.",
-      "removePhotoLabel": "Supprimer"
+      "removePhotoLabel": "Supprimer",
+      "photoBrowseLabel": "Choisir un fichier"
     },
     "info": {
       "addressTitle": "Adresse",

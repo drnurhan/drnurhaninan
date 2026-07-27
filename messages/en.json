@@ -181,7 +181,8 @@
       "photoErrorSize": "Each photo can be at most 5 MB.",
       "photoErrorCount": "You can upload up to 3 photos.",
       "photoErrorRequired": "Please add at least 1 photo to continue.",
-      "removePhotoLabel": "Remove"
+      "removePhotoLabel": "Remove",
+      "photoBrowseLabel": "Choose File"
     },
     "info": {
       "addressTitle": "Address",

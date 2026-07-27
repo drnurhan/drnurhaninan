@@ -361,8 +361,7 @@ export function ContactForm() {
             <div
               onDragOver={(e) => e.preventDefault()}
               onDrop={handleDrop}
-              onClick={() => fileInputRef.current?.click()}
-              className="cursor-pointer rounded-[var(--radius-input)] border-2 border-dashed border-line bg-bg p-6 text-center transition-colors hover:border-primary-ink"
+              className="rounded-[var(--radius-card)] border-2 border-dashed border-line bg-bg px-6 py-10 text-center transition-colors hover:border-primary-ink"
             >
               <input
                 ref={fileInputRef}
@@ -372,15 +371,22 @@ export function ContactForm() {
                 onChange={handleFileInputChange}
                 className="hidden"
               />
-              <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary-tint text-primary-ink">
-                <ImagePlus size={22} />
+              <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary-tint text-primary-ink">
+                <ImagePlus size={30} />
               </span>
-              <p className="mt-3 text-sm font-medium text-ink">
+              <p className="mt-4 text-base font-semibold text-ink">
                 {t("photoDropLabel")}
               </p>
               <p className="mt-1 text-xs text-ink-soft">
                 {t("photoUploadHint")}
               </p>
+              <button
+                type="button"
+                onClick={() => fileInputRef.current?.click()}
+                className="mt-5 inline-flex items-center justify-center rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-primary-deep"
+              >
+                {t("photoBrowseLabel")}
+              </button>
             </div>
 
             {fileError && (

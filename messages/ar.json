@@ -181,7 +181,8 @@
       "photoErrorSize": "يجب ألا يتجاوز حجم كل صورة 5 ميجابايت.",
       "photoErrorCount": "يمكنكم تحميل 3 صور كحد أقصى.",
       "photoErrorRequired": "يرجى إضافة صورة واحدة على الأقل للمتابعة.",
-      "removePhotoLabel": "إزالة"
+      "removePhotoLabel": "إزالة",
+      "photoBrowseLabel": "اختر ملفًا"
     },
     "info": {
       "addressTitle": "العنوان",

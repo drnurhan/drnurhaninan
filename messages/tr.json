@@ -181,7 +181,8 @@
       "photoErrorSize": "Her fotoğraf en fazla 5 MB olabilir.",
       "photoErrorCount": "En fazla 3 fotoğraf yükleyebilirsiniz.",
       "photoErrorRequired": "Devam etmek için en az 1 fotoğraf ekleyin.",
-      "removePhotoLabel": "Kaldır"
+      "removePhotoLabel": "Kaldır",
+      "photoBrowseLabel": "Dosya Seç"
     },
     "info": {
       "addressTitle": "Adres",

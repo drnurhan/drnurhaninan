@@ -181,7 +181,8 @@
       "photoErrorSize": "Ogni foto può pesare al massimo 5 MB.",
       "photoErrorCount": "Potete caricare fino a 3 foto.",
       "photoErrorRequired": "Aggiungete almeno 1 foto per continuare.",
-      "removePhotoLabel": "Rimuovi"
+      "removePhotoLabel": "Rimuovi",
+      "photoBrowseLabel": "Scegli file"
     },
     "info": {
       "addressTitle": "Indirizzo",

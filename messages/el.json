@@ -181,7 +181,8 @@
       "photoErrorSize": "Κάθε φωτογραφία μπορεί να είναι έως 5 MB.",
       "photoErrorCount": "Μπορείτε να ανεβάσετε έως 3 φωτογραφίες.",
       "photoErrorRequired": "Προσθέστε τουλάχιστον 1 φωτογραφία για να συνεχίσετε.",
-      "removePhotoLabel": "Αφαίρεση"
+      "removePhotoLabel": "Αφαίρεση",
+      "photoBrowseLabel": "Επιλογή αρχείου"
     },
     "info": {
       "addressTitle": "Διεύθυνση",

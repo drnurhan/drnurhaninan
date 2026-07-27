@@ -181,7 +181,8 @@
       "photoErrorSize": "Każde zdjęcie może mieć maksymalnie 5 MB.",
       "photoErrorCount": "Możesz przesłać maksymalnie 3 zdjęcia.",
       "photoErrorRequired": "Dodaj co najmniej 1 zdjęcie, aby kontynuować.",
-      "removePhotoLabel": "Usuń"
+      "removePhotoLabel": "Usuń",
+      "photoBrowseLabel": "Wybierz plik"
     },
     "info": {
       "addressTitle": "Adres",
