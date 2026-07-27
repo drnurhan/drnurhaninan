@@ -233,6 +233,7 @@
     "ariaLabel": "WhatsApp ile iletişime geçin",
     "chatLabel": "WhatsApp'tan yazın",
     "callLabel": "Hemen arayın",
-    "message": "Merhaba, gülüşüm hakkında bilgi almak istiyorum."
+    "message": "Merhaba, gülüşüm hakkında bilgi almak istiyorum.",
+    "instagramLabel": "Instagram'da takip edin"
   }
 }

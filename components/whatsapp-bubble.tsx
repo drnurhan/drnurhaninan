@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Phone, X } from "lucide-react";
 import { WhatsAppIcon } from "@/components/whatsapp-icon";
+import { InstagramIcon } from "@/components/instagram-icon";
 import { siteConfig } from "@/lib/site-config";
 
 export function WhatsappBubble() {
@@ -59,7 +60,7 @@ export function WhatsappBubble() {
             onClick={() => setIsOpen(false)}
             className="flex items-center gap-3 px-4 py-3 text-sm font-medium text-ink transition-colors hover:bg-bg"
           >
-            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#25D366] text-white">
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F3EBDC] text-[#0E4E4A]">
               <WhatsAppIcon size={16} />
             </span>
             {t("chatLabel")}
@@ -75,6 +76,19 @@ export function WhatsappBubble() {
             </span>
             {t("callLabel")}
           </a>
+          <a
+            role="menuitem"
+            href={siteConfig.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsOpen(false)}
+            className="flex items-center gap-3 border-t border-line px-4 py-3 text-sm font-medium text-ink transition-colors hover:bg-bg"
+          >
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F3EBDC] text-[#0E4E4A]">
+              <InstagramIcon size={16} />
+            </span>
+            {t("instagramLabel")}
+          </a>
         </div>
       )}
 
@@ -87,7 +101,7 @@ export function WhatsappBubble() {
         aria-label={t("ariaLabel")}
         aria-haspopup="menu"
         aria-expanded={isOpen}
-        className={`flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[var(--shadow-medium)] transition-transform hover:scale-105 ${
+        className={`flex h-14 w-14 items-center justify-center rounded-full bg-[#F3EBDC] text-[#0E4E4A] shadow-[var(--shadow-medium)] transition-transform hover:scale-105 ${
           hasInteracted
             ? ""
             : "motion-safe:animate-[whatsapp-pulse_2.4s_ease-in-out_infinite]"

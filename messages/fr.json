@@ -233,6 +233,7 @@
     "ariaLabel": "Contactez-nous sur WhatsApp",
     "chatLabel": "Écrire sur WhatsApp",
     "callLabel": "Appeler maintenant",
-    "message": "Bonjour, je souhaite obtenir des informations sur mon sourire."
+    "message": "Bonjour, je souhaite obtenir des informations sur mon sourire.",
+    "instagramLabel": "Suivez-nous sur Instagram"
   }
 }

@@ -33,6 +33,40 @@ function todayIsoDate() {
   return new Date().toISOString().split("T")[0];
 }
 
+// Telefon fotoğrafları genelde 5 MB'ın çok üzerinde oluyor; kullanıcıyı
+// reddetmek yerine tarayıcıda otomatik olarak yeniden boyutlandırıp
+// sıkıştırıyoruz. Zaten küçük dosyalarda dokunmadan geçiyoruz.
+async function compressImage(file: File): Promise<File> {
+  if (file.size <= 1.5 * 1024 * 1024) return file;
+
+  try {
+    const bitmap = await createImageBitmap(file);
+    const maxDimension = 1600;
+    const scale = Math.min(1, maxDimension / Math.max(bitmap.width, bitmap.height));
+    const width = Math.round(bitmap.width * scale);
+    const height = Math.round(bitmap.height * scale);
+
+    const canvas = document.createElement("canvas");
+    canvas.width = width;
+    canvas.height = height;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return file;
+    ctx.drawImage(bitmap, 0, 0, width, height);
+
+    const blob = await new Promise<Blob | null>((resolve) =>
+      canvas.toBlob(resolve, "image/jpeg", 0.82)
+    );
+    if (!blob) return file;
+
+    const newName = file.name.replace(/\.\w+$/, "") + ".jpg";
+    return new File([blob], newName, { type: "image/jpeg" });
+  } catch {
+    // Sıkıştırma başarısız olursa (bozuk dosya vb.) orijinal dosyayla devam
+    // et; boyut kontrolü zaten aşağıda ayrıca yapılıyor.
+    return file;
+  }
+}
+
 export function ContactForm() {
   const t = useTranslations("Contact.form");
   const locale = useLocale();
@@ -54,7 +88,7 @@ export function ContactForm() {
   const isAppointment = subject === "appointment";
   const isPhotoAssessment = subject === "freePhotoAssessment";
 
-  function addFiles(fileList: FileList | File[]) {
+  async function addFiles(fileList: FileList | File[]) {
     const incoming = Array.from(fileList);
     let error: string | null = null;
     const next = [...photos];
@@ -68,11 +102,14 @@ export function ContactForm() {
         error = t("photoErrorType");
         continue;
       }
-      if (file.size > MAX_PHOTO_SIZE) {
+
+      const processed = await compressImage(file);
+
+      if (processed.size > MAX_PHOTO_SIZE) {
         error = t("photoErrorSize");
         continue;
       }
-      next.push({ file, previewUrl: URL.createObjectURL(file) });
+      next.push({ file: processed, previewUrl: URL.createObjectURL(processed) });
     }
 
     setPhotos(next);
@@ -88,13 +125,13 @@ export function ContactForm() {
   }
 
   function handleFileInputChange(event: ChangeEvent<HTMLInputElement>) {
-    if (event.target.files) addFiles(event.target.files);
+    if (event.target.files) void addFiles(event.target.files);
     event.target.value = "";
   }
 
   function handleDrop(event: DragEvent<HTMLDivElement>) {
     event.preventDefault();
-    if (event.dataTransfer.files) addFiles(event.dataTransfer.files);
+    if (event.dataTransfer.files) void addFiles(event.dataTransfer.files);
   }
 
   function handleHighlightClick() {
@@ -434,7 +471,7 @@ export function ContactForm() {
 }
 
 const inputClass =
-  "w-full rounded-[var(--radius-input)] border border-line bg-surface px-4 py-2.5 text-ink placeholder:text-ink-soft/60 focus:border-primary-ink focus:outline-none focus:ring-1 focus:ring-primary-ink";
+  "w-full rounded-[var(--radius-input)] border border-line bg-input-bg px-4 py-2.5 text-ink placeholder:text-ink-soft/60 focus:border-primary-ink focus:outline-none focus:ring-1 focus:ring-primary-ink";
 
 function Field({
   label,

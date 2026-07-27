@@ -30,6 +30,11 @@
      Açık modda mevcut primary ile birebir aynı — görsel fark yok. */
   --color-primary-ink: #0e4e4a;
   --color-primary-ink-deep: #0a3a37;
+  /* Form input zemini: açık modda surface ile aynı (görsel fark yok).
+     Contact bölümünün kendisi zaten bg-surface olduğu için koyu modda
+     inputlar surface'dan ayrı, bir tık daha açık yeşil bir tona sahip
+     olmalı — aksi halde input'lar bölüm zeminiyle birebir aynı görünüyor. */
+  --color-input-bg: #ffffff;
 
   --radius-card: 20px;
   --radius-input: 12px;
@@ -52,6 +57,7 @@
   --color-accent-strong: #d9bc7e;
   --color-primary-ink: #45b8ab;
   --color-primary-ink-deep: #6fd0c2;
+  --color-input-bg: #33544a;
 
   --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.25);
   --shadow-medium: 0 16px 45px rgba(0, 0, 0, 0.35);
@@ -67,6 +73,7 @@
   --color-primary-tint: var(--color-primary-tint);
   --color-primary-ink: var(--color-primary-ink);
   --color-primary-ink-deep: var(--color-primary-ink-deep);
+  --color-input-bg: var(--color-input-bg);
   --color-accent: var(--color-accent);
   --color-accent-soft: var(--color-accent-soft);
   --color-accent-strong: var(--color-accent-strong);
@@ -111,7 +118,10 @@ body {
 
 /* Logo: siyah çizim PNG'yi maskeleyip marka rengiyle boyar (dosyayı değiştirmeye gerek kalmadan). */
 .brand-mark {
-  background-color: var(--color-primary);
+  /* --color-primary sabittir (arkaplan amaçlı); logo ise sayfanın kendi
+     zemininde durduğu için primary-ink kullanılır — koyu modda daha
+     canlı/görünür bir yeşile döner (aksi halde siyah üstünde sönük kalıyordu). */
+  background-color: var(--color-primary-ink);
   -webkit-mask-image: url("/images/n_logo.png");
   mask-image: url("/images/n_logo.png");
   -webkit-mask-size: contain;
@@ -124,13 +134,23 @@ body {
 
 /* WhatsApp balonu: sayfa yüklendiğinde dikkat çeken nabız animasyonu.
    `motion-safe:` varyantı prefers-reduced-motion'da zaten devre dışı bırakır. */
+/* Bottom sheet: alttan yukarı kayarak açılma animasyonu. */
+@keyframes bottom-sheet-in {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 @keyframes whatsapp-pulse {
   0%,
   100% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55);
+    box-shadow: 0 0 0 0 rgba(14, 78, 74, 0.45);
   }
   50% {
-    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+    box-shadow: 0 0 0 10px rgba(14, 78, 74, 0);
   }
 }
 
