@@ -144,7 +144,7 @@
     "form": {
       "name": "Полное Имя",
       "phone": "Телефон",
-      "email": "Эл. почта",
+      "email": "Email (необязательно)",
       "subject": "Тема",
       "subjectOptions": {
         "appointment": "Запись на Приём",

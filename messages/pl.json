@@ -144,7 +144,7 @@
     "form": {
       "name": "Imię i nazwisko",
       "phone": "Telefon",
-      "email": "E-mail",
+      "email": "E-mail (opcjonalnie)",
       "subject": "Temat",
       "subjectOptions": {
         "appointment": "Prośba o Wizytę",

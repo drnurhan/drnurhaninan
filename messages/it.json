@@ -144,7 +144,7 @@
     "form": {
       "name": "Nome e Cognome",
       "phone": "Telefono",
-      "email": "Email",
+      "email": "Email (facoltativo)",
       "subject": "Motivo",
       "subjectOptions": {
         "appointment": "Richiesta di Appuntamento",

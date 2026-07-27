@@ -144,7 +144,7 @@
     "form": {
       "name": "Nombre completo",
       "phone": "Teléfono",
-      "email": "Correo electrónico",
+      "email": "Correo electrónico (opcional)",
       "subject": "Asunto",
       "subjectOptions": {
         "appointment": "Solicitud de Cita",

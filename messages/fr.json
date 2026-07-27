@@ -144,7 +144,7 @@
     "form": {
       "name": "Nom complet",
       "phone": "Téléphone",
-      "email": "E-mail",
+      "email": "E-mail (facultatif)",
       "subject": "Objet",
       "subjectOptions": {
         "appointment": "Demande de rendez-vous",

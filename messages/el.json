@@ -144,7 +144,7 @@
     "form": {
       "name": "Ονοματεπώνυμο",
       "phone": "Τηλέφωνο",
-      "email": "Email",
+      "email": "Email (προαιρετικό)",
       "subject": "Θέμα",
       "subjectOptions": {
         "appointment": "Αίτημα Ραντεβού",

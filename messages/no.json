@@ -144,7 +144,7 @@
     "form": {
       "name": "Fullt Navn",
       "phone": "Telefon",
-      "email": "E-post",
+      "email": "E-post (valgfritt)",
       "subject": "Emne",
       "subjectOptions": {
         "appointment": "Timeforespørsel",
