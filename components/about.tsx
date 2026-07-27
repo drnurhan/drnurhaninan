@@ -42,7 +42,7 @@ export function About() {
             type="button"
             onClick={() => setIsExpanded((v) => !v)}
             aria-expanded={isExpanded}
-            className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-colors hover:text-primary-deep"
+            className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-primary-ink transition-colors hover:text-primary-ink-deep"
           >
             {isExpanded ? t("collapseLabel") : t("expandLabel")}
             <ChevronDown
@@ -59,7 +59,7 @@ export function About() {
             <div className="overflow-hidden">
             <div className="mt-6 space-y-5 border-t border-line pt-6">
               <div className="flex gap-3">
-                <Stethoscope size={20} className="mt-0.5 shrink-0 text-primary" />
+                <Stethoscope size={20} className="mt-0.5 shrink-0 text-primary-ink" />
                 <div>
                   <h3 className="font-semibold text-ink">
                     {t("sections.expertiseAreas.title")}
@@ -73,7 +73,7 @@ export function About() {
               </div>
 
               <div className="flex gap-3">
-                <Zap size={20} className="mt-0.5 shrink-0 text-primary" />
+                <Zap size={20} className="mt-0.5 shrink-0 text-primary-ink" />
                 <div>
                   <h3 className="font-semibold text-ink">
                     {t("sections.featuredProcedures.title")}
@@ -87,12 +87,12 @@ export function About() {
               </div>
 
               <div className="flex gap-3">
-                <Target size={20} className="mt-0.5 shrink-0 text-primary" />
+                <Target size={20} className="mt-0.5 shrink-0 text-primary-ink" />
                 <p className="text-sm text-ink-soft">{t("philosophyText")}</p>
               </div>
 
               <div className="flex gap-3">
-                <Languages size={20} className="mt-0.5 shrink-0 text-primary" />
+                <Languages size={20} className="mt-0.5 shrink-0 text-primary-ink" />
                 <p className="text-sm text-ink-soft">
                   {t("internationalLine")}
                 </p>

@@ -16,7 +16,9 @@
     },
     "menuOpen": "Åpne meny",
     "menuClose": "Lukk meny",
-    "instagramLabel": "Følg oss på Instagram"
+    "instagramLabel": "Følg oss på Instagram",
+    "themeLight": "Bytt til lys modus",
+    "themeDark": "Bytt til mørk modus"
   },
   "LanguageSwitcher": {
     "tr": "Türkçe",
@@ -213,6 +215,10 @@
     "pageTitle": "Blogg",
     "backLabel": "Alle innlegg",
     "prevPostLabel": "Forrige innlegg",
-    "nextPostLabel": "Neste innlegg"
+    "nextPostLabel": "Neste innlegg",
+    "shareLabel": "Del",
+    "shareWhatsappLabel": "Del på WhatsApp",
+    "copyLinkLabel": "Kopier lenke",
+    "linkCopiedLabel": "Lenke kopiert"
   }
 }

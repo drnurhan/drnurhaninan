@@ -52,7 +52,7 @@ export function Contact() {
               >
                 <a
                   href={`tel:${siteConfig.phoneTel}`}
-                  className="hover:text-primary"
+                  className="hover:text-primary-ink"
                 >
                   {siteConfig.phoneDisplay}
                 </a>
@@ -76,7 +76,7 @@ function InfoCard({
 }) {
   return (
     <div className="rounded-[var(--radius-card)] border border-line bg-bg p-5">
-      <div className="flex h-9 w-9 items-center justify-center rounded-full bg-primary-tint text-primary">
+      <div className="flex h-9 w-9 items-center justify-center rounded-full bg-primary-tint text-primary-ink">
         {icon}
       </div>
       <h3 className="mt-3 text-sm font-semibold text-ink">{title}</h3>

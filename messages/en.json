@@ -16,7 +16,9 @@
     },
     "menuOpen": "Open menu",
     "menuClose": "Close menu",
-    "instagramLabel": "Follow on Instagram"
+    "instagramLabel": "Follow on Instagram",
+    "themeLight": "Switch to light mode",
+    "themeDark": "Switch to dark mode"
   },
   "LanguageSwitcher": {
     "tr": "Türkçe",
@@ -213,6 +215,10 @@
     "pageTitle": "Blog",
     "backLabel": "All Posts",
     "prevPostLabel": "Previous Post",
-    "nextPostLabel": "Next Post"
+    "nextPostLabel": "Next Post",
+    "shareLabel": "Share",
+    "shareWhatsappLabel": "Share on WhatsApp",
+    "copyLinkLabel": "Copy link",
+    "linkCopiedLabel": "Link copied"
   }
 }

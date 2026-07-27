@@ -84,7 +84,7 @@ export function ContactForm() {
   if (status === "success") {
     return (
       <div className="rounded-[var(--radius-card)] border border-primary/20 bg-primary-tint p-8 text-center">
-        <p className="font-serif text-xl text-primary">
+        <p className="font-serif text-xl text-primary-ink">
           {t("successTitle")}
         </p>
         <p className="mt-2 text-ink-soft">{t("successMessage")}</p>
@@ -197,14 +197,14 @@ export function ContactForm() {
           type="checkbox"
           name="kvkkConsent"
           required
-          className="mt-1 h-4 w-4 shrink-0 rounded border-line text-primary focus:ring-primary"
+          className="mt-1 h-4 w-4 shrink-0 rounded border-line text-primary-ink focus:ring-primary-ink"
         />
         <span>
           {t("kvkkLabel")}{" "}
           <Link
             href="/kvkk"
             locale={locale}
-            className="underline underline-offset-2 hover:text-primary"
+            className="underline underline-offset-2 hover:text-primary-ink"
           >
             {t("kvkkLinkLabel")}
           </Link>
@@ -214,7 +214,7 @@ export function ContactForm() {
       <p className="text-xs text-ink-soft">{t("requiredNote")}</p>
 
       {status === "error" && (
-        <p className="text-sm text-red-700">{t("errorMessage")}</p>
+        <p className="text-sm text-red-700 dark:text-red-400">{t("errorMessage")}</p>
       )}
 
       <button
@@ -229,7 +229,7 @@ export function ContactForm() {
 }
 
 const inputClass =
-  "w-full rounded-[var(--radius-input)] border border-line bg-surface px-4 py-2.5 text-ink placeholder:text-ink-soft/60 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary";
+  "w-full rounded-[var(--radius-input)] border border-line bg-surface px-4 py-2.5 text-ink placeholder:text-ink-soft/60 focus:border-primary-ink focus:outline-none focus:ring-1 focus:ring-primary-ink";
 
 function Field({
   label,

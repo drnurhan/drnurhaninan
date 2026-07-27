@@ -8,6 +8,7 @@ import { ogLocaleMap, siteConfig } from "@/lib/site-config";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { MobileBar } from "@/components/mobile-bar";
+import { themeInitScript } from "@/lib/theme-script";
 import "../globals.css";
 
 const fraunces = Fraunces({
@@ -109,7 +110,10 @@ export default async function LocaleLayout({
   const dir = locale === "ar" ? "rtl" : "ltr";
 
   return (
-    <html lang={locale} dir={dir}>
+    <html lang={locale} dir={dir} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
       <body
         className={`${fraunces.variable} ${inter.variable} ${plexArabic.variable} ${urbanist.variable} bg-bg text-ink font-sans antialiased pb-20 md:pb-0`}
       >

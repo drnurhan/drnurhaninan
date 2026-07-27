@@ -24,7 +24,7 @@ export function Services() {
             return (
               <Reveal key={id} delay={index * 60}>
                 <div className="group h-full rounded-[var(--radius-card)] border border-line bg-surface p-7 shadow-[var(--shadow-soft)] transition-all hover:-translate-y-1 hover:border-accent hover:shadow-[var(--shadow-medium)]">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary-tint text-primary transition-colors group-hover:bg-accent-soft group-hover:text-accent">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary-tint text-primary-ink transition-colors group-hover:bg-accent-soft group-hover:text-accent">
                     <Icon size={22} />
                   </div>
                   <h3 className="mt-5 font-serif text-xl text-ink">

@@ -1,10 +1,19 @@
 @import "tailwindcss";
 
+/* Manuel karanlık mod: `<html data-theme="dark">` (veya bir üstünde) her
+   yerde dark: varyantını tetikler. Tailwind'in varsayılan medya-sorgusu
+   yerine buton ile aç/kapa + localStorage kalıcılığı için kullanılıyor. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 :root {
   --color-bg: #faf7f1;
   --color-surface: #ffffff;
   --color-ink: #22302c;
   --color-ink-soft: #5f6e68;
+  /* primary/primary-deep/primary-tint SADECE arkaplan olarak kullanılır
+     (bg-primary + text-white gibi sabit marka bantları: Trust, Blog,
+     Footer, CTA butonları). Bu yüzden temaya göre DEĞİŞMEZ — koyu modda
+     bile üzerlerindeki beyaz metin zaten yeterli kontrasta sahip. */
   --color-primary: #0e4e4a;
   --color-primary-deep: #0a3a37;
   --color-primary-tint: #e8f0ee;
@@ -16,12 +25,36 @@
      yalnızca gerçek metinlerde kullanılır; ikon/dekoratif öğelerde accent kalır. */
   --color-accent-strong: #8a6d2e;
   --color-accent-light: #d9bc7e;
+  /* primary'nin, sayfanın KENDİ (temaya göre değişen) zemininde metin/ikon
+     rengi olarak kullanılan hali (hero vurgusu, ikon rozetleri, linkler).
+     Açık modda mevcut primary ile birebir aynı — görsel fark yok. */
+  --color-primary-ink: #0e4e4a;
+  --color-primary-ink-deep: #0a3a37;
 
   --radius-card: 20px;
   --radius-input: 12px;
 
   --shadow-soft: 0 8px 30px rgba(14, 78, 74, 0.08);
   --shadow-medium: 0 16px 45px rgba(14, 78, 74, 0.14);
+}
+
+/* Koyu tema — değerler WCAG AA için hesaplanıp doğrulandı (bkz. proje
+   development log). Sadece sayfanın kendi zeminiyle birlikte değişmesi
+   gereken tokenlar burada tanımlı. */
+:root[data-theme="dark"] {
+  --color-bg: #0b1613;
+  --color-surface: #213730;
+  --color-ink: #edebe3;
+  --color-ink-soft: #a9b6ad;
+  --color-line: #32473f;
+  --color-primary-tint: #16261f;
+  --color-accent-soft: #2e2415;
+  --color-accent-strong: #d9bc7e;
+  --color-primary-ink: #45b8ab;
+  --color-primary-ink-deep: #6fd0c2;
+
+  --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.25);
+  --shadow-medium: 0 16px 45px rgba(0, 0, 0, 0.35);
 }
 
 @theme inline {
@@ -32,6 +65,8 @@
   --color-primary: var(--color-primary);
   --color-primary-deep: var(--color-primary-deep);
   --color-primary-tint: var(--color-primary-tint);
+  --color-primary-ink: var(--color-primary-ink);
+  --color-primary-ink-deep: var(--color-primary-ink-deep);
   --color-accent: var(--color-accent);
   --color-accent-soft: var(--color-accent-soft);
   --color-accent-strong: var(--color-accent-strong);
@@ -52,6 +87,15 @@
 
 html {
   scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 [dir="rtl"] body {

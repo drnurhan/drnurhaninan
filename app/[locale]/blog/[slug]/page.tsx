@@ -9,6 +9,7 @@ import { ogLocaleMap, siteConfig } from "@/lib/site-config";
 import { getAllPosts, getPostBySlug, getAdjacentPosts } from "@/lib/blog";
 import { getBlogPostingSchema } from "@/lib/structured-data";
 import { blogMdxComponents } from "@/components/blog-mdx-components";
+import { BlogShare } from "@/components/blog-share";
 import { Reveal } from "@/components/reveal";
 
 export function generateStaticParams() {
@@ -97,7 +98,7 @@ export default async function BlogPostPage({
 
       <Link
         href="/blog"
-        className="inline-flex items-center gap-1.5 text-sm font-semibold text-ink-soft transition-colors hover:text-primary"
+        className="inline-flex items-center gap-1.5 text-sm font-semibold text-ink-soft transition-colors hover:text-primary-ink"
       >
         <ChevronLeft size={16} />
         {t("backLabel")}
@@ -116,6 +117,20 @@ export default async function BlogPostPage({
         <MDXRemote source={post.content} components={blogMdxComponents} />
       </Reveal>
 
+      <div className="mt-10 flex items-center gap-3 border-t border-line pt-8">
+        <span className="text-sm font-semibold text-ink-soft">
+          {t("shareLabel")}
+        </span>
+        <BlogShare
+          title={post.title}
+          url={`${siteConfig.url}/${locale}/blog/${slug}`}
+          shareLabel={t("shareLabel")}
+          whatsappLabel={t("shareWhatsappLabel")}
+          copyLabel={t("copyLinkLabel")}
+          copiedLabel={t("linkCopiedLabel")}
+        />
+      </div>
+
       {(previous || next) && (
         <div className="mt-16 grid gap-4 border-t border-line pt-10 sm:grid-cols-2">
           {previous ? (
@@ -127,7 +142,7 @@ export default async function BlogPostPage({
                 <ChevronLeft size={14} />
                 {t("prevPostLabel").toLocaleUpperCase(locale)}
               </span>
-              <span className="mt-2 font-serif text-lg text-ink group-hover:text-primary">
+              <span className="mt-2 font-serif text-lg text-ink group-hover:text-primary-ink">
                 {previous.title}
               </span>
             </Link>
@@ -144,7 +159,7 @@ export default async function BlogPostPage({
                 {t("nextPostLabel").toLocaleUpperCase(locale)}
                 <ChevronRight size={14} />
               </span>
-              <span className="mt-2 font-serif text-lg text-ink group-hover:text-primary">
+              <span className="mt-2 font-serif text-lg text-ink group-hover:text-primary-ink">
                 {next.title}
               </span>
             </Link>

@@ -16,7 +16,9 @@
     },
     "menuOpen": "Apri il menu",
     "menuClose": "Chiudi il menu",
-    "instagramLabel": "Seguici su Instagram"
+    "instagramLabel": "Seguici su Instagram",
+    "themeLight": "Passa alla modalità chiara",
+    "themeDark": "Passa alla modalità scura"
   },
   "LanguageSwitcher": {
     "tr": "Türkçe",
@@ -213,6 +215,10 @@
     "pageTitle": "Blog",
     "backLabel": "Tutti gli articoli",
     "prevPostLabel": "Articolo precedente",
-    "nextPostLabel": "Articolo successivo"
+    "nextPostLabel": "Articolo successivo",
+    "shareLabel": "Condividi",
+    "shareWhatsappLabel": "Condividi su WhatsApp",
+    "copyLinkLabel": "Copia link",
+    "linkCopiedLabel": "Link copiato"
   }
 }

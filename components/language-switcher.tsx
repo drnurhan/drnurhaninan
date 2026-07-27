@@ -56,7 +56,7 @@ export function LanguageSwitcher({ className = "" }: { className?: string }) {
         aria-haspopup="menu"
         aria-expanded={isOpen}
         aria-label={t("selectLanguage")}
-        className="flex items-center gap-1.5 rounded-full p-2 text-ink-soft transition-colors hover:bg-primary-tint hover:text-primary"
+        className="flex items-center gap-1.5 rounded-full p-2 text-ink-soft transition-colors hover:bg-primary-tint hover:text-primary-ink"
       >
         <Globe size={20} />
         <span className="hidden text-xs font-semibold uppercase sm:inline">
@@ -81,8 +81,8 @@ export function LanguageSwitcher({ className = "" }: { className?: string }) {
                 onClick={() => setIsOpen(false)}
                 className={`block px-4 py-2 text-sm transition-colors ${
                   isActive
-                    ? "bg-primary-tint font-semibold text-primary"
-                    : "text-ink-soft hover:bg-bg hover:text-primary"
+                    ? "bg-primary-tint font-semibold text-primary-ink"
+                    : "text-ink-soft hover:bg-bg hover:text-primary-ink"
                 }`}
               >
                 {t(locale)}

@@ -16,7 +16,9 @@
     },
     "menuOpen": "Menü öffnen",
     "menuClose": "Menü schließen",
-    "instagramLabel": "Auf Instagram folgen"
+    "instagramLabel": "Auf Instagram folgen",
+    "themeLight": "Zu hellem Modus wechseln",
+    "themeDark": "Zu dunklem Modus wechseln"
   },
   "LanguageSwitcher": {
     "tr": "Türkçe",
@@ -213,6 +215,10 @@
     "pageTitle": "Blog",
     "backLabel": "Alle Beiträge",
     "prevPostLabel": "Vorheriger Beitrag",
-    "nextPostLabel": "Nächster Beitrag"
+    "nextPostLabel": "Nächster Beitrag",
+    "shareLabel": "Teilen",
+    "shareWhatsappLabel": "Auf WhatsApp teilen",
+    "copyLinkLabel": "Link kopieren",
+    "linkCopiedLabel": "Link kopiert"
   }
 }

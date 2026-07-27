@@ -35,7 +35,7 @@ export const blogMdxComponents: NonNullable<MDXRemoteProps["components"]> = {
   strong: (props) => <strong className="font-semibold text-ink" {...props} />,
   a: (props) => (
     <a
-      className="text-primary underline underline-offset-2 hover:text-primary-deep"
+      className="text-primary-ink underline underline-offset-2 hover:text-primary-ink-deep"
       {...props}
     />
   ),

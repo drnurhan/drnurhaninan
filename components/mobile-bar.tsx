@@ -19,7 +19,7 @@ export function MobileBar() {
         href={siteConfig.whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex flex-1 items-center justify-center gap-2 rounded-full border border-primary/30 px-4 py-3 text-sm font-semibold text-primary"
+        className="flex flex-1 items-center justify-center gap-2 rounded-full border border-primary/30 px-4 py-3 text-sm font-semibold text-primary-ink"
       >
         <MessageCircle size={18} />
         {t("whatsapp")}
@@ -29,7 +29,7 @@ export function MobileBar() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label={t("instagramAria")}
-        className="flex shrink-0 items-center justify-center rounded-full border border-primary/30 px-4 py-3 text-primary"
+        className="flex shrink-0 items-center justify-center rounded-full border border-primary/30 px-4 py-3 text-primary-ink"
       >
         <InstagramIcon size={18} />
       </a>

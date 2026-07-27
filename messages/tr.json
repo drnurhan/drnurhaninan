@@ -16,7 +16,9 @@
     },
     "menuOpen": "Menüyü aç",
     "menuClose": "Menüyü kapat",
-    "instagramLabel": "Instagram'da takip edin"
+    "instagramLabel": "Instagram'da takip edin",
+    "themeLight": "Açık temaya geç",
+    "themeDark": "Koyu temaya geç"
   },
   "LanguageSwitcher": {
     "tr": "Türkçe",
@@ -213,6 +215,10 @@
     "pageTitle": "Blog",
     "backLabel": "Tüm Yazılar",
     "prevPostLabel": "Önceki Yazı",
-    "nextPostLabel": "Sonraki Yazı"
+    "nextPostLabel": "Sonraki Yazı",
+    "shareLabel": "Paylaş",
+    "shareWhatsappLabel": "WhatsApp'ta paylaş",
+    "copyLinkLabel": "Bağlantıyı kopyala",
+    "linkCopiedLabel": "Bağlantı kopyalandı"
   }
 }

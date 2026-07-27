@@ -23,7 +23,7 @@ export function Hero() {
           </p>
           <h1 className="mt-4 font-serif text-4xl leading-tight text-ink sm:text-5xl">
             {t("titlePrefix")}{" "}
-            <em className="text-primary italic">{t("titleEmphasis")}</em>{" "}
+            <em className="text-primary-ink italic">{t("titleEmphasis")}</em>{" "}
             {t("titleSuffix")}
           </h1>
           <p className="mt-6 max-w-md text-lg text-ink-soft">
@@ -41,7 +41,7 @@ export function Hero() {
               href={siteConfig.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-primary/30 px-7 py-3.5 text-sm font-semibold text-primary transition-colors hover:bg-primary-tint"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-primary/30 px-7 py-3.5 text-sm font-semibold text-primary-ink transition-colors hover:bg-primary-tint"
             >
               <MessageCircle size={18} />
               {t("ctaWhatsapp")}
@@ -54,11 +54,11 @@ export function Hero() {
               {t("trustBar.rating")}
             </span>
             <span className="flex items-center gap-1.5">
-              <SparklesIcon size={16} className="text-primary" />
+              <SparklesIcon size={16} className="text-primary-ink" />
               {t("trustBar.experience")}
             </span>
             <span className="flex items-center gap-1.5">
-              <Globe2 size={16} className="text-primary" />
+              <Globe2 size={16} className="text-primary-ink" />
               {t("trustBar.languages")}
             </span>
           </div>

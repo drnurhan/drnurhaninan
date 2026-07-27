@@ -16,7 +16,9 @@
     },
     "menuOpen": "فتح القائمة",
     "menuClose": "إغلاق القائمة",
-    "instagramLabel": "تابعنا على إنستغرام"
+    "instagramLabel": "تابعنا على إنستغرام",
+    "themeLight": "التبديل إلى الوضع الفاتح",
+    "themeDark": "التبديل إلى الوضع الداكن"
   },
   "LanguageSwitcher": {
     "tr": "Türkçe",
@@ -213,6 +215,10 @@
     "pageTitle": "المدونة",
     "backLabel": "كل المقالات",
     "prevPostLabel": "المقال السابق",
-    "nextPostLabel": "المقال التالي"
+    "nextPostLabel": "المقال التالي",
+    "shareLabel": "مشاركة",
+    "shareWhatsappLabel": "مشاركة عبر واتساب",
+    "copyLinkLabel": "نسخ الرابط",
+    "linkCopiedLabel": "تم نسخ الرابط"
   }
 }

@@ -11,16 +11,16 @@ export function BlogSection() {
   if (posts.length === 0) return null;
 
   return (
-    <section id="blog" className="bg-bg">
+    <section id="blog" className="bg-primary text-white">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 md:py-24 lg:px-8">
         <Reveal className="max-w-xl">
-          <p className="font-semibold uppercase tracking-wide text-accent-strong">
+          <p className="font-semibold uppercase tracking-wide text-accent-light">
             {t("kicker")}
           </p>
-          <h2 className="mt-4 font-serif text-3xl leading-tight text-ink sm:text-4xl">
+          <h2 className="mt-4 font-serif text-3xl leading-tight sm:text-4xl">
             {t("title")}
           </h2>
-          <p className="mt-4 text-ink-soft">{t("subtitle")}</p>
+          <p className="mt-4 text-white/80">{t("subtitle")}</p>
         </Reveal>
 
         <Reveal delay={120} className="mt-10">

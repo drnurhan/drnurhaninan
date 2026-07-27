@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Menu, Phone, X } from "lucide-react";
 import { InstagramIcon } from "@/components/instagram-icon";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { Link } from "@/i18n/navigation";
 import { siteConfig } from "@/lib/site-config";
 
@@ -17,7 +18,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line/80 bg-bg/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <a href="#top" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-3">
           <span
             aria-hidden="true"
             className="brand-mark h-9 w-9 shrink-0 sm:h-10 sm:w-10"
@@ -30,21 +31,21 @@ export function Header() {
               {t("logoTagline")}
             </span>
           </span>
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
           {navItems.map((item) => (
-            <a
+            <Link
               key={item}
-              href={`#${item}`}
-              className="text-sm text-ink-soft transition-colors hover:text-primary"
+              href={`/#${item}`}
+              className="text-sm text-ink-soft transition-colors hover:text-primary-ink"
             >
               {t(`nav.${item}`)}
-            </a>
+            </Link>
           ))}
           <Link
             href="/blog"
-            className="text-sm text-ink-soft transition-colors hover:text-primary"
+            className="text-sm text-ink-soft transition-colors hover:text-primary-ink"
           >
             {t("nav.blog")}
           </Link>
@@ -53,7 +54,7 @@ export function Header() {
         <div className="flex items-center gap-2">
           <a
             href={`tel:${siteConfig.phoneTel}`}
-            className="hidden items-center gap-1.5 rounded-full border border-primary/30 px-3 py-1.5 text-sm font-semibold text-primary transition-colors hover:bg-primary-tint md:flex"
+            className="hidden items-center gap-1.5 rounded-full border border-primary/30 px-3 py-1.5 text-sm font-semibold text-primary-ink transition-colors hover:bg-primary-tint md:flex"
           >
             <Phone size={15} />
             {siteConfig.phoneDisplay}
@@ -67,6 +68,10 @@ export function Header() {
           >
             {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
+          <ThemeToggle
+            lightLabel={t("themeLight")}
+            darkLabel={t("themeDark")}
+          />
           <LanguageSwitcher />
         </div>
       </div>
@@ -75,19 +80,19 @@ export function Header() {
         <div className="border-t border-line bg-bg px-4 pb-6 pt-2 md:hidden">
           <nav className="flex flex-col gap-4">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item}
-                href={`#${item}`}
+                href={`/#${item}`}
                 onClick={() => setIsMenuOpen(false)}
-                className="text-base text-ink-soft transition-colors hover:text-primary"
+                className="text-base text-ink-soft transition-colors hover:text-primary-ink"
               >
                 {t(`nav.${item}`)}
-              </a>
+              </Link>
             ))}
             <Link
               href="/blog"
               onClick={() => setIsMenuOpen(false)}
-              className="text-base text-ink-soft transition-colors hover:text-primary"
+              className="text-base text-ink-soft transition-colors hover:text-primary-ink"
             >
               {t("nav.blog")}
             </Link>
@@ -96,7 +101,7 @@ export function Header() {
             href={siteConfig.instagramUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-4 flex items-center gap-2 border-t border-line pt-4 text-base text-ink-soft transition-colors hover:text-primary"
+            className="mt-4 flex items-center gap-2 border-t border-line pt-4 text-base text-ink-soft transition-colors hover:text-primary-ink"
           >
             <InstagramIcon size={18} />
             {t("instagramLabel")}

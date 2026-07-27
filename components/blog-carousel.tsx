@@ -37,7 +37,7 @@ export function BlogCarousel({
             type="button"
             onClick={() => scroll(-1)}
             aria-label={prevLabel}
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-line text-ink-soft transition-colors hover:border-primary hover:text-primary"
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/20 text-white/80 transition-colors hover:bg-white/10 hover:text-white"
           >
             <ChevronLeft size={20} />
           </button>
@@ -45,7 +45,7 @@ export function BlogCarousel({
             type="button"
             onClick={() => scroll(1)}
             aria-label={nextLabel}
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-line text-ink-soft transition-colors hover:border-primary hover:text-primary"
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/20 text-white/80 transition-colors hover:bg-white/10 hover:text-white"
           >
             <ChevronRight size={20} />
           </button>
@@ -53,7 +53,7 @@ export function BlogCarousel({
 
         <Link
           href="/blog"
-          className="hidden items-center gap-1.5 text-sm font-semibold text-accent-strong transition-colors hover:text-primary sm:inline-flex"
+          className="hidden items-center gap-1.5 text-sm font-semibold text-accent-light transition-colors hover:text-white sm:inline-flex"
         >
           {viewAllLabel}
           <ChevronRight size={16} />
@@ -73,6 +73,7 @@ export function BlogCarousel({
               post={post}
               locale={locale}
               readMoreLabel={readMoreLabel}
+              variant="dark"
               className="h-full"
             />
           </div>
@@ -81,7 +82,7 @@ export function BlogCarousel({
 
       <Link
         href="/blog"
-        className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-accent-strong transition-colors hover:text-primary sm:hidden"
+        className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-accent-light transition-colors hover:text-white sm:hidden"
       >
         {viewAllLabel}
         <ChevronRight size={16} />

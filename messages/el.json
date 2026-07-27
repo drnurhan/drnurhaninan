@@ -16,7 +16,9 @@
     },
     "menuOpen": "Άνοιγμα μενού",
     "menuClose": "Κλείσιμο μενού",
-    "instagramLabel": "Ακολουθήστε μας στο Instagram"
+    "instagramLabel": "Ακολουθήστε μας στο Instagram",
+    "themeLight": "Εναλλαγή σε φωτεινή λειτουργία",
+    "themeDark": "Εναλλαγή σε σκοτεινή λειτουργία"
   },
   "LanguageSwitcher": {
     "tr": "Türkçe",
@@ -213,6 +215,10 @@
     "pageTitle": "Blog",
     "backLabel": "Όλα τα άρθρα",
     "prevPostLabel": "Προηγούμενο άρθρο",
-    "nextPostLabel": "Επόμενο άρθρο"
+    "nextPostLabel": "Επόμενο άρθρο",
+    "shareLabel": "Κοινοποίηση",
+    "shareWhatsappLabel": "Κοινοποίηση στο WhatsApp",
+    "copyLinkLabel": "Αντιγραφή συνδέσμου",
+    "linkCopiedLabel": "Ο σύνδεσμος αντιγράφηκε"
   }
 }
