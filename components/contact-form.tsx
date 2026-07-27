@@ -8,7 +8,7 @@ import {
   type FormEvent,
 } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { ArrowRight, Upload, X } from "lucide-react";
+import { ArrowRight, ImagePlus, X } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 
 const subjectKeys = [
@@ -372,8 +372,10 @@ export function ContactForm() {
                 onChange={handleFileInputChange}
                 className="hidden"
               />
-              <Upload size={22} className="mx-auto text-ink-soft" />
-              <p className="mt-2 text-sm font-medium text-ink">
+              <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary-tint text-primary-ink">
+                <ImagePlus size={22} />
+              </span>
+              <p className="mt-3 text-sm font-medium text-ink">
                 {t("photoDropLabel")}
               </p>
               <p className="mt-1 text-xs text-ink-soft">
