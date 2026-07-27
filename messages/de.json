@@ -177,13 +177,11 @@
       "photoDisclaimer": "Dies ist keine Diagnose, sondern dient nur der Terminvorbereitung. Eine endgültige Diagnose erfordert eine klinische Untersuchung.",
       "successMessagePhoto": "Vielen Dank! Ihre Fotos sind bei uns eingegangen. Unser Expertenteam meldet sich innerhalb von 24 Stunden bei Ihnen.",
       "photoErrorType": "Sie können Bilder nur im JPG- oder PNG-Format hochladen.",
-      "photoErrorSize": "Jedes Foto darf höchstens 5 MB groß sein.",
       "photoErrorCount": "Sie können bis zu 3 Fotos hochladen.",
       "photoErrorRequired": "Bitte fügen Sie mindestens 1 Foto hinzu, um fortzufahren.",
       "removePhotoLabel": "Entfernen",
       "photoBrowseLabel": "Datei auswählen",
       "photoOrLabel": "oder",
-      "photoMaxSizeLabel": "Max. Dateigröße: 5 MB",
       "photoSupportedLabel": "Unterstützte Formate: JPG, PNG · bis zu 3 Bilder"
     },
     "info": {

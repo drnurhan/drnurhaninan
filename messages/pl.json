@@ -177,13 +177,11 @@
       "photoDisclaimer": "To nie jest diagnoza; służy wyłącznie przygotowaniu do wizyty. Ostateczną diagnozę stawia się wyłącznie podczas badania klinicznego.",
       "successMessagePhoto": "Dziękujemy! Twoje zdjęcia dotarły do nas. Nasz zespół ekspertów skontaktuje się z Tobą w ciągu maksymalnie 24 godzin.",
       "photoErrorType": "Możesz przesyłać zdjęcia wyłącznie w formacie JPG lub PNG.",
-      "photoErrorSize": "Każde zdjęcie może mieć maksymalnie 5 MB.",
       "photoErrorCount": "Możesz przesłać maksymalnie 3 zdjęcia.",
       "photoErrorRequired": "Dodaj co najmniej 1 zdjęcie, aby kontynuować.",
       "removePhotoLabel": "Usuń",
       "photoBrowseLabel": "Wybierz plik",
       "photoOrLabel": "lub",
-      "photoMaxSizeLabel": "Maks. rozmiar pliku: 5 MB",
       "photoSupportedLabel": "Obsługiwane formaty: JPG, PNG · do 3 zdjęć"
     },
     "info": {

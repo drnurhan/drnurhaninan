@@ -5,10 +5,9 @@ import { Reveal } from "@/components/reveal";
 import { HeroSlider } from "@/components/hero-slider";
 
 const clinicImagePaths = [
-  "/images/clinic/clinic-1.jpg",
-  "/images/clinic/clinic-2.jpg",
-  "/images/clinic/clinic-3.jpg",
-  "/images/clinic/clinic-4.jpg",
+  "/images/clinic/clinic-1.webp",
+  "/images/clinic/clinic-2.webp",
+  "/images/clinic/clinic-3.webp",
 ];
 
 export function Hero() {

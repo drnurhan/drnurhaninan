@@ -177,13 +177,11 @@
       "photoDisclaimer": "Dette er ikke en diagnose; det er kun til forberedelse av timen. En endelig diagnose stilles bare ved klinisk undersøkelse.",
       "successMessagePhoto": "Takk! Bildene dine har nådd oss. Ekspertteamet vårt tar kontakt med deg innen 24 timer.",
       "photoErrorType": "Du kan bare laste opp bilder i JPG- eller PNG-format.",
-      "photoErrorSize": "Hvert bilde kan være maks 5 MB.",
       "photoErrorCount": "Du kan laste opp maks 3 bilder.",
       "photoErrorRequired": "Legg til minst 1 bilde for å fortsette.",
       "removePhotoLabel": "Fjern",
       "photoBrowseLabel": "Velg fil",
       "photoOrLabel": "eller",
-      "photoMaxSizeLabel": "Maks filstørrelse: 5 MB",
       "photoSupportedLabel": "Støttede formater: JPG, PNG · opptil 3 bilder"
     },
     "info": {

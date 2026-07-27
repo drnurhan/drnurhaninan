@@ -177,13 +177,11 @@
       "photoDisclaimer": "هذا ليس تشخيصًا؛ إنه فقط للتحضير للموعد. لا يتم التشخيص النهائي إلا بالفحص السريري.",
       "successMessagePhoto": "شكرًا لكم! وصلتنا صوركم. سيتواصل معكم فريقنا المتخصص خلال 24 ساعة على الأكثر.",
       "photoErrorType": "يمكنكم تحميل الصور بصيغة JPG أو PNG فقط.",
-      "photoErrorSize": "يجب ألا يتجاوز حجم كل صورة 5 ميجابايت.",
       "photoErrorCount": "يمكنكم تحميل 3 صور كحد أقصى.",
       "photoErrorRequired": "يرجى إضافة صورة واحدة على الأقل للمتابعة.",
       "removePhotoLabel": "إزالة",
       "photoBrowseLabel": "اختر ملفًا",
       "photoOrLabel": "أو",
-      "photoMaxSizeLabel": "الحجم الأقصى للملف: 5 ميجابايت",
       "photoSupportedLabel": "الصيغ المدعومة: JPG، PNG · حتى 3 صور"
     },
     "info": {

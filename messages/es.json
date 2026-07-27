@@ -177,13 +177,11 @@
       "photoDisclaimer": "Esto no es un diagnóstico; es solo para la preparación de la cita. El diagnóstico definitivo solo se establece mediante examen clínico.",
       "successMessagePhoto": "¡Gracias! Sus fotos nos han llegado. Nuestro equipo de expertos se pondrá en contacto con usted en un plazo máximo de 24 horas.",
       "photoErrorType": "Solo puede subir imágenes en formato JPG o PNG.",
-      "photoErrorSize": "Cada foto puede pesar como máximo 5 MB.",
       "photoErrorCount": "Puede subir hasta 3 fotos.",
       "photoErrorRequired": "Añada al menos 1 foto para continuar.",
       "removePhotoLabel": "Eliminar",
       "photoBrowseLabel": "Elegir archivo",
       "photoOrLabel": "o",
-      "photoMaxSizeLabel": "Tamaño máx. del archivo: 5 MB",
       "photoSupportedLabel": "Formatos admitidos: JPG, PNG · hasta 3 imágenes"
     },
     "info": {

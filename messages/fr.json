@@ -177,13 +177,11 @@
       "photoDisclaimer": "Ceci n'est pas un diagnostic ; c'est uniquement pour la préparation du rendez-vous. Un diagnostic définitif nécessite un examen clinique.",
       "successMessagePhoto": "Merci ! Vos photos nous sont bien parvenues. Notre équipe d'experts vous recontactera sous 24 heures maximum.",
       "photoErrorType": "Vous ne pouvez télécharger que des images au format JPG ou PNG.",
-      "photoErrorSize": "Chaque photo ne doit pas dépasser 5 Mo.",
       "photoErrorCount": "Vous pouvez télécharger jusqu'à 3 photos.",
       "photoErrorRequired": "Veuillez ajouter au moins 1 photo pour continuer.",
       "removePhotoLabel": "Supprimer",
       "photoBrowseLabel": "Choisir un fichier",
       "photoOrLabel": "ou",
-      "photoMaxSizeLabel": "Taille max. du fichier : 5 Mo",
       "photoSupportedLabel": "Formats pris en charge : JPG, PNG · jusqu'à 3 images"
     },
     "info": {

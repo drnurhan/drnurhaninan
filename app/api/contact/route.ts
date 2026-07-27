@@ -37,7 +37,6 @@ const timeLabels: Record<string, string> = {
 };
 
 const MAX_PHOTOS = 3;
-const MAX_PHOTO_SIZE = 5 * 1024 * 1024;
 const ACCEPTED_PHOTO_TYPES = ["image/jpeg", "image/png"];
 
 async function parseRequest(
@@ -79,16 +78,19 @@ export async function POST(request: Request) {
     );
   }
 
-  const isPhotoAssessment = body.subject === "freePhotoAssessment";
+  // Fotoğrafla ilgili kurallar Konu seçimine değil, gerçekten fotoğraf
+  // eklenmiş olmasına bağlı — kullanıcı "Gülüş Tasarımı"nı fotoğrafsız da
+  // seçebilir (istemci tarafındaki mantıkla birebir aynı).
+  const hasPhotos = photos.length > 0;
 
-  if (isPhotoAssessment) {
+  if (hasPhotos) {
     if (!body.photoConsent) {
       return NextResponse.json(
         { ok: false, error: "missing-photo-consent" },
         { status: 400 }
       );
     }
-    if (photos.length === 0 || photos.length > MAX_PHOTOS) {
+    if (photos.length > MAX_PHOTOS) {
       return NextResponse.json(
         { ok: false, error: "invalid-photo-count" },
         { status: 400 }
@@ -98,12 +100,6 @@ export async function POST(request: Request) {
       if (!ACCEPTED_PHOTO_TYPES.includes(photo.type)) {
         return NextResponse.json(
           { ok: false, error: "invalid-photo-type" },
-          { status: 400 }
-        );
-      }
-      if (photo.size > MAX_PHOTO_SIZE) {
-        return NextResponse.json(
-          { ok: false, error: "photo-too-large" },
           { status: 400 }
         );
       }
@@ -139,7 +135,7 @@ export async function POST(request: Request) {
     `Mesaj: ${body.message || "-"}`,
   ];
 
-  if (isPhotoAssessment) {
+  if (hasPhotos) {
     emailLines.push(
       `Fotoğraf Onayı (Açık Rıza): ${body.photoConsent ? "Evet" : "Hayır"}`,
       `Ekli Fotoğraf Sayısı: ${photos.length}`
@@ -149,7 +145,7 @@ export async function POST(request: Request) {
   emailLines.push(`Gönderim Tarihi: ${submittedAt}`);
   const emailBody = emailLines.join("\n");
 
-  const mailSubject = isPhotoAssessment
+  const mailSubject = hasPhotos
     ? `[Gülüş Tasarımı - Foto] ${body.name}`
     : `[drnurhaninan.com] ${subjectLabel} – ${body.name}`;
 

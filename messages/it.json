@@ -177,13 +177,11 @@
       "photoDisclaimer": "Questo non è una diagnosi; serve solo per la preparazione dell'appuntamento. Una diagnosi definitiva richiede una visita clinica.",
       "successMessagePhoto": "Grazie! Le vostre foto ci sono arrivate. Il nostro team di esperti vi risponderà entro 24 ore al massimo.",
       "photoErrorType": "Potete caricare immagini solo in formato JPG o PNG.",
-      "photoErrorSize": "Ogni foto può pesare al massimo 5 MB.",
       "photoErrorCount": "Potete caricare fino a 3 foto.",
       "photoErrorRequired": "Aggiungete almeno 1 foto per continuare.",
       "removePhotoLabel": "Rimuovi",
       "photoBrowseLabel": "Scegli file",
       "photoOrLabel": "oppure",
-      "photoMaxSizeLabel": "Dimensione massima file: 5 MB",
       "photoSupportedLabel": "Formati supportati: JPG, PNG · fino a 3 immagini"
     },
     "info": {

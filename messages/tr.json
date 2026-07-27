@@ -177,13 +177,11 @@
       "photoDisclaimer": "Bu bir teşhis değildir; yalnızca randevu öncesi hazırlık amaçlıdır. Kesin teşhis ancak klinik muayene ile konur.",
       "successMessagePhoto": "Teşekkürler! Fotoğraflarınız bize ulaştı. Uzman ekibimiz en geç 24 saat içinde size dönecek.",
       "photoErrorType": "Sadece JPG veya PNG formatında görsel yükleyebilirsiniz.",
-      "photoErrorSize": "Her fotoğraf en fazla 5 MB olabilir.",
       "photoErrorCount": "En fazla 3 fotoğraf yükleyebilirsiniz.",
       "photoErrorRequired": "Devam etmek için en az 1 fotoğraf ekleyin.",
       "removePhotoLabel": "Kaldır",
       "photoBrowseLabel": "Dosya Seç",
       "photoOrLabel": "veya",
-      "photoMaxSizeLabel": "Maksimum dosya boyutu: 5 MB",
       "photoSupportedLabel": "Desteklenen formatlar: JPG, PNG · en fazla 3 görsel"
     },
     "info": {

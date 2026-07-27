@@ -26,7 +26,6 @@ type Status = "idle" | "submitting" | "success" | "error";
 type PhotoFile = { file: File; previewUrl: string };
 
 const MAX_PHOTOS = 3;
-const MAX_PHOTO_SIZE = 5 * 1024 * 1024;
 const ACCEPTED_PHOTO_TYPES = ["image/jpeg", "image/png"];
 
 function todayIsoDate() {
@@ -102,11 +101,6 @@ export function ContactForm() {
       }
 
       const processed = await compressImage(file);
-
-      if (processed.size > MAX_PHOTO_SIZE) {
-        error = t("photoErrorSize");
-        continue;
-      }
       next.push({ file: processed, previewUrl: URL.createObjectURL(processed) });
     }
 
@@ -260,8 +254,7 @@ export function ContactForm() {
         >
           {t("photoBrowseLabel")}
         </button>
-        <p className="mt-4 text-xs text-ink-soft">{t("photoMaxSizeLabel")}</p>
-        <p className="mt-0.5 text-xs text-ink-soft">
+        <p className="mt-4 text-xs text-ink-soft">
           {t("photoSupportedLabel")}
         </p>
 
