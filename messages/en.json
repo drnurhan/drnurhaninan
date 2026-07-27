@@ -172,8 +172,7 @@
       "requiredNote": "* required field",
       "highlightText": "✨ Save time — Upload your X-ray or a suitable dental photo",
       "photoIntro": "Add your X-ray or a clear photo of you smiling. This helps us prepare ahead of your appointment and saves time.",
-      "photoDropLabel": "Drag and drop, or click to choose",
-      "photoUploadHint": "1-3 images · JPG/PNG · max 5 MB each",
+      "photoDropLabel": "Drag files to upload",
       "photoConsentLabel": "I give explicit consent for my health-related photo/X-ray to be processed solely for appointment preparation.",
       "photoDisclaimer": "This is not a diagnosis; it is only for appointment preparation. A definitive diagnosis requires a clinical examination.",
       "successMessagePhoto": "Thank you! Your photos have reached us. Our team will get back to you within 24 hours.",
@@ -182,7 +181,10 @@
       "photoErrorCount": "You can upload up to 3 photos.",
       "photoErrorRequired": "Please add at least 1 photo to continue.",
       "removePhotoLabel": "Remove",
-      "photoBrowseLabel": "Choose File"
+      "photoBrowseLabel": "Choose File",
+      "photoOrLabel": "or",
+      "photoMaxSizeLabel": "Max file size: 5 MB",
+      "photoSupportedLabel": "Supported formats: JPG, PNG · up to 3 images"
     },
     "info": {
       "addressTitle": "Address",

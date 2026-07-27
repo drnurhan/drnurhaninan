@@ -172,8 +172,7 @@
       "requiredNote": "* zorunlu alan",
       "highlightText": "✨ Zaman kazanın — Röntgen ya da uygun bir diş fotoğrafınızı yükleyin",
       "photoIntro": "Röntgeninizi ya da gülümserken çekilmiş net bir fotoğrafınızı ekleyin. Randevunuz öncesinde hazırlık yapmamızı sağlar, zaman kazandırır.",
-      "photoDropLabel": "Sürükleyip bırakın ya da tıklayarak seçin",
-      "photoUploadHint": "1-3 görsel · JPG/PNG · dosya başına maksimum 5 MB",
+      "photoDropLabel": "Dosyalarınızı sürükleyip bırakın",
       "photoConsentLabel": "Sağlık durumuma ilişkin fotoğraf/röntgenimin yalnızca randevu hazırlığı amacıyla işlenmesine açık rıza veriyorum.",
       "photoDisclaimer": "Bu bir teşhis değildir; yalnızca randevu öncesi hazırlık amaçlıdır. Kesin teşhis ancak klinik muayene ile konur.",
       "successMessagePhoto": "Teşekkürler! Fotoğraflarınız bize ulaştı. Uzman ekibimiz en geç 24 saat içinde size dönecek.",
@@ -182,7 +181,10 @@
       "photoErrorCount": "En fazla 3 fotoğraf yükleyebilirsiniz.",
       "photoErrorRequired": "Devam etmek için en az 1 fotoğraf ekleyin.",
       "removePhotoLabel": "Kaldır",
-      "photoBrowseLabel": "Dosya Seç"
+      "photoBrowseLabel": "Dosya Seç",
+      "photoOrLabel": "veya",
+      "photoMaxSizeLabel": "Maksimum dosya boyutu: 5 MB",
+      "photoSupportedLabel": "Desteklenen formatlar: JPG, PNG · en fazla 3 görsel"
     },
     "info": {
       "addressTitle": "Adres",

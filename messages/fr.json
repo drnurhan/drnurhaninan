@@ -172,8 +172,7 @@
       "requiredNote": "* champ obligatoire",
       "highlightText": "✨ Gagnez du temps — Téléchargez votre radio ou une photo dentaire adaptée",
       "photoIntro": "Ajoutez votre radio ou une photo nette de votre sourire. Cela nous aide à préparer votre rendez-vous et vous fait gagner du temps.",
-      "photoDropLabel": "Glissez-déposez, ou cliquez pour choisir",
-      "photoUploadHint": "1 à 3 images · JPG/PNG · max 5 Mo par fichier",
+      "photoDropLabel": "Déposez vos fichiers ici",
       "photoConsentLabel": "Je consens expressément à ce que ma photo/radio liée à ma santé soit traitée uniquement pour la préparation du rendez-vous.",
       "photoDisclaimer": "Ceci n'est pas un diagnostic ; c'est uniquement pour la préparation du rendez-vous. Un diagnostic définitif nécessite un examen clinique.",
       "successMessagePhoto": "Merci ! Vos photos nous sont bien parvenues. Notre équipe d'experts vous recontactera sous 24 heures maximum.",
@@ -182,7 +181,10 @@
       "photoErrorCount": "Vous pouvez télécharger jusqu'à 3 photos.",
       "photoErrorRequired": "Veuillez ajouter au moins 1 photo pour continuer.",
       "removePhotoLabel": "Supprimer",
-      "photoBrowseLabel": "Choisir un fichier"
+      "photoBrowseLabel": "Choisir un fichier",
+      "photoOrLabel": "ou",
+      "photoMaxSizeLabel": "Taille max. du fichier : 5 Mo",
+      "photoSupportedLabel": "Formats pris en charge : JPG, PNG · jusqu'à 3 images"
     },
     "info": {
       "addressTitle": "Adresse",

@@ -8,7 +8,7 @@ import {
   type FormEvent,
 } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { ArrowRight, ImagePlus, X } from "lucide-react";
+import { ArrowRight, CloudUpload, X } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 
 const subjectKeys = [
@@ -361,7 +361,7 @@ export function ContactForm() {
             <div
               onDragOver={(e) => e.preventDefault()}
               onDrop={handleDrop}
-              className="rounded-[var(--radius-card)] border-2 border-dashed border-line bg-bg px-6 py-10 text-center transition-colors hover:border-primary-ink"
+              className="rounded-[var(--radius-card)] border-2 border-dashed border-line bg-bg px-6 py-8 text-center transition-colors hover:border-primary-ink"
             >
               <input
                 ref={fileInputRef}
@@ -371,22 +371,28 @@ export function ContactForm() {
                 onChange={handleFileInputChange}
                 className="hidden"
               />
-              <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary-tint text-primary-ink">
-                <ImagePlus size={30} />
-              </span>
-              <p className="mt-4 text-base font-semibold text-ink">
+              <CloudUpload
+                size={40}
+                strokeWidth={1.5}
+                className="mx-auto text-primary-ink"
+              />
+              <p className="mt-3 text-sm font-semibold text-ink">
                 {t("photoDropLabel")}
               </p>
-              <p className="mt-1 text-xs text-ink-soft">
-                {t("photoUploadHint")}
-              </p>
+              <p className="mt-1 text-xs text-ink-soft">{t("photoOrLabel")}</p>
               <button
                 type="button"
                 onClick={() => fileInputRef.current?.click()}
-                className="mt-5 inline-flex items-center justify-center rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-primary-deep"
+                className="mt-3 inline-flex items-center justify-center rounded-full border border-primary-ink px-5 py-2 text-sm font-semibold text-primary-ink transition-colors hover:bg-primary-tint"
               >
                 {t("photoBrowseLabel")}
               </button>
+              <p className="mt-4 text-xs text-ink-soft">
+                {t("photoMaxSizeLabel")}
+              </p>
+              <p className="mt-0.5 text-xs text-ink-soft">
+                {t("photoSupportedLabel")}
+              </p>
             </div>
 
             {fileError && (

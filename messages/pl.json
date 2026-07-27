@@ -172,8 +172,7 @@
       "requiredNote": "* pole wymagane",
       "highlightText": "✨ Zaoszczędź czas — Prześlij swoje zdjęcie rentgenowskie lub odpowiednie zdjęcie zębów",
       "photoIntro": "Dodaj swoje zdjęcie rentgenowskie lub wyraźne zdjęcie uśmiechu. Pomaga nam to przygotować się przed Twoją wizytą i oszczędza czas.",
-      "photoDropLabel": "Przeciągnij i upuść, albo kliknij, aby wybrać",
-      "photoUploadHint": "1-3 zdjęcia · JPG/PNG · maks. 5 MB na plik",
+      "photoDropLabel": "Przeciągnij pliki, aby przesłać",
       "photoConsentLabel": "Wyrażam wyraźną zgodę na przetwarzanie mojego zdjęcia/zdjęcia rentgenowskiego dotyczącego zdrowia wyłącznie w celu przygotowania do wizyty.",
       "photoDisclaimer": "To nie jest diagnoza; służy wyłącznie przygotowaniu do wizyty. Ostateczną diagnozę stawia się wyłącznie podczas badania klinicznego.",
       "successMessagePhoto": "Dziękujemy! Twoje zdjęcia dotarły do nas. Nasz zespół ekspertów skontaktuje się z Tobą w ciągu maksymalnie 24 godzin.",
@@ -182,7 +181,10 @@
       "photoErrorCount": "Możesz przesłać maksymalnie 3 zdjęcia.",
       "photoErrorRequired": "Dodaj co najmniej 1 zdjęcie, aby kontynuować.",
       "removePhotoLabel": "Usuń",
-      "photoBrowseLabel": "Wybierz plik"
+      "photoBrowseLabel": "Wybierz plik",
+      "photoOrLabel": "lub",
+      "photoMaxSizeLabel": "Maks. rozmiar pliku: 5 MB",
+      "photoSupportedLabel": "Obsługiwane formaty: JPG, PNG · do 3 zdjęć"
     },
     "info": {
       "addressTitle": "Adres",

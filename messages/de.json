@@ -172,8 +172,7 @@
       "requiredNote": "* Pflichtfeld",
       "highlightText": "✨ Zeit sparen — Laden Sie Ihr Röntgenbild oder ein passendes Zahnfoto hoch",
       "photoIntro": "Fügen Sie Ihr Röntgenbild oder ein klares Foto von Ihrem Lächeln hinzu. Das hilft uns, uns auf Ihren Termin vorzubereiten, und spart Zeit.",
-      "photoDropLabel": "Ziehen und ablegen oder zum Auswählen klicken",
-      "photoUploadHint": "1-3 Bilder · JPG/PNG · max. 5 MB pro Datei",
+      "photoDropLabel": "Dateien zum Hochladen ablegen",
       "photoConsentLabel": "Ich willige ausdrücklich ein, dass mein gesundheitsbezogenes Foto/Röntgenbild ausschließlich zur Terminvorbereitung verarbeitet wird.",
       "photoDisclaimer": "Dies ist keine Diagnose, sondern dient nur der Terminvorbereitung. Eine endgültige Diagnose erfordert eine klinische Untersuchung.",
       "successMessagePhoto": "Vielen Dank! Ihre Fotos sind bei uns eingegangen. Unser Expertenteam meldet sich innerhalb von 24 Stunden bei Ihnen.",
@@ -182,7 +181,10 @@
       "photoErrorCount": "Sie können bis zu 3 Fotos hochladen.",
       "photoErrorRequired": "Bitte fügen Sie mindestens 1 Foto hinzu, um fortzufahren.",
       "removePhotoLabel": "Entfernen",
-      "photoBrowseLabel": "Datei auswählen"
+      "photoBrowseLabel": "Datei auswählen",
+      "photoOrLabel": "oder",
+      "photoMaxSizeLabel": "Max. Dateigröße: 5 MB",
+      "photoSupportedLabel": "Unterstützte Formate: JPG, PNG · bis zu 3 Bilder"
     },
     "info": {
       "addressTitle": "Adresse",

@@ -172,8 +172,7 @@
       "requiredNote": "* obligatorisk felt",
       "highlightText": "✨ Spar tid — Last opp røntgenbildet ditt eller et egnet tannbilde",
       "photoIntro": "Legg ved røntgenbildet ditt eller et tydelig bilde av deg som smiler. Dette hjelper oss å forberede oss før timen din og sparer tid.",
-      "photoDropLabel": "Dra og slipp, eller klikk for å velge",
-      "photoUploadHint": "1-3 bilder · JPG/PNG · maks 5 MB per fil",
+      "photoDropLabel": "Dra filer for å laste opp",
       "photoConsentLabel": "Jeg gir uttrykkelig samtykke til at bildet/røntgenbildet mitt knyttet til helsen min behandles utelukkende for forberedelse til timen.",
       "photoDisclaimer": "Dette er ikke en diagnose; det er kun til forberedelse av timen. En endelig diagnose stilles bare ved klinisk undersøkelse.",
       "successMessagePhoto": "Takk! Bildene dine har nådd oss. Ekspertteamet vårt tar kontakt med deg innen 24 timer.",
@@ -182,7 +181,10 @@
       "photoErrorCount": "Du kan laste opp maks 3 bilder.",
       "photoErrorRequired": "Legg til minst 1 bilde for å fortsette.",
       "removePhotoLabel": "Fjern",
-      "photoBrowseLabel": "Velg fil"
+      "photoBrowseLabel": "Velg fil",
+      "photoOrLabel": "eller",
+      "photoMaxSizeLabel": "Maks filstørrelse: 5 MB",
+      "photoSupportedLabel": "Støttede formater: JPG, PNG · opptil 3 bilder"
     },
     "info": {
       "addressTitle": "Adresse",

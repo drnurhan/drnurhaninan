@@ -172,8 +172,7 @@
       "requiredNote": "* campo obligatorio",
       "highlightText": "✨ Ahorre tiempo — Suba su radiografía o una foto dental adecuada",
       "photoIntro": "Añada su radiografía o una foto nítida suya sonriendo. Esto nos ayuda a prepararnos antes de su cita y ahorra tiempo.",
-      "photoDropLabel": "Arrastre y suelte, o haga clic para elegir",
-      "photoUploadHint": "1-3 imágenes · JPG/PNG · máx. 5 MB por archivo",
+      "photoDropLabel": "Arrastre archivos para subir",
       "photoConsentLabel": "Doy mi consentimiento explícito para que mi foto/radiografía relacionada con mi salud se procese únicamente para la preparación de la cita.",
       "photoDisclaimer": "Esto no es un diagnóstico; es solo para la preparación de la cita. El diagnóstico definitivo solo se establece mediante examen clínico.",
       "successMessagePhoto": "¡Gracias! Sus fotos nos han llegado. Nuestro equipo de expertos se pondrá en contacto con usted en un plazo máximo de 24 horas.",
@@ -182,7 +181,10 @@
       "photoErrorCount": "Puede subir hasta 3 fotos.",
       "photoErrorRequired": "Añada al menos 1 foto para continuar.",
       "removePhotoLabel": "Eliminar",
-      "photoBrowseLabel": "Elegir archivo"
+      "photoBrowseLabel": "Elegir archivo",
+      "photoOrLabel": "o",
+      "photoMaxSizeLabel": "Tamaño máx. del archivo: 5 MB",
+      "photoSupportedLabel": "Formatos admitidos: JPG, PNG · hasta 3 imágenes"
     },
     "info": {
       "addressTitle": "Dirección",
