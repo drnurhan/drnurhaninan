@@ -73,6 +73,8 @@ export function Hero() {
                 alt: t("imageAlt"),
               }))}
               dotLabel={t("sliderDotLabel")}
+              prevLabel={t("sliderPrevLabel")}
+              nextLabel={t("sliderNextLabel")}
             />
           </div>
         </Reveal>

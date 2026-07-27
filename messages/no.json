@@ -46,7 +46,9 @@
       "languages": "Tjenester på flere språk"
     },
     "trustBarNote": "EKSEMPELDATA — ekte Google-vurdering legges til (antall erfaringsår er oppdatert)",
-    "sliderDotLabel": "Lysbilde"
+    "sliderDotLabel": "Lysbilde",
+    "sliderPrevLabel": "Forrige bilde",
+    "sliderNextLabel": "Neste bilde"
   },
   "Trust": {
     "kicker": "Hvorfor dr. İnan?",
@@ -171,8 +173,7 @@
       "hoursValue": "Hverdager 10:00–19:00 · Lørdag 10:00–15:00 · Søndag stengt",
       "phoneTitle": "Telefon & WhatsApp"
     },
-    "mapTitle": "Kart over klinikkens beliggenhet",
-    "mapLoadLabel": "Last inn kart"
+    "mapTitle": "Kart over klinikkens beliggenhet"
   },
   "Footer": {
     "tagline": "Estetisk & Restaurativ Tannbehandling",

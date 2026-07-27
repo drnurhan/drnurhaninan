@@ -46,7 +46,9 @@
       "languages": "Atención en varios idiomas"
     },
     "trustBarNote": "DATOS DE EJEMPLO — se añadirá la puntuación real de Google (los años de experiencia están actualizados)",
-    "sliderDotLabel": "Diapositiva"
+    "sliderDotLabel": "Diapositiva",
+    "sliderPrevLabel": "Imagen anterior",
+    "sliderNextLabel": "Imagen siguiente"
   },
   "Trust": {
     "kicker": "¿Por qué la Dra. İnan?",
@@ -171,8 +173,7 @@
       "hoursValue": "Días laborables 10:00–19:00 · Sábados 10:00–15:00 · Domingos cerrado",
       "phoneTitle": "Teléfono y WhatsApp"
     },
-    "mapTitle": "Mapa de ubicación de la clínica",
-    "mapLoadLabel": "Cargar mapa"
+    "mapTitle": "Mapa de ubicación de la clínica"
   },
   "Footer": {
     "tagline": "Odontología Estética y Restauradora",

@@ -46,7 +46,9 @@
       "languages": "Çok Dilde Hizmet"
     },
     "trustBarNote": "ÖRNEK VERİ — gerçek Google puanı eklenecek (deneyim yılı güncel)",
-    "sliderDotLabel": "Görsel"
+    "sliderDotLabel": "Görsel",
+    "sliderPrevLabel": "Önceki görsel",
+    "sliderNextLabel": "Sonraki görsel"
   },
   "Trust": {
     "kicker": "Neden Dr. İnan?",
@@ -171,8 +173,7 @@
       "hoursValue": "Hafta içi 10:00–19:00 · Cumartesi 10:00–15:00 · Pazar kapalı",
       "phoneTitle": "Telefon & WhatsApp"
     },
-    "mapTitle": "Muayenehane konumu haritası",
-    "mapLoadLabel": "Haritayı Yükle"
+    "mapTitle": "Muayenehane konumu haritası"
   },
   "Footer": {
     "tagline": "Estetik & Restoratif Diş Hekimliği",

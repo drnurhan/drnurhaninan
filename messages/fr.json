@@ -46,7 +46,9 @@
       "languages": "Accueil multilingue"
     },
     "trustBarNote": "DONNÉES D'EXEMPLE — la note Google réelle sera ajoutée (années d'expérience à jour)",
-    "sliderDotLabel": "Diapositive"
+    "sliderDotLabel": "Diapositive",
+    "sliderPrevLabel": "Image précédente",
+    "sliderNextLabel": "Image suivante"
   },
   "Trust": {
     "kicker": "Pourquoi le Dr İnan ?",
@@ -171,8 +173,7 @@
       "hoursValue": "Semaine 10h00–19h00 · Samedi 10h00–15h00 · Dimanche fermé",
       "phoneTitle": "Téléphone et WhatsApp"
     },
-    "mapTitle": "Carte de localisation du cabinet",
-    "mapLoadLabel": "Charger la carte"
+    "mapTitle": "Carte de localisation du cabinet"
   },
   "Footer": {
     "tagline": "Dentisterie Esthétique et Restauratrice",

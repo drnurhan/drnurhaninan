@@ -46,7 +46,9 @@
       "languages": "Obsługa w wielu językach"
     },
     "trustBarNote": "PRZYKŁADOWE DANE — prawdziwa ocena Google zostanie dodana (liczba lat doświadczenia jest aktualna)",
-    "sliderDotLabel": "Slajd"
+    "sliderDotLabel": "Slajd",
+    "sliderPrevLabel": "Poprzedni obraz",
+    "sliderNextLabel": "Następny obraz"
   },
   "Trust": {
     "kicker": "Dlaczego dr İnan?",
@@ -171,8 +173,7 @@
       "hoursValue": "Dni robocze 10:00–19:00 · Sobota 10:00–15:00 · Niedziela nieczynne",
       "phoneTitle": "Telefon i WhatsApp"
     },
-    "mapTitle": "Mapa lokalizacji gabinetu",
-    "mapLoadLabel": "Wczytaj mapę"
+    "mapTitle": "Mapa lokalizacji gabinetu"
   },
   "Footer": {
     "tagline": "Stomatologia Estetyczna i Rekonstrukcyjna",

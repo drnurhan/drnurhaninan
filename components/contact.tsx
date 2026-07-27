@@ -28,7 +28,7 @@ export function Contact() {
 
           <Reveal delay={120} className="space-y-6">
             <div className="overflow-hidden rounded-[var(--radius-card)] border border-line shadow-[var(--shadow-soft)]">
-              <MapEmbed title={t("mapTitle")} loadLabel={t("mapLoadLabel")} />
+              <MapEmbed title={t("mapTitle")} />
             </div>
 
             <div className="grid gap-4 sm:grid-cols-3">

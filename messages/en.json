@@ -46,7 +46,9 @@
       "languages": "Multilingual Care"
     },
     "trustBarNote": "SAMPLE DATA — real Google rating to be added (experience figure is current)",
-    "sliderDotLabel": "Slide"
+    "sliderDotLabel": "Slide",
+    "sliderPrevLabel": "Previous slide",
+    "sliderNextLabel": "Next slide"
   },
   "Trust": {
     "kicker": "Why Dr. İnan?",
@@ -171,8 +173,7 @@
       "hoursValue": "Weekdays 10:00–19:00 · Saturday 10:00–15:00 · Sunday closed",
       "phoneTitle": "Phone & WhatsApp"
     },
-    "mapTitle": "Practice location map",
-    "mapLoadLabel": "Load Map"
+    "mapTitle": "Practice location map"
   },
   "Footer": {
     "tagline": "Aesthetic & Restorative Dentistry",
