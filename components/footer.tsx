@@ -39,17 +39,6 @@ export function Footer() {
 
         <div className="sm:text-end">
           <p className="text-sm">{t("rights")}</p>
-          <p className="mt-1 text-xs text-white/60">
-            {/* Bilinçli olarak çevrilmiyor: tasarım/geliştirme kredisi
-                site diline bakılmaksızın sabit İngilizce kalır. */}
-            Designed &amp; Developed by{" "}
-            <a
-              href="mailto:ufukyilmazim@gmail.com"
-              className="underline underline-offset-2 hover:text-white"
-            >
-              Ufuk Yılmaz
-            </a>
-          </p>
         </div>
       </div>
     </footer>
