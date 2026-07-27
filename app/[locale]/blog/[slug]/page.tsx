@@ -75,11 +75,16 @@ export default async function BlogPostPage({
 
   const t = await getTranslations("Blog");
   const { previous, next } = getAdjacentPosts(slug);
+  // CSS uppercase yerine burada locale-duyarlı büyütme kullanıyoruz (Nisan/
+  // Ekim gibi Türkçe ay adlarındaki noktalı "i" harfi CSS text-transform ile
+  // yanlış büyütülüyor).
   const formattedDate = new Intl.DateTimeFormat(locale, {
     day: "numeric",
     month: "long",
     year: "numeric",
-  }).format(new Date(post.date));
+  })
+    .format(new Date(post.date))
+    .toLocaleUpperCase(locale);
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
@@ -99,7 +104,7 @@ export default async function BlogPostPage({
       </Link>
 
       <Reveal className="mt-6">
-        <p className="text-xs font-semibold uppercase tracking-wide text-accent-strong">
+        <p className="text-xs font-semibold tracking-wide text-accent-strong">
           {formattedDate}
         </p>
         <h1 className="mt-3 font-serif text-3xl leading-tight text-ink sm:text-4xl">
@@ -118,9 +123,9 @@ export default async function BlogPostPage({
               href={`/blog/${previous.slug}`}
               className="group flex flex-col rounded-[var(--radius-card)] border border-line bg-surface p-5 transition-colors hover:border-accent"
             >
-              <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-accent-strong">
+              <span className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-accent-strong">
                 <ChevronLeft size={14} />
-                {t("prevPostLabel")}
+                {t("prevPostLabel").toLocaleUpperCase(locale)}
               </span>
               <span className="mt-2 font-serif text-lg text-ink group-hover:text-primary">
                 {previous.title}
@@ -135,8 +140,8 @@ export default async function BlogPostPage({
               href={`/blog/${next.slug}`}
               className="group flex flex-col rounded-[var(--radius-card)] border border-line bg-surface p-5 text-right transition-colors hover:border-accent sm:items-end"
             >
-              <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-accent-strong">
-                {t("nextPostLabel")}
+              <span className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide text-accent-strong">
+                {t("nextPostLabel").toLocaleUpperCase(locale)}
                 <ChevronRight size={14} />
               </span>
               <span className="mt-2 font-serif text-lg text-ink group-hover:text-primary">

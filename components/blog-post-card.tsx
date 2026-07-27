@@ -13,18 +13,23 @@ export function BlogPostCard({
   readMoreLabel: string;
   className?: string;
 }) {
+  // CSS text-transform:uppercase harf sıralamasından habersizdir ve Türkçe
+  // noktalı "i"yi yanlış şekilde "I"ya çevirir (Nisan/Ekim gibi ay adlarında
+  // sorun çıkarır); bu yüzden metni burada, locale-duyarlı şekilde büyütüyoruz.
   const formattedDate = new Intl.DateTimeFormat(locale, {
     day: "numeric",
     month: "long",
     year: "numeric",
-  }).format(new Date(post.date));
+  })
+    .format(new Date(post.date))
+    .toLocaleUpperCase(locale);
 
   return (
     <Link
       href={`/blog/${post.slug}`}
       className={`group flex h-full flex-col rounded-[var(--radius-card)] border border-line bg-surface p-6 shadow-[var(--shadow-soft)] transition-all hover:-translate-y-1 hover:border-accent hover:shadow-[var(--shadow-medium)] ${className}`}
     >
-      <p className="text-xs font-semibold uppercase tracking-wide text-accent-strong">
+      <p className="text-xs font-semibold tracking-wide text-accent-strong">
         {formattedDate}
       </p>
       <h3 className="mt-3 font-serif text-lg leading-snug text-ink">
