@@ -17,6 +17,7 @@ type ContactPayload = {
   timePreference?: string | null;
   message?: string;
   kvkkConsent: boolean;
+  photoConsent?: boolean;
   locale: string;
 };
 
@@ -24,6 +25,7 @@ const subjectLabels: Record<string, string> = {
   appointment: "Randevu Talebi",
   pricing: "Tedavi ve Fiyat Bilgisi",
   international: "Uluslararası Hasta",
+  freePhotoAssessment: "Ücretsiz Gülüş Ön Değerlendirmesi (fotoğraflı)",
   general: "Genel Soru",
   other: "Diğer",
 };
@@ -34,8 +36,41 @@ const timeLabels: Record<string, string> = {
   evening: "Akşam",
 };
 
-export async function POST(request: Request) {
+const MAX_PHOTOS = 3;
+const MAX_PHOTO_SIZE = 5 * 1024 * 1024;
+const ACCEPTED_PHOTO_TYPES = ["image/jpeg", "image/png"];
+
+async function parseRequest(
+  request: Request
+): Promise<{ body: Partial<ContactPayload>; photos: File[] }> {
+  const contentType = request.headers.get("content-type") || "";
+
+  if (contentType.includes("multipart/form-data")) {
+    const formData = await request.formData();
+    const body: Partial<ContactPayload> = {
+      name: String(formData.get("name") || ""),
+      phone: String(formData.get("phone") || ""),
+      email: String(formData.get("email") || ""),
+      subject: String(formData.get("subject") || ""),
+      preferredDate: (formData.get("preferredDate") as string) || null,
+      timePreference: (formData.get("timePreference") as string) || null,
+      message: String(formData.get("message") || ""),
+      kvkkConsent: formData.get("kvkkConsent") === "true",
+      photoConsent: formData.get("photoConsent") === "true",
+      locale: String(formData.get("locale") || "tr"),
+    };
+    const photos = formData
+      .getAll("photos")
+      .filter((entry): entry is File => entry instanceof File);
+    return { body, photos };
+  }
+
   const body = (await request.json()) as Partial<ContactPayload>;
+  return { body, photos: [] };
+}
+
+export async function POST(request: Request) {
+  const { body, photos } = await parseRequest(request);
 
   if (!body.name || !body.phone || !body.kvkkConsent) {
     return NextResponse.json(
@@ -44,12 +79,44 @@ export async function POST(request: Request) {
     );
   }
 
+  const isPhotoAssessment = body.subject === "freePhotoAssessment";
+
+  if (isPhotoAssessment) {
+    if (!body.photoConsent) {
+      return NextResponse.json(
+        { ok: false, error: "missing-photo-consent" },
+        { status: 400 }
+      );
+    }
+    if (photos.length === 0 || photos.length > MAX_PHOTOS) {
+      return NextResponse.json(
+        { ok: false, error: "invalid-photo-count" },
+        { status: 400 }
+      );
+    }
+    for (const photo of photos) {
+      if (!ACCEPTED_PHOTO_TYPES.includes(photo.type)) {
+        return NextResponse.json(
+          { ok: false, error: "invalid-photo-type" },
+          { status: 400 }
+        );
+      }
+      if (photo.size > MAX_PHOTO_SIZE) {
+        return NextResponse.json(
+          { ok: false, error: "photo-too-large" },
+          { status: 400 }
+        );
+      }
+    }
+  }
+
   const smtpPassword = process.env.SMTP_PASSWORD;
 
   if (!smtpPassword) {
     // SMTP_PASSWORD tanımlı değil: isteği logla, kullanıcıya nazikçe bildir.
     console.log("[contact] SMTP_PASSWORD tanımlı değil, form isteği:", {
       ...body,
+      photos: photos.map((p) => p.name),
     });
     return NextResponse.json({ ok: true, delivered: false });
   }
@@ -62,7 +129,7 @@ export async function POST(request: Request) {
     timeZone: "Europe/Istanbul",
   });
 
-  const emailBody = [
+  const emailLines = [
     `Ad Soyad: ${body.name}`,
     `Telefon: ${body.phone}`,
     `E-posta: ${body.email || "-"}`,
@@ -70,8 +137,32 @@ export async function POST(request: Request) {
     `Tercih Edilen Tarih: ${body.preferredDate || "-"}`,
     `Zaman Tercihi: ${timeLabel}`,
     `Mesaj: ${body.message || "-"}`,
-    `Gönderim Tarihi: ${submittedAt}`,
-  ].join("\n");
+  ];
+
+  if (isPhotoAssessment) {
+    emailLines.push(
+      `Fotoğraf Onayı (Açık Rıza): ${body.photoConsent ? "Evet" : "Hayır"}`,
+      `Ekli Fotoğraf Sayısı: ${photos.length}`
+    );
+  }
+
+  emailLines.push(`Gönderim Tarihi: ${submittedAt}`);
+  const emailBody = emailLines.join("\n");
+
+  const mailSubject = isPhotoAssessment
+    ? `[Ön Değerlendirme] ${body.name}`
+    : `[drnurhaninan.com] ${subjectLabel} – ${body.name}`;
+
+  // Attachment dönüşümü (File -> Buffer) yanıt döndürülmeden ÖNCE, senkron
+  // akışta yapılır: `request`e bağlı File akışları, after() içinde (yanıt
+  // döndükten sonra) artık güvenle okunamayabilir.
+  const attachments = await Promise.all(
+    photos.map(async (file) => ({
+      filename: file.name || "fotograf.jpg",
+      content: Buffer.from(await file.arrayBuffer()),
+      contentType: file.type,
+    }))
+  );
 
   // Gerçek SMTP gönderimi, yanıt tarayıcıya döndükten sonra arka planda
   // çalışır — tarayıcı SMTP'nin ne kadar süreceğini beklemez.
@@ -94,8 +185,9 @@ export async function POST(request: Request) {
         from: `"drnurhaninan.com" <${process.env.SMTP_USER || siteConfig.email}>`,
         to: siteConfig.email,
         replyTo: body.email || undefined,
-        subject: `[drnurhaninan.com] ${subjectLabel} – ${body.name}`,
+        subject: mailSubject,
         text: emailBody,
+        attachments: attachments.length > 0 ? attachments : undefined,
       });
 
       console.log("[contact] Mail başarıyla gönderildi:", body.name);

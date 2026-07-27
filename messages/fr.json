@@ -139,8 +139,8 @@
   },
   "Contact": {
     "kicker": "Contact",
-    "title": "Contactez-nous",
-    "subtitle": "Remplissez le formulaire et nous vous répondrons le jour même – ou contactez-nous en un seul geste.",
+    "title": "Planifions votre sourire ensemble",
+    "subtitle": "Nous sommes là pour vous aider. Contactez-nous comme il vous convient ; nous vous répondrons dans les plus brefs délais.",
     "form": {
       "name": "Nom complet",
       "phone": "Téléphone",
@@ -151,7 +151,8 @@
         "pricing": "Informations sur les traitements et tarifs",
         "international": "Patient international",
         "general": "Question générale",
-        "other": "Autre"
+        "other": "Autre",
+        "freePhotoAssessment": "Évaluation gratuite du sourire (avec photo)"
       },
       "preferredDate": "Date souhaitée",
       "timePreference": "Créneau souhaité",
@@ -168,7 +169,19 @@
       "successTitle": "Merci !",
       "successMessage": "Votre demande a été reçue, nous vous recontacterons rapidement.",
       "errorMessage": "L'envoi n'a pas pu aboutir pour le moment, merci de nous écrire plutôt sur WhatsApp.",
-      "requiredNote": "* champ obligatoire"
+      "requiredNote": "* champ obligatoire",
+      "highlightText": "✨ Évaluation préliminaire gratuite — Une seule photo suffit",
+      "photoIntro": "Ajoutez 1 à 2 photos nettes de votre sourire. Vos photos sont utilisées uniquement pour l'évaluation préliminaire.",
+      "photoDropLabel": "Glissez-déposez, ou cliquez pour choisir",
+      "photoUploadHint": "1 à 3 images · JPG/PNG · max 5 Mo par fichier",
+      "photoConsentLabel": "Je consens expressément à ce que mes photos relatives à ma santé soient traitées uniquement à des fins d'évaluation préliminaire.",
+      "photoDisclaimer": "Cette évaluation est fournie à titre d'information préliminaire uniquement ; un diagnostic définitif nécessite un examen clinique.",
+      "successMessagePhoto": "Merci ! Vos photos nous sont bien parvenues. Notre équipe d'experts vous recontactera sous 24 heures maximum.",
+      "photoErrorType": "Vous ne pouvez télécharger que des images au format JPG ou PNG.",
+      "photoErrorSize": "Chaque photo ne doit pas dépasser 5 Mo.",
+      "photoErrorCount": "Vous pouvez télécharger jusqu'à 3 photos.",
+      "photoErrorRequired": "Veuillez ajouter au moins 1 photo pour continuer.",
+      "removePhotoLabel": "Supprimer"
     },
     "info": {
       "addressTitle": "Adresse",

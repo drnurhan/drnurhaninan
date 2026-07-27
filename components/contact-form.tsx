@@ -1,13 +1,21 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import {
+  useRef,
+  useState,
+  type ChangeEvent,
+  type DragEvent,
+  type FormEvent,
+} from "react";
 import { useLocale, useTranslations } from "next-intl";
+import { ArrowRight, Upload, X } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 
 const subjectKeys = [
   "appointment",
   "pricing",
   "international",
+  "freePhotoAssessment",
   "general",
   "other",
 ] as const;
@@ -15,6 +23,11 @@ const subjectKeys = [
 const timeKeys = ["morning", "noon", "evening"] as const;
 
 type Status = "idle" | "submitting" | "success" | "error";
+type PhotoFile = { file: File; previewUrl: string };
+
+const MAX_PHOTOS = 3;
+const MAX_PHOTO_SIZE = 5 * 1024 * 1024;
+const ACCEPTED_PHOTO_TYPES = ["image/jpeg", "image/png"];
 
 function todayIsoDate() {
   return new Date().toISOString().split("T")[0];
@@ -31,8 +44,68 @@ export function ContactForm() {
     (typeof timeKeys)[number] | ""
   >("");
   const [status, setStatus] = useState<Status>("idle");
+  const [succeededWithPhoto, setSucceededWithPhoto] = useState(false);
+
+  const [photos, setPhotos] = useState<PhotoFile[]>([]);
+  const [fileError, setFileError] = useState<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+  const photoSectionRef = useRef<HTMLDivElement>(null);
 
   const isAppointment = subject === "appointment";
+  const isPhotoAssessment = subject === "freePhotoAssessment";
+
+  function addFiles(fileList: FileList | File[]) {
+    const incoming = Array.from(fileList);
+    let error: string | null = null;
+    const next = [...photos];
+
+    for (const file of incoming) {
+      if (next.length >= MAX_PHOTOS) {
+        error = t("photoErrorCount");
+        break;
+      }
+      if (!ACCEPTED_PHOTO_TYPES.includes(file.type)) {
+        error = t("photoErrorType");
+        continue;
+      }
+      if (file.size > MAX_PHOTO_SIZE) {
+        error = t("photoErrorSize");
+        continue;
+      }
+      next.push({ file, previewUrl: URL.createObjectURL(file) });
+    }
+
+    setPhotos(next);
+    setFileError(error);
+  }
+
+  function removePhoto(index: number) {
+    setPhotos((prev) => {
+      const target = prev[index];
+      if (target) URL.revokeObjectURL(target.previewUrl);
+      return prev.filter((_, i) => i !== index);
+    });
+  }
+
+  function handleFileInputChange(event: ChangeEvent<HTMLInputElement>) {
+    if (event.target.files) addFiles(event.target.files);
+    event.target.value = "";
+  }
+
+  function handleDrop(event: DragEvent<HTMLDivElement>) {
+    event.preventDefault();
+    if (event.dataTransfer.files) addFiles(event.dataTransfer.files);
+  }
+
+  function handleHighlightClick() {
+    setSubject("freePhotoAssessment");
+    setTimeout(() => {
+      photoSectionRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    }, 50);
+  }
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -40,42 +113,81 @@ export function ContactForm() {
     // event.currentTarget tarayıcı tarafından null'a çevriliyor (DOM
     // standardı — event dispatch'i bittiğinde currentTarget sıfırlanır).
     const form = event.currentTarget;
+
+    if (isPhotoAssessment && photos.length === 0) {
+      setFileError(t("photoErrorRequired"));
+      return;
+    }
+
     setStatus("submitting");
 
-    const formData = new FormData(form);
-    const payload = {
-      name: formData.get("name"),
-      phone: formData.get("phone"),
-      email: formData.get("email"),
+    const rawFormData = new FormData(form);
+    const commonFields: Record<string, string> = {
+      name: String(rawFormData.get("name") || ""),
+      phone: String(rawFormData.get("phone") || ""),
+      email: String(rawFormData.get("email") || ""),
       subject,
-      preferredDate: isAppointment ? formData.get("preferredDate") : null,
-      timePreference: isAppointment ? timePreference || null : null,
-      message: formData.get("message"),
-      kvkkConsent: formData.get("kvkkConsent") === "on",
+      preferredDate: isAppointment
+        ? String(rawFormData.get("preferredDate") || "")
+        : "",
+      timePreference: isAppointment ? timePreference : "",
+      message: String(rawFormData.get("message") || ""),
+      kvkkConsent: String(rawFormData.get("kvkkConsent") === "on"),
+      photoConsent: String(
+        isPhotoAssessment && rawFormData.get("photoConsent") === "on"
+      ),
       locale,
     };
 
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
+      let response: Response;
+
+      if (isPhotoAssessment && photos.length > 0) {
+        const multipart = new FormData();
+        Object.entries(commonFields).forEach(([key, value]) => {
+          multipart.append(key, value);
+        });
+        photos.forEach(({ file }) => multipart.append("photos", file));
+        response = await fetch("/api/contact", {
+          method: "POST",
+          body: multipart,
+        });
+      } else {
+        response = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: commonFields.name,
+            phone: commonFields.phone,
+            email: commonFields.email,
+            subject: commonFields.subject,
+            preferredDate: commonFields.preferredDate || null,
+            timePreference: commonFields.timePreference || null,
+            message: commonFields.message,
+            kvkkConsent: rawFormData.get("kvkkConsent") === "on",
+            locale: commonFields.locale,
+          }),
+        });
+      }
 
       if (!response.ok) throw new Error("request-failed");
 
       const data = (await response.json()) as { delivered: boolean };
 
       if (!data.delivered) {
-        // RESEND_API_KEY henüz tanımlı değil: istek loglandı ama mail gönderilemedi.
+        // SMTP_PASSWORD henüz tanımlı değil: istek loglandı ama mail gönderilemedi.
         setStatus("error");
         return;
       }
 
+      setSucceededWithPhoto(isPhotoAssessment);
       setStatus("success");
       form.reset();
       setSubject("appointment");
       setTimePreference("");
+      photos.forEach((p) => URL.revokeObjectURL(p.previewUrl));
+      setPhotos([]);
+      setFileError(null);
     } catch {
       setStatus("error");
     }
@@ -87,13 +199,26 @@ export function ContactForm() {
         <p className="font-serif text-xl text-primary-ink">
           {t("successTitle")}
         </p>
-        <p className="mt-2 text-ink-soft">{t("successMessage")}</p>
+        <p className="mt-2 text-ink-soft">
+          {succeededWithPhoto ? t("successMessagePhoto") : t("successMessage")}
+        </p>
       </div>
     );
   }
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
+      <button
+        type="button"
+        onClick={handleHighlightClick}
+        className="flex w-full items-center justify-between gap-3 rounded-[var(--radius-card)] border-2 border-accent bg-accent-soft px-5 py-4 text-left transition-transform hover:-translate-y-0.5"
+      >
+        <span className="text-sm font-semibold text-accent-strong sm:text-base">
+          {t("highlightText")}
+        </span>
+        <ArrowRight size={18} className="shrink-0 text-accent-strong" />
+      </button>
+
       <div className="grid gap-5 sm:grid-cols-2">
         <Field label={t("name")} htmlFor="name" required>
           <input
@@ -124,7 +249,10 @@ export function ContactForm() {
           id="subject"
           name="subject"
           value={subject}
-          onChange={(e) => setSubject(e.target.value as typeof subject)}
+          onChange={(e) => {
+            setSubject(e.target.value as typeof subject);
+            setFileError(null);
+          }}
           className={inputClass}
         >
           {subjectKeys.map((key) => (
@@ -180,6 +308,83 @@ export function ContactForm() {
             </div>
           </fieldset>
         </div>
+        </div>
+      </div>
+
+      <div
+        ref={photoSectionRef}
+        className={`grid transition-[grid-template-rows] duration-500 ease-in-out ${
+          isPhotoAssessment ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+        }`}
+      >
+        <div className="overflow-hidden">
+          <div className="space-y-4 pt-1">
+            <p className="text-sm text-ink-soft">{t("photoIntro")}</p>
+
+            <div
+              onDragOver={(e) => e.preventDefault()}
+              onDrop={handleDrop}
+              onClick={() => fileInputRef.current?.click()}
+              className="cursor-pointer rounded-[var(--radius-input)] border-2 border-dashed border-line bg-bg p-6 text-center transition-colors hover:border-primary-ink"
+            >
+              <input
+                ref={fileInputRef}
+                type="file"
+                accept="image/jpeg,image/png"
+                multiple
+                onChange={handleFileInputChange}
+                className="hidden"
+              />
+              <Upload size={22} className="mx-auto text-ink-soft" />
+              <p className="mt-2 text-sm font-medium text-ink">
+                {t("photoDropLabel")}
+              </p>
+              <p className="mt-1 text-xs text-ink-soft">
+                {t("photoUploadHint")}
+              </p>
+            </div>
+
+            {fileError && (
+              <p className="text-sm text-red-700 dark:text-red-400">
+                {fileError}
+              </p>
+            )}
+
+            {photos.length > 0 && (
+              <div className="flex flex-wrap gap-3">
+                {photos.map((photo, index) => (
+                  <div key={index} className="relative">
+                    {/* eslint-disable-next-line @next/next/no-img-element -- geçici blob: önizleme, next/image ile uyumlu değil */}
+                    <img
+                      src={photo.previewUrl}
+                      alt=""
+                      className="h-16 w-16 rounded-[var(--radius-input)] border border-line object-cover"
+                    />
+                    <button
+                      type="button"
+                      onClick={() => removePhoto(index)}
+                      aria-label={t("removePhotoLabel")}
+                      className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-ink text-white"
+                    >
+                      <X size={12} />
+                    </button>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            <label className="flex items-start gap-3 text-sm text-ink-soft">
+              <input
+                type="checkbox"
+                name="photoConsent"
+                required={isPhotoAssessment}
+                className="mt-1 h-4 w-4 shrink-0 rounded border-line text-primary-ink focus:ring-primary-ink"
+              />
+              <span>{t("photoConsentLabel")}</span>
+            </label>
+
+            <p className="text-xs text-ink-soft/80">{t("photoDisclaimer")}</p>
+          </div>
         </div>
       </div>
 

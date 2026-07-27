@@ -139,8 +139,8 @@
   },
   "Contact": {
     "kicker": "Kontakt",
-    "title": "Kontaktieren Sie uns",
-    "subtitle": "Füllen Sie das Formular aus, wir melden uns noch am selben Tag – oder erreichen Sie uns mit nur einem Klick.",
+    "title": "Lassen Sie uns gemeinsam Ihr Lächeln planen",
+    "subtitle": "Wir sind für Sie da. Nehmen Sie auf die Weise Kontakt auf, die Ihnen am liebsten ist – wir melden uns so schnell wie möglich bei Ihnen.",
     "form": {
       "name": "Vollständiger Name",
       "phone": "Telefon",
@@ -151,7 +151,8 @@
         "pricing": "Behandlungs- und Preisinformationen",
         "international": "Internationaler Patient",
         "general": "Allgemeine Frage",
-        "other": "Sonstiges"
+        "other": "Sonstiges",
+        "freePhotoAssessment": "Kostenlose Lächeln-Ersteinschätzung (mit Foto)"
       },
       "preferredDate": "Bevorzugtes Datum",
       "timePreference": "Bevorzugte Uhrzeit",
@@ -168,7 +169,19 @@
       "successTitle": "Vielen Dank!",
       "successMessage": "Ihre Anfrage ist eingegangen, wir melden uns in Kürze bei Ihnen.",
       "errorMessage": "Dies konnte gerade nicht gesendet werden, bitte schreiben Sie uns stattdessen über WhatsApp.",
-      "requiredNote": "* Pflichtfeld"
+      "requiredNote": "* Pflichtfeld",
+      "highlightText": "✨ Kostenlose Ersteinschätzung — Ein Foto genügt",
+      "photoIntro": "Fügen Sie 1-2 klare Fotos von Ihrem Lächeln hinzu. Ihre Fotos werden ausschließlich für die Ersteinschätzung verwendet.",
+      "photoDropLabel": "Ziehen und ablegen oder zum Auswählen klicken",
+      "photoUploadHint": "1-3 Bilder · JPG/PNG · max. 5 MB pro Datei",
+      "photoConsentLabel": "Ich willige ausdrücklich ein, dass meine gesundheitsbezogenen Fotos ausschließlich zur Ersteinschätzung verarbeitet werden.",
+      "photoDisclaimer": "Diese Einschätzung dient nur der vorläufigen Information; eine endgültige Diagnose erfordert eine klinische Untersuchung.",
+      "successMessagePhoto": "Vielen Dank! Ihre Fotos sind bei uns eingegangen. Unser Expertenteam meldet sich innerhalb von 24 Stunden bei Ihnen.",
+      "photoErrorType": "Sie können Bilder nur im JPG- oder PNG-Format hochladen.",
+      "photoErrorSize": "Jedes Foto darf höchstens 5 MB groß sein.",
+      "photoErrorCount": "Sie können bis zu 3 Fotos hochladen.",
+      "photoErrorRequired": "Bitte fügen Sie mindestens 1 Foto hinzu, um fortzufahren.",
+      "removePhotoLabel": "Entfernen"
     },
     "info": {
       "addressTitle": "Adresse",

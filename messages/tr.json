@@ -139,8 +139,8 @@
   },
   "Contact": {
     "kicker": "İletişim",
-    "title": "Bize Ulaşın",
-    "subtitle": "Formu doldurun, aynı gün içinde size dönelim – ya da tek dokunuşla arayın.",
+    "title": "Gülüşünüzü birlikte planlayalım",
+    "subtitle": "Size yardımcı olmak için buradayız. Dilediğiniz gibi ulaşın; en kısa sürede size dönelim.",
     "form": {
       "name": "Ad Soyad",
       "phone": "Telefon",
@@ -151,7 +151,8 @@
         "pricing": "Tedavi ve Fiyat Bilgisi",
         "international": "Uluslararası Hasta",
         "general": "Genel Soru",
-        "other": "Diğer"
+        "other": "Diğer",
+        "freePhotoAssessment": "Ücretsiz Gülüş Ön Değerlendirmesi (fotoğraflı)"
       },
       "preferredDate": "Tercih Ettiğiniz Tarih",
       "timePreference": "Zaman Tercihi",
@@ -168,7 +169,19 @@
       "successTitle": "Teşekkürler!",
       "successMessage": "Talebiniz alındı, en kısa sürede size döneceğiz.",
       "errorMessage": "Şu anda gönderilemedi, lütfen WhatsApp'tan yazın.",
-      "requiredNote": "* zorunlu alan"
+      "requiredNote": "* zorunlu alan",
+      "highlightText": "✨ Ücretsiz ön değerlendirme — Bir fotoğraf yeterli",
+      "photoIntro": "Gülümserken çekilmiş 1-2 net fotoğraf ekleyin. Fotoğraflarınız yalnızca ön değerlendirme için kullanılır.",
+      "photoDropLabel": "Sürükleyip bırakın ya da tıklayarak seçin",
+      "photoUploadHint": "1-3 görsel · JPG/PNG · dosya başına maksimum 5 MB",
+      "photoConsentLabel": "Sağlık durumuma ilişkin fotoğraflarımın yalnızca ön değerlendirme amacıyla işlenmesine açık rıza veriyorum.",
+      "photoDisclaimer": "Bu değerlendirme ön bilgilendirme amaçlıdır; kesin teşhis ancak klinik muayene ile konur.",
+      "successMessagePhoto": "Teşekkürler! Fotoğraflarınız bize ulaştı. Uzman ekibimiz en geç 24 saat içinde size dönecek.",
+      "photoErrorType": "Sadece JPG veya PNG formatında görsel yükleyebilirsiniz.",
+      "photoErrorSize": "Her fotoğraf en fazla 5 MB olabilir.",
+      "photoErrorCount": "En fazla 3 fotoğraf yükleyebilirsiniz.",
+      "photoErrorRequired": "Devam etmek için en az 1 fotoğraf ekleyin.",
+      "removePhotoLabel": "Kaldır"
     },
     "info": {
       "addressTitle": "Adres",

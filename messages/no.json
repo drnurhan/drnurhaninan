@@ -139,8 +139,8 @@
   },
   "Contact": {
     "kicker": "Kontakt",
-    "title": "Ta Kontakt",
-    "subtitle": "Fyll ut skjemaet, så svarer vi samme dag – eller kontakt oss med ett trykk.",
+    "title": "La oss planlegge smilet ditt sammen",
+    "subtitle": "Vi er her for å hjelpe deg. Ta kontakt slik du foretrekker — vi svarer deg så snart som mulig.",
     "form": {
       "name": "Fullt Navn",
       "phone": "Telefon",
@@ -151,7 +151,8 @@
         "pricing": "Behandlings- og Prisinformasjon",
         "international": "Internasjonal Pasient",
         "general": "Generelt Spørsmål",
-        "other": "Annet"
+        "other": "Annet",
+        "freePhotoAssessment": "Gratis smilevurdering (med bilde)"
       },
       "preferredDate": "Ønsket Dato",
       "timePreference": "Ønsket Tidspunkt",
@@ -168,7 +169,19 @@
       "successTitle": "Takk!",
       "successMessage": "Forespørselen din er mottatt, vi tar kontakt med deg snart.",
       "errorMessage": "Dette kunne ikke sendes akkurat nå, vennligst skriv til oss på WhatsApp i stedet.",
-      "requiredNote": "* obligatorisk felt"
+      "requiredNote": "* obligatorisk felt",
+      "highlightText": "✨ Gratis forhåndsvurdering — Ett bilde er nok",
+      "photoIntro": "Legg ved 1-2 tydelige bilder av deg selv mens du smiler. Bildene dine brukes kun til forhåndsvurderingen.",
+      "photoDropLabel": "Dra og slipp, eller klikk for å velge",
+      "photoUploadHint": "1-3 bilder · JPG/PNG · maks 5 MB per fil",
+      "photoConsentLabel": "Jeg gir uttrykkelig samtykke til at bildene mine knyttet til helsen min behandles utelukkende for forhåndsvurdering.",
+      "photoDisclaimer": "Denne vurderingen er kun til foreløpig informasjon; en endelig diagnose stilles bare ved klinisk undersøkelse.",
+      "successMessagePhoto": "Takk! Bildene dine har nådd oss. Ekspertteamet vårt tar kontakt med deg innen 24 timer.",
+      "photoErrorType": "Du kan bare laste opp bilder i JPG- eller PNG-format.",
+      "photoErrorSize": "Hvert bilde kan være maks 5 MB.",
+      "photoErrorCount": "Du kan laste opp maks 3 bilder.",
+      "photoErrorRequired": "Legg til minst 1 bilde for å fortsette.",
+      "removePhotoLabel": "Fjern"
     },
     "info": {
       "addressTitle": "Adresse",

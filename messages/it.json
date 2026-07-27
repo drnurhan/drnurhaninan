@@ -139,8 +139,8 @@
   },
   "Contact": {
     "kicker": "Contatti",
-    "title": "Contattaci",
-    "subtitle": "Compila il modulo e ti risponderemo in giornata, oppure contattaci con un solo tocco.",
+    "title": "Pianifichiamo insieme il vostro sorriso",
+    "subtitle": "Siamo qui per aiutarvi. Contattateci come preferite; vi risponderemo il prima possibile.",
     "form": {
       "name": "Nome e Cognome",
       "phone": "Telefono",
@@ -151,7 +151,8 @@
         "pricing": "Informazioni su Trattamenti e Prezzi",
         "international": "Paziente Internazionale",
         "general": "Domanda Generale",
-        "other": "Altro"
+        "other": "Altro",
+        "freePhotoAssessment": "Valutazione gratuita del sorriso (con foto)"
       },
       "preferredDate": "Data Preferita",
       "timePreference": "Fascia Oraria Preferita",
@@ -168,7 +169,19 @@
       "successTitle": "Grazie!",
       "successMessage": "La tua richiesta è stata ricevuta, ti ricontatteremo a breve.",
       "errorMessage": "Al momento non è stato possibile inviare il messaggio, scrivici invece su WhatsApp.",
-      "requiredNote": "* campo obbligatorio"
+      "requiredNote": "* campo obbligatorio",
+      "highlightText": "✨ Valutazione preliminare gratuita — Basta una foto",
+      "photoIntro": "Aggiungete 1-2 foto nitide del vostro sorriso. Le foto vengono utilizzate esclusivamente per la valutazione preliminare.",
+      "photoDropLabel": "Trascinate qui, oppure fate clic per scegliere",
+      "photoUploadHint": "1-3 immagini · JPG/PNG · max 5 MB per file",
+      "photoConsentLabel": "Presto il mio consenso esplicito affinché le mie foto relative alla salute siano trattate esclusivamente ai fini della valutazione preliminare.",
+      "photoDisclaimer": "Questa valutazione ha scopo puramente informativo preliminare; una diagnosi definitiva richiede una visita clinica.",
+      "successMessagePhoto": "Grazie! Le vostre foto ci sono arrivate. Il nostro team di esperti vi risponderà entro 24 ore al massimo.",
+      "photoErrorType": "Potete caricare immagini solo in formato JPG o PNG.",
+      "photoErrorSize": "Ogni foto può pesare al massimo 5 MB.",
+      "photoErrorCount": "Potete caricare fino a 3 foto.",
+      "photoErrorRequired": "Aggiungete almeno 1 foto per continuare.",
+      "removePhotoLabel": "Rimuovi"
     },
     "info": {
       "addressTitle": "Indirizzo",
