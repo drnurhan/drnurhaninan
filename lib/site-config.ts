@@ -1,7 +1,11 @@
 // Tek yerden yönetilen site sabitleri. Gerçek değerler geldiğinde sadece burası güncellenir.
 export const siteConfig = {
-  domain: "drnurhaninan.com",
-  url: "https://drnurhaninan.com",
+  // Not: drnurhaninan.com (www'suz), www.drnurhaninan.com'a 308 yönlendiriyor.
+  // Canonical/hreflang/sitemap/OG hepsi gerçekte servis edilen www'lu adresi
+  // kullanmalı; aksi halde Lighthouse "canonical başka bir adrese
+  // yönlendiriyor" diye SEO puanını düşürüyor.
+  domain: "www.drnurhaninan.com",
+  url: "https://www.drnurhaninan.com",
   email: "info@drnurhaninan.com",
   phoneDisplay: "+90 541 682 16 16",
   phoneTel: "+905416821616",
