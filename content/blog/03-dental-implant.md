@@ -2,7 +2,7 @@
 title: Dental İmplant - Bilmeniz Gereken Her Şey
 slug: dental-implant-bilmeniz-gerekenler
 description: İmplant nedir, kimlere uygulanır, başarı oranları nedir? Uzun dönem bilimsel verilerle dental implant rehberi.
-date: 2026-07-27
+date: 2025-11-05
 ---
 
 # Dental İmplant: Bilmeniz Gereken Her Şey

@@ -2,7 +2,7 @@
 title: Çocuğunuzu Kaç Yaşında Diş Hekimine Götürmelisiniz?
 slug: cocugu-kac-yasinda-dis-hekimine-goturmeli
 description: İlk diş hekimi ziyareti için doğru yaş, düzenli kontrollerin sıklığı ve erken muayenenin önemi — uluslararası rehberler ışığında.
-date: 2026-07-27
+date: 2026-04-16
 ---
 
 # Çocuğunuzu Kaç Yaşında Diş Hekimine Götürmelisiniz?

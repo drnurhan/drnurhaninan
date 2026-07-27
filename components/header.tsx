@@ -44,7 +44,7 @@ export function Header() {
             </Link>
           ))}
           <Link
-            href="/blog"
+            href="/#blog"
             className="text-sm text-ink-soft transition-colors hover:text-primary-ink"
           >
             {t("nav.blog")}
@@ -90,7 +90,7 @@ export function Header() {
               </Link>
             ))}
             <Link
-              href="/blog"
+              href="/#blog"
               onClick={() => setIsMenuOpen(false)}
               className="text-base text-ink-soft transition-colors hover:text-primary-ink"
             >

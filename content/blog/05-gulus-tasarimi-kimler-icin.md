@@ -2,7 +2,7 @@
 title: Gülüş Tasarımı Kimler İçin, Ne Zaman?
 slug: gulus-tasarimi-kimler-icin
 description: Gülüş tasarımı (smile design) nedir, kimlere uygulanır, süreç nasıl işler? Dijital planlama ve doğal sonuç ilkesiyle kanıta dayalı bir bakış.
-date: 2026-07-27
+date: 2026-04-11
 ---
 
 # Gülüş Tasarımı Kimler İçin, Ne Zaman?

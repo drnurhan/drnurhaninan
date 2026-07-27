@@ -2,7 +2,7 @@
 title: Diş Eti Kanaması Normal mi?
 slug: dis-eti-kanamasi-normal-mi
 description: Fırçalarken diş eti kanaması neden olur, ne zaman ciddiye alınmalı? Diş eti hastalıklarının erken belirtileri üzerine bilimsel bir bakış.
-date: 2026-07-27
+date: 2026-05-17
 ---
 
 # Diş Eti Kanaması Normal mi?

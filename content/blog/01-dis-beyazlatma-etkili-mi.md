@@ -2,7 +2,7 @@
 title: Diş Beyazlatma Gerçekten Etkili mi? Bilimin Cevabı
 slug: dis-beyazlatma-gercekten-etkili-mi
 description: Diş beyazlatma nasıl çalışır, bilimsel kanıtlar ne söylüyor? Etki mekanizması, kalıcılık ve yan etkiler üzerine kanıta dayalı bir inceleme.
-date: 2026-07-27
+date: 2025-07-30
 ---
 
 # Diş Beyazlatma Gerçekten Etkili mi? Bilimin Cevabı

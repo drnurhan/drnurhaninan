@@ -2,7 +2,7 @@
 title: İmplant mı, Köprü mü? Doğru Kararın Bilimsel Kriterleri
 slug: implant-mi-kopru-mu
 description: Eksik diş tedavisinde implant ve köprü seçenekleri nasıl karşılaştırılır? Sağkalım oranları ve karar kriterleri üzerine kanıta dayalı rehber.
-date: 2026-07-27
+date: 2025-12-24
 ---
 
 # İmplant mı, Köprü mü? Doğru Kararın Bilimsel Kriterleri

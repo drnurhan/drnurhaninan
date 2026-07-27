@@ -2,7 +2,7 @@
 title: Kanal Tedavisi Ne Zaman Gerekli?
 slug: kanal-tedavisi-ne-zaman-gerekli
 description: Kanal tedavisinin gerektiği durumlar, belirtileri ve başarı oranları. Modern endodonti hakkında kanıta dayalı bilgiler.
-date: 2026-07-27
+date: 2026-05-11
 ---
 
 # Kanal Tedavisi Ne Zaman Gerekli?

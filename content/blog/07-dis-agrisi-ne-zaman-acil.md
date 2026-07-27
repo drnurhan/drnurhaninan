@@ -2,7 +2,7 @@
 title: Diş Ağrısı Hangi Durumlarda Acildir?
 slug: dis-agrisi-hangi-durumlarda-acil
 description: Hangi diş ağrısı bekleyebilir, hangisi bekleyemez? Acil diş durumlarının belirtileri ve doğru ilk yardım adımları.
-date: 2026-07-27
+date: 2026-05-09
 ---
 
 # Diş Ağrısı Hangi Durumlarda Acildir?

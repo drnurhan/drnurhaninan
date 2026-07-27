@@ -2,7 +2,7 @@
 title: Evde Bilinçsiz Diş Beyazlatmanın Zararları
 slug: evde-bilincsiz-dis-beyazlatmanin-zararlari
 description: İnternetten alınan beyazlatma kitleri, kömür tozları ve "doğal" yöntemler dişlere ne yapıyor? Bilimsel literatür ışığında riskler.
-date: 2026-07-27
+date: 2025-09-24
 ---
 
 # Evde Bilinçsiz Diş Beyazlatmanın Zararları

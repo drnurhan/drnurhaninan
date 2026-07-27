@@ -2,7 +2,7 @@
 title: Diş Macunu Seçimi ve Önemi - Etikette Neye Bakmalı?
 slug: dis-macunu-secimi-ve-onemi
 description: Diş macununda gerçekten önemli olan nedir? Florür, konsantrasyon, beyazlatıcı macunlar ve çocuklarda doğru kullanım — bilimsel verilerle.
-date: 2026-07-27
+date: 2026-06-19
 ---
 
 # Diş Macunu Seçimi ve Önemi: Etikette Neye Bakmalı?

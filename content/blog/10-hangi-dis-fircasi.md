@@ -2,7 +2,7 @@
 title: Hangi Diş Fırçası? Doğru Fırça Seçiminin Bilimi
 slug: hangi-dis-fircasi-nasil-secilir
 description: Manuel mi elektrikli mi, sert mi yumuşak mı? Diş fırçası seçimi ve değiştirme sıklığı üzerine kanıta dayalı öneriler.
-date: 2026-07-27
+date: 2026-05-28
 ---
 
 # Hangi Diş Fırçası? Doğru Fırça Seçiminin Bilimi
