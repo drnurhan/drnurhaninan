@@ -155,8 +155,8 @@
         "evening": "Akşam"
       },
       "message": "Mesajınız",
-      "kvkkLabel": "Kişisel verilerimin KVKK kapsamında işlenmesine onay veriyorum.",
-      "kvkkLinkLabel": "Aydınlatma metnini okudum.",
+      "kvkkLabel": "Bilgilerimin iletişim amacıyla kullanılmasını kabul ediyorum.",
+      "kvkkLinkLabel": "KVKK metni",
       "submit": "Gönder",
       "submitting": "Gönderiliyor...",
       "successTitle": "Teşekkürler!",

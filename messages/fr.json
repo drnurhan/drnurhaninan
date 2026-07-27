@@ -155,8 +155,8 @@
         "evening": "Soir"
       },
       "message": "Votre message",
-      "kvkkLabel": "J'accepte le traitement de mes données personnelles conformément au KVKK (loi turque sur la protection des données).",
-      "kvkkLinkLabel": "J'ai lu la notice d'information.",
+      "kvkkLabel": "J'accepte que mes informations soient utilisées pour me contacter.",
+      "kvkkLinkLabel": "Politique de confidentialité",
       "submit": "Envoyer",
       "submitting": "Envoi en cours...",
       "successTitle": "Merci !",

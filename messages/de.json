@@ -155,8 +155,8 @@
         "evening": "Abends"
       },
       "message": "Ihre Nachricht",
-      "kvkkLabel": "Ich stimme der Verarbeitung meiner personenbezogenen Daten gemäß dem türkischen Datenschutzgesetz (KVKK) zu.",
-      "kvkkLinkLabel": "Ich habe die Datenschutzerklärung gelesen.",
+      "kvkkLabel": "Ich bin damit einverstanden, dass meine Angaben zur Kontaktaufnahme verwendet werden.",
+      "kvkkLinkLabel": "Datenschutzhinweis",
       "submit": "Senden",
       "submitting": "Wird gesendet...",
       "successTitle": "Vielen Dank!",

@@ -155,8 +155,8 @@
         "evening": "Kveld"
       },
       "message": "Din Melding",
-      "kvkkLabel": "Jeg samtykker til behandling av mine personopplysninger i henhold til KVKK (tyrkisk personvernlov).",
-      "kvkkLinkLabel": "Jeg har lest personvernerklæringen.",
+      "kvkkLabel": "Jeg godtar at opplysningene mine brukes for å kontakte meg.",
+      "kvkkLinkLabel": "Personvernerklæring",
       "submit": "Send",
       "submitting": "Sender...",
       "successTitle": "Takk!",

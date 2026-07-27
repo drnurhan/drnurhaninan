@@ -155,8 +155,8 @@
         "evening": "Wieczór"
       },
       "message": "Twoja Wiadomość",
-      "kvkkLabel": "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z KVKK (turecką ustawą o ochronie danych osobowych).",
-      "kvkkLinkLabel": "Przeczytałem/am informację o prywatności.",
+      "kvkkLabel": "Zgadzam się na wykorzystanie moich danych w celu kontaktu ze mną.",
+      "kvkkLinkLabel": "Informacja o prywatności",
       "submit": "Wyślij",
       "submitting": "Wysyłanie...",
       "successTitle": "Dziękujemy!",
