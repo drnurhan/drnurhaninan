@@ -8,7 +8,7 @@ import {
   type FormEvent,
 } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { ArrowRight, CloudUpload, X } from "lucide-react";
+import { CloudUpload, X } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 
 const subjectKeys = [
@@ -83,10 +83,8 @@ export function ContactForm() {
   const [photos, setPhotos] = useState<PhotoFile[]>([]);
   const [fileError, setFileError] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const photoSectionRef = useRef<HTMLDivElement>(null);
 
   const isAppointment = subject === "appointment";
-  const isPhotoAssessment = subject === "freePhotoAssessment";
 
   async function addFiles(fileList: FileList | File[]) {
     const incoming = Array.from(fileList);
@@ -114,6 +112,9 @@ export function ContactForm() {
 
     setPhotos(next);
     setFileError(error);
+    // Kutu artık her zaman görünür ve bağımsız çalışıyor: bir fotoğraf
+    // eklenince Konu'yu otomatik olarak Gülüş Tasarımı'na çekiyoruz.
+    if (next.length > 0) setSubject("freePhotoAssessment");
   }
 
   function removePhoto(index: number) {
@@ -134,27 +135,12 @@ export function ContactForm() {
     if (event.dataTransfer.files) void addFiles(event.dataTransfer.files);
   }
 
-  function handleHighlightClick() {
-    setSubject("freePhotoAssessment");
-    setTimeout(() => {
-      photoSectionRef.current?.scrollIntoView({
-        behavior: "smooth",
-        block: "center",
-      });
-    }, 50);
-  }
-
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     // Form elementini burada, senkron olarak yakalıyoruz: `await`den sonra
     // event.currentTarget tarayıcı tarafından null'a çevriliyor (DOM
     // standardı — event dispatch'i bittiğinde currentTarget sıfırlanır).
     const form = event.currentTarget;
-
-    if (isPhotoAssessment && photos.length === 0) {
-      setFileError(t("photoErrorRequired"));
-      return;
-    }
 
     setStatus("submitting");
 
@@ -171,7 +157,7 @@ export function ContactForm() {
       message: String(rawFormData.get("message") || ""),
       kvkkConsent: String(rawFormData.get("kvkkConsent") === "on"),
       photoConsent: String(
-        isPhotoAssessment && rawFormData.get("photoConsent") === "on"
+        photos.length > 0 && rawFormData.get("photoConsent") === "on"
       ),
       locale,
     };
@@ -179,7 +165,7 @@ export function ContactForm() {
     try {
       let response: Response;
 
-      if (isPhotoAssessment && photos.length > 0) {
+      if (photos.length > 0) {
         const multipart = new FormData();
         Object.entries(commonFields).forEach(([key, value]) => {
           multipart.append(key, value);
@@ -217,7 +203,7 @@ export function ContactForm() {
         return;
       }
 
-      setSucceededWithPhoto(isPhotoAssessment);
+      setSucceededWithPhoto(photos.length > 0);
       setStatus("success");
       form.reset();
       setSubject("appointment");
@@ -245,16 +231,88 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
-      <button
-        type="button"
-        onClick={handleHighlightClick}
-        className="flex w-full items-center justify-between gap-3 rounded-[var(--radius-card)] border-2 border-accent bg-accent-soft px-5 py-4 text-left transition-transform hover:-translate-y-0.5"
+      <div
+        onDragOver={(e) => e.preventDefault()}
+        onDrop={handleDrop}
+        className="rounded-[var(--radius-card)] border-2 border-dashed border-accent bg-accent-soft px-6 py-8 text-center transition-colors hover:border-accent-strong"
       >
-        <span className="text-sm font-semibold text-accent-strong sm:text-base">
+        <input
+          ref={fileInputRef}
+          type="file"
+          accept="image/jpeg,image/png"
+          multiple
+          onChange={handleFileInputChange}
+          className="hidden"
+        />
+        <CloudUpload
+          size={40}
+          strokeWidth={1.5}
+          className="mx-auto text-accent-strong"
+        />
+        <p className="mt-3 text-sm font-semibold text-accent-strong sm:text-base">
           {t("highlightText")}
-        </span>
-        <ArrowRight size={18} className="shrink-0 text-accent-strong" />
-      </button>
+        </p>
+        <p className="mt-1 text-xs text-accent-strong/70">
+          {t("photoOrLabel")}
+        </p>
+        <button
+          type="button"
+          onClick={() => fileInputRef.current?.click()}
+          className="mt-3 inline-flex items-center justify-center rounded-full border border-accent-strong px-5 py-2 text-sm font-semibold text-accent-strong transition-colors hover:bg-white/40"
+        >
+          {t("photoBrowseLabel")}
+        </button>
+        <p className="mt-4 text-xs text-accent-strong/70">
+          {t("photoMaxSizeLabel")}
+        </p>
+        <p className="mt-0.5 text-xs text-accent-strong/70">
+          {t("photoSupportedLabel")}
+        </p>
+
+        {fileError && (
+          <p className="mt-3 text-sm text-red-700 dark:text-red-400">
+            {fileError}
+          </p>
+        )}
+
+        {photos.length > 0 && (
+          <div className="mt-4 flex flex-wrap justify-center gap-3">
+            {photos.map((photo, index) => (
+              <div key={index} className="relative">
+                {/* eslint-disable-next-line @next/next/no-img-element -- geçici blob: önizleme, next/image ile uyumlu değil */}
+                <img
+                  src={photo.previewUrl}
+                  alt=""
+                  className="h-16 w-16 rounded-[var(--radius-input)] border border-line object-cover"
+                />
+                <button
+                  type="button"
+                  onClick={() => removePhoto(index)}
+                  aria-label={t("removePhotoLabel")}
+                  className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-ink text-white"
+                >
+                  <X size={12} />
+                </button>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+
+      {photos.length > 0 && (
+        <div className="space-y-2">
+          <label className="flex items-start gap-3 text-sm text-ink-soft">
+            <input
+              type="checkbox"
+              name="photoConsent"
+              required
+              className="mt-1 h-4 w-4 shrink-0 rounded border-line text-primary-ink focus:ring-primary-ink"
+            />
+            <span>{t("photoConsentLabel")}</span>
+          </label>
+          <p className="text-xs text-ink-soft/80">{t("photoDisclaimer")}</p>
+        </div>
+      )}
 
       <div className="grid gap-5 sm:grid-cols-2">
         <Field label={t("name")} htmlFor="name" required>
@@ -345,97 +403,6 @@ export function ContactForm() {
             </div>
           </fieldset>
         </div>
-        </div>
-      </div>
-
-      <div
-        ref={photoSectionRef}
-        className={`grid transition-[grid-template-rows] duration-500 ease-in-out ${
-          isPhotoAssessment ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
-        }`}
-      >
-        <div className="overflow-hidden">
-          <div className="space-y-4 pt-1">
-            <p className="text-sm text-ink-soft">{t("photoIntro")}</p>
-
-            <div
-              onDragOver={(e) => e.preventDefault()}
-              onDrop={handleDrop}
-              className="rounded-[var(--radius-card)] border-2 border-dashed border-line bg-bg px-6 py-8 text-center transition-colors hover:border-primary-ink"
-            >
-              <input
-                ref={fileInputRef}
-                type="file"
-                accept="image/jpeg,image/png"
-                multiple
-                onChange={handleFileInputChange}
-                className="hidden"
-              />
-              <CloudUpload
-                size={40}
-                strokeWidth={1.5}
-                className="mx-auto text-primary-ink"
-              />
-              <p className="mt-3 text-sm font-semibold text-ink">
-                {t("photoDropLabel")}
-              </p>
-              <p className="mt-1 text-xs text-ink-soft">{t("photoOrLabel")}</p>
-              <button
-                type="button"
-                onClick={() => fileInputRef.current?.click()}
-                className="mt-3 inline-flex items-center justify-center rounded-full border border-primary-ink px-5 py-2 text-sm font-semibold text-primary-ink transition-colors hover:bg-primary-tint"
-              >
-                {t("photoBrowseLabel")}
-              </button>
-              <p className="mt-4 text-xs text-ink-soft">
-                {t("photoMaxSizeLabel")}
-              </p>
-              <p className="mt-0.5 text-xs text-ink-soft">
-                {t("photoSupportedLabel")}
-              </p>
-            </div>
-
-            {fileError && (
-              <p className="text-sm text-red-700 dark:text-red-400">
-                {fileError}
-              </p>
-            )}
-
-            {photos.length > 0 && (
-              <div className="flex flex-wrap gap-3">
-                {photos.map((photo, index) => (
-                  <div key={index} className="relative">
-                    {/* eslint-disable-next-line @next/next/no-img-element -- geçici blob: önizleme, next/image ile uyumlu değil */}
-                    <img
-                      src={photo.previewUrl}
-                      alt=""
-                      className="h-16 w-16 rounded-[var(--radius-input)] border border-line object-cover"
-                    />
-                    <button
-                      type="button"
-                      onClick={() => removePhoto(index)}
-                      aria-label={t("removePhotoLabel")}
-                      className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-ink text-white"
-                    >
-                      <X size={12} />
-                    </button>
-                  </div>
-                ))}
-              </div>
-            )}
-
-            <label className="flex items-start gap-3 text-sm text-ink-soft">
-              <input
-                type="checkbox"
-                name="photoConsent"
-                required={isPhotoAssessment}
-                className="mt-1 h-4 w-4 shrink-0 rounded border-line text-primary-ink focus:ring-primary-ink"
-              />
-              <span>{t("photoConsentLabel")}</span>
-            </label>
-
-            <p className="text-xs text-ink-soft/80">{t("photoDisclaimer")}</p>
-          </div>
         </div>
       </div>
 
