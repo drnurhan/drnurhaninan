@@ -25,7 +25,7 @@ const subjectLabels: Record<string, string> = {
   appointment: "Randevu Talebi",
   pricing: "Tedavi ve Fiyat Bilgisi",
   international: "Uluslararası Hasta",
-  freePhotoAssessment: "Ücretsiz Gülüş Ön Değerlendirmesi (fotoğraflı)",
+  freePhotoAssessment: "Gülüş Tasarımı (fotoğraflı)",
   general: "Genel Soru",
   other: "Diğer",
 };
@@ -150,7 +150,7 @@ export async function POST(request: Request) {
   const emailBody = emailLines.join("\n");
 
   const mailSubject = isPhotoAssessment
-    ? `[Ön Değerlendirme] ${body.name}`
+    ? `[Gülüş Tasarımı - Foto] ${body.name}`
     : `[drnurhaninan.com] ${subjectLabel} – ${body.name}`;
 
   // Attachment dönüşümü (File -> Buffer) yanıt döndürülmeden ÖNCE, senkron
