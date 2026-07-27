@@ -234,7 +234,7 @@ export function ContactForm() {
       <div
         onDragOver={(e) => e.preventDefault()}
         onDrop={handleDrop}
-        className="rounded-[var(--radius-card)] border-2 border-dashed border-accent bg-accent-soft px-6 py-8 text-center transition-colors hover:border-accent-strong"
+        className="rounded-[var(--radius-card)] border-2 border-dashed border-line bg-bg px-6 py-8 text-center transition-colors hover:border-primary-ink"
       >
         <input
           ref={fileInputRef}
@@ -247,25 +247,21 @@ export function ContactForm() {
         <CloudUpload
           size={40}
           strokeWidth={1.5}
-          className="mx-auto text-accent-strong"
+          className="mx-auto text-primary-ink"
         />
-        <p className="mt-3 text-sm font-semibold text-accent-strong sm:text-base">
+        <p className="mt-3 text-sm font-semibold text-ink sm:text-base">
           {t("highlightText")}
         </p>
-        <p className="mt-1 text-xs text-accent-strong/70">
-          {t("photoOrLabel")}
-        </p>
+        <p className="mt-1 text-xs text-ink-soft">{t("photoOrLabel")}</p>
         <button
           type="button"
           onClick={() => fileInputRef.current?.click()}
-          className="mt-3 inline-flex items-center justify-center rounded-full border border-accent-strong px-5 py-2 text-sm font-semibold text-accent-strong transition-colors hover:bg-white/40"
+          className="mt-3 inline-flex items-center justify-center rounded-full border border-primary-ink px-5 py-2 text-sm font-semibold text-primary-ink transition-colors hover:bg-primary-tint"
         >
           {t("photoBrowseLabel")}
         </button>
-        <p className="mt-4 text-xs text-accent-strong/70">
-          {t("photoMaxSizeLabel")}
-        </p>
-        <p className="mt-0.5 text-xs text-accent-strong/70">
+        <p className="mt-4 text-xs text-ink-soft">{t("photoMaxSizeLabel")}</p>
+        <p className="mt-0.5 text-xs text-ink-soft">
           {t("photoSupportedLabel")}
         </p>
 
