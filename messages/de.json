@@ -144,7 +144,7 @@
     "form": {
       "name": "Vollständiger Name",
       "phone": "Telefon",
-      "email": "E-Mail (optional)",
+      "email": "E-Mail",
       "subject": "Betreff",
       "subjectOptions": {
         "appointment": "Terminanfrage",
@@ -170,7 +170,7 @@
       "successMessage": "Ihre Anfrage ist eingegangen, wir melden uns in Kürze bei Ihnen.",
       "errorMessage": "Dies konnte gerade nicht gesendet werden, bitte schreiben Sie uns stattdessen über WhatsApp.",
       "requiredNote": "* Pflichtfeld",
-      "highlightText": "✨ Zeit sparen — Laden Sie Ihr Röntgenbild oder ein passendes Zahnfoto hoch",
+      "highlightText": "✨ Zeit sparen — Laden Sie Ihr Röntgenbild oder ein passendes Zahnfoto hoch (optional)",
       "photoIntro": "Fügen Sie Ihr Röntgenbild oder ein klares Foto von Ihrem Lächeln hinzu. Das hilft uns, uns auf Ihren Termin vorzubereiten, und spart Zeit.",
       "photoDropLabel": "Dateien zum Hochladen ablegen",
       "photoConsentLabel": "Ich willige ausdrücklich ein, dass mein gesundheitsbezogenes Foto/Röntgenbild ausschließlich zur Terminvorbereitung verarbeitet wird.",

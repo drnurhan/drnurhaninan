@@ -144,7 +144,7 @@
     "form": {
       "name": "Nom complet",
       "phone": "Téléphone",
-      "email": "E-mail (facultatif)",
+      "email": "E-mail",
       "subject": "Objet",
       "subjectOptions": {
         "appointment": "Demande de rendez-vous",
@@ -170,7 +170,7 @@
       "successMessage": "Votre demande a été reçue, nous vous recontacterons rapidement.",
       "errorMessage": "L'envoi n'a pas pu aboutir pour le moment, merci de nous écrire plutôt sur WhatsApp.",
       "requiredNote": "* champ obligatoire",
-      "highlightText": "✨ Gagnez du temps — Téléchargez votre radio ou une photo dentaire adaptée",
+      "highlightText": "✨ Gagnez du temps — Téléchargez votre radio ou une photo dentaire adaptée (facultatif)",
       "photoIntro": "Ajoutez votre radio ou une photo nette de votre sourire. Cela nous aide à préparer votre rendez-vous et vous fait gagner du temps.",
       "photoDropLabel": "Déposez vos fichiers ici",
       "photoConsentLabel": "Je consens expressément à ce que ma photo/radio liée à ma santé soit traitée uniquement pour la préparation du rendez-vous.",

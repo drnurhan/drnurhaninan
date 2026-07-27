@@ -1,7 +1,6 @@
 import { useTranslations } from "next-intl";
 import { MessageCircle, Star, Sparkles as SparklesIcon, Globe2 } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
-import { Reveal } from "@/components/reveal";
 import { HeroSlider } from "@/components/hero-slider";
 
 const clinicImagePaths = [
@@ -16,7 +15,7 @@ export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden">
       <div className="mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6 md:grid-cols-2 md:items-center md:py-24 lg:px-8">
-        <Reveal>
+        <div>
           <p className="font-semibold uppercase tracking-wide text-accent-strong">
             {t("kicker")}
           </p>
@@ -62,21 +61,19 @@ export function Hero() {
             </span>
           </div>
           {/* ÖRNEK VERİ — gerçek Google puanı ve deneyim yılı eklenecek */}
-        </Reveal>
+        </div>
 
-        <Reveal delay={150}>
-          <div className="relative aspect-video w-full overflow-hidden rounded-t-[7rem] rounded-b-[20px] border border-line bg-primary-tint shadow-[var(--shadow-medium)]">
-            <HeroSlider
-              slides={clinicImagePaths.map((src) => ({
-                src,
-                alt: t("imageAlt"),
-              }))}
-              dotLabel={t("sliderDotLabel")}
-              prevLabel={t("sliderPrevLabel")}
-              nextLabel={t("sliderNextLabel")}
-            />
-          </div>
-        </Reveal>
+        <div className="relative aspect-video w-full overflow-hidden rounded-t-[7rem] rounded-b-[20px] border border-line bg-primary-tint shadow-[var(--shadow-medium)]">
+          <HeroSlider
+            slides={clinicImagePaths.map((src) => ({
+              src,
+              alt: t("imageAlt"),
+            }))}
+            dotLabel={t("sliderDotLabel")}
+            prevLabel={t("sliderPrevLabel")}
+            nextLabel={t("sliderNextLabel")}
+          />
+        </div>
       </div>
     </section>
   );

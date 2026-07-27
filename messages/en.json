@@ -144,7 +144,7 @@
     "form": {
       "name": "Full Name",
       "phone": "Phone",
-      "email": "Email (optional)",
+      "email": "Email",
       "subject": "Subject",
       "subjectOptions": {
         "appointment": "Appointment Request",
@@ -170,7 +170,7 @@
       "successMessage": "Your request has been received, we'll get back to you shortly.",
       "errorMessage": "This couldn't be sent right now, please message us on WhatsApp instead.",
       "requiredNote": "* required field",
-      "highlightText": "✨ Save time — Upload your X-ray or a suitable dental photo",
+      "highlightText": "✨ Save time — Upload your X-ray or a suitable dental photo (optional)",
       "photoIntro": "Add your X-ray or a clear photo of you smiling. This helps us prepare ahead of your appointment and saves time.",
       "photoDropLabel": "Drag files to upload",
       "photoConsentLabel": "I give explicit consent for my health-related photo/X-ray to be processed solely for appointment preparation.",

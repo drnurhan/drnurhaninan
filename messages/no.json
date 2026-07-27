@@ -144,7 +144,7 @@
     "form": {
       "name": "Fullt Navn",
       "phone": "Telefon",
-      "email": "E-post (valgfritt)",
+      "email": "E-post",
       "subject": "Emne",
       "subjectOptions": {
         "appointment": "Timeforespørsel",
@@ -170,7 +170,7 @@
       "successMessage": "Forespørselen din er mottatt, vi tar kontakt med deg snart.",
       "errorMessage": "Dette kunne ikke sendes akkurat nå, vennligst skriv til oss på WhatsApp i stedet.",
       "requiredNote": "* obligatorisk felt",
-      "highlightText": "✨ Spar tid — Last opp røntgenbildet ditt eller et egnet tannbilde",
+      "highlightText": "✨ Spar tid — Last opp røntgenbildet ditt eller et egnet tannbilde (valgfritt)",
       "photoIntro": "Legg ved røntgenbildet ditt eller et tydelig bilde av deg som smiler. Dette hjelper oss å forberede oss før timen din og sparer tid.",
       "photoDropLabel": "Dra filer for å laste opp",
       "photoConsentLabel": "Jeg gir uttrykkelig samtykke til at bildet/røntgenbildet mitt knyttet til helsen min behandles utelukkende for forberedelse til timen.",

@@ -144,7 +144,7 @@
     "form": {
       "name": "Ad Soyad",
       "phone": "Telefon",
-      "email": "E-posta (opsiyonel)",
+      "email": "E-posta",
       "subject": "Konu",
       "subjectOptions": {
         "appointment": "Randevu Talebi",
@@ -170,7 +170,7 @@
       "successMessage": "Talebiniz alındı, en kısa sürede size döneceğiz.",
       "errorMessage": "Şu anda gönderilemedi, lütfen WhatsApp'tan yazın.",
       "requiredNote": "* zorunlu alan",
-      "highlightText": "✨ Zaman kazanın — Röntgen ya da uygun bir diş fotoğrafınızı yükleyin",
+      "highlightText": "✨ Zaman kazanın — Röntgen ya da uygun bir diş fotoğrafınızı yükleyin (opsiyonel)",
       "photoIntro": "Röntgeninizi ya da gülümserken çekilmiş net bir fotoğrafınızı ekleyin. Randevunuz öncesinde hazırlık yapmamızı sağlar, zaman kazandırır.",
       "photoDropLabel": "Dosyalarınızı sürükleyip bırakın",
       "photoConsentLabel": "Sağlık durumuma ilişkin fotoğraf/röntgenimin yalnızca randevu hazırlığı amacıyla işlenmesine açık rıza veriyorum.",

@@ -144,7 +144,7 @@
     "form": {
       "name": "Nombre completo",
       "phone": "Teléfono",
-      "email": "Correo electrónico (opcional)",
+      "email": "Correo electrónico",
       "subject": "Asunto",
       "subjectOptions": {
         "appointment": "Solicitud de Cita",
@@ -170,7 +170,7 @@
       "successMessage": "Su solicitud ha sido recibida, nos pondremos en contacto con usted en breve.",
       "errorMessage": "No se pudo enviar en este momento, por favor escríbanos por WhatsApp.",
       "requiredNote": "* campo obligatorio",
-      "highlightText": "✨ Ahorre tiempo — Suba su radiografía o una foto dental adecuada",
+      "highlightText": "✨ Ahorre tiempo — Suba su radiografía o una foto dental adecuada (opcional)",
       "photoIntro": "Añada su radiografía o una foto nítida suya sonriendo. Esto nos ayuda a prepararnos antes de su cita y ahorra tiempo.",
       "photoDropLabel": "Arrastre archivos para subir",
       "photoConsentLabel": "Doy mi consentimiento explícito para que mi foto/radiografía relacionada con mi salud se procese únicamente para la preparación de la cita.",

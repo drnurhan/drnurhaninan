@@ -144,7 +144,7 @@
     "form": {
       "name": "Imię i nazwisko",
       "phone": "Telefon",
-      "email": "E-mail (opcjonalnie)",
+      "email": "E-mail",
       "subject": "Temat",
       "subjectOptions": {
         "appointment": "Prośba o Wizytę",
@@ -170,7 +170,7 @@
       "successMessage": "Twoje zgłoszenie zostało odebrane, wkrótce się z Tobą skontaktujemy.",
       "errorMessage": "Nie udało się teraz wysłać wiadomości, napisz do nas przez WhatsApp.",
       "requiredNote": "* pole wymagane",
-      "highlightText": "✨ Zaoszczędź czas — Prześlij swoje zdjęcie rentgenowskie lub odpowiednie zdjęcie zębów",
+      "highlightText": "✨ Zaoszczędź czas — Prześlij swoje zdjęcie rentgenowskie lub odpowiednie zdjęcie zębów (opcjonalnie)",
       "photoIntro": "Dodaj swoje zdjęcie rentgenowskie lub wyraźne zdjęcie uśmiechu. Pomaga nam to przygotować się przed Twoją wizytą i oszczędza czas.",
       "photoDropLabel": "Przeciągnij pliki, aby przesłać",
       "photoConsentLabel": "Wyrażam wyraźną zgodę na przetwarzanie mojego zdjęcia/zdjęcia rentgenowskiego dotyczącego zdrowia wyłącznie w celu przygotowania do wizyty.",

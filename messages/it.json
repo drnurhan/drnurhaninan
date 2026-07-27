@@ -144,7 +144,7 @@
     "form": {
       "name": "Nome e Cognome",
       "phone": "Telefono",
-      "email": "Email (facoltativo)",
+      "email": "Email",
       "subject": "Motivo",
       "subjectOptions": {
         "appointment": "Richiesta di Appuntamento",
@@ -170,7 +170,7 @@
       "successMessage": "La tua richiesta è stata ricevuta, ti ricontatteremo a breve.",
       "errorMessage": "Al momento non è stato possibile inviare il messaggio, scrivici invece su WhatsApp.",
       "requiredNote": "* campo obbligatorio",
-      "highlightText": "✨ Risparmiate tempo — Caricate la vostra radiografia o una foto dentale adatta",
+      "highlightText": "✨ Risparmiate tempo — Caricate la vostra radiografia o una foto dentale adatta (facoltativo)",
       "photoIntro": "Aggiungete la vostra radiografia o una foto nitida del vostro sorriso. Questo ci aiuta a prepararci prima del vostro appuntamento e fa risparmiare tempo.",
       "photoDropLabel": "Trascina i file per caricarli",
       "photoConsentLabel": "Presto il mio consenso esplicito affinché la mia foto/radiografia relativa alla salute sia trattata esclusivamente per la preparazione dell'appuntamento.",
