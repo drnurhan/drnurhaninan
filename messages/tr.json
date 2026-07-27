@@ -33,19 +33,20 @@
   },
   "Hero": {
     "kicker": "Uzm. Dr. Nurhan İnan",
-    "titlePrefix": "Doğal olan,",
+    "titlePrefix": "Doğal görünen,",
     "titleEmphasis": "iyi tasarlanmıştır.",
     "titleSuffix": "",
     "subtitle": "Estetik ve restoratif diş hekimliğinde dijital planlama ve minimal müdahale. Uzm. Dr. Nurhan İnan.",
     "ctaPrimary": "Randevu Talebi",
     "ctaWhatsapp": "WhatsApp ile Yazın",
-    "imageAlt": "Dr. Nurhan İnan portresi",
+    "imageAlt": "Klinik iç mekanı",
     "trustBar": {
       "rating": "4,9 Google",
       "experience": "20+ Yıl Deneyim",
       "languages": "Çok Dilde Hizmet"
     },
-    "trustBarNote": "ÖRNEK VERİ — gerçek Google puanı eklenecek (deneyim yılı güncel)"
+    "trustBarNote": "ÖRNEK VERİ — gerçek Google puanı eklenecek (deneyim yılı güncel)",
+    "sliderDotLabel": "Görsel"
   },
   "Trust": {
     "kicker": "Neden Dr. İnan?",
@@ -166,7 +167,6 @@
     },
     "info": {
       "addressTitle": "Adres",
-      "addressNote": "TODO: mahalle/cadde satırı eklenecek",
       "hoursTitle": "Çalışma Saatleri",
       "hoursValue": "Hafta içi 10:00–19:00 · Cumartesi 10:00–15:00 · Pazar kapalı",
       "phoneTitle": "Telefon & WhatsApp"

@@ -37,9 +37,6 @@ export function Contact() {
                 title={t("info.addressTitle")}
               >
                 <p>{siteConfig.addressLine}</p>
-                <p className="mt-1 text-xs text-ink-soft">
-                  {t("info.addressNote")}
-                </p>
               </InfoCard>
 
               <InfoCard

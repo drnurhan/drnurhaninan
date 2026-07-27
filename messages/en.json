@@ -33,19 +33,20 @@
   },
   "Hero": {
     "kicker": "Dr. Nurhan İnan, DDS",
-    "titlePrefix": "What's natural,",
+    "titlePrefix": "What looks natural,",
     "titleEmphasis": "is well designed.",
     "titleSuffix": "",
     "subtitle": "Digital planning and minimal intervention in aesthetic and restorative dentistry. Dr. Nurhan İnan, DDS.",
     "ctaPrimary": "Request an Appointment",
     "ctaWhatsapp": "Message on WhatsApp",
-    "imageAlt": "Portrait of Dr. Nurhan İnan",
+    "imageAlt": "Clinic interior",
     "trustBar": {
       "rating": "4.9 on Google",
       "experience": "20+ Years of Experience",
       "languages": "Multilingual Care"
     },
-    "trustBarNote": "SAMPLE DATA — real Google rating to be added (experience figure is current)"
+    "trustBarNote": "SAMPLE DATA — real Google rating to be added (experience figure is current)",
+    "sliderDotLabel": "Slide"
   },
   "Trust": {
     "kicker": "Why Dr. İnan?",
@@ -166,7 +167,6 @@
     },
     "info": {
       "addressTitle": "Address",
-      "addressNote": "TODO: street/neighborhood line to be added",
       "hoursTitle": "Opening Hours",
       "hoursValue": "Weekdays 10:00–19:00 · Saturday 10:00–15:00 · Sunday closed",
       "phoneTitle": "Phone & WhatsApp"

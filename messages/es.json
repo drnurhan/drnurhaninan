@@ -33,19 +33,20 @@
   },
   "Hero": {
     "kicker": "Dra. Nurhan İnan",
-    "titlePrefix": "Lo natural,",
+    "titlePrefix": "Lo que parece natural,",
     "titleEmphasis": "está bien diseñado.",
     "titleSuffix": "",
     "subtitle": "Planificación digital e intervención mínima en odontología estética y restauradora. Dra. Nurhan İnan.",
     "ctaPrimary": "Solicitar una cita",
     "ctaWhatsapp": "Escríbanos por WhatsApp",
-    "imageAlt": "Retrato de la Dra. Nurhan İnan",
+    "imageAlt": "Interior de la clínica",
     "trustBar": {
       "rating": "4,9 en Google",
       "experience": "Más de 20 años de experiencia",
       "languages": "Atención en varios idiomas"
     },
-    "trustBarNote": "DATOS DE EJEMPLO — se añadirá la puntuación real de Google (los años de experiencia están actualizados)"
+    "trustBarNote": "DATOS DE EJEMPLO — se añadirá la puntuación real de Google (los años de experiencia están actualizados)",
+    "sliderDotLabel": "Diapositiva"
   },
   "Trust": {
     "kicker": "¿Por qué la Dra. İnan?",
@@ -166,7 +167,6 @@
     },
     "info": {
       "addressTitle": "Dirección",
-      "addressNote": "Pendiente: se añadirá la línea de calle/barrio",
       "hoursTitle": "Horario de Atención",
       "hoursValue": "Días laborables 10:00–19:00 · Sábados 10:00–15:00 · Domingos cerrado",
       "phoneTitle": "Teléfono y WhatsApp"

@@ -33,19 +33,20 @@
   },
   "Hero": {
     "kicker": "Dr. Nurhan İnan",
-    "titlePrefix": "Was natürlich ist,",
+    "titlePrefix": "Was natürlich aussieht,",
     "titleEmphasis": "ist gut gestaltet.",
     "titleSuffix": "",
     "subtitle": "Digitale Planung und minimale Eingriffe in der ästhetischen und restaurativen Zahnheilkunde. Dr. Nurhan İnan.",
     "ctaPrimary": "Termin anfragen",
     "ctaWhatsapp": "Per WhatsApp schreiben",
-    "imageAlt": "Porträt von Dr. Nurhan İnan",
+    "imageAlt": "Praxisinnenraum",
     "trustBar": {
       "rating": "4,9 bei Google",
       "experience": "20+ Jahre Erfahrung",
       "languages": "Mehrsprachige Betreuung"
     },
-    "trustBarNote": "BEISPIELDATEN — echte Google-Bewertung folgt (Erfahrungsjahre sind aktuell)"
+    "trustBarNote": "BEISPIELDATEN — echte Google-Bewertung folgt (Erfahrungsjahre sind aktuell)",
+    "sliderDotLabel": "Folie"
   },
   "Trust": {
     "kicker": "Warum Dr. İnan?",
@@ -166,7 +167,6 @@
     },
     "info": {
       "addressTitle": "Adresse",
-      "addressNote": "TODO: Straße/Stadtteil folgt",
       "hoursTitle": "Öffnungszeiten",
       "hoursValue": "Wochentags 10:00–19:00 Uhr · Samstag 10:00–15:00 Uhr · Sonntag geschlossen",
       "phoneTitle": "Telefon & WhatsApp"

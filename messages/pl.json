@@ -33,19 +33,20 @@
   },
   "Hero": {
     "kicker": "Dr Nurhan İnan",
-    "titlePrefix": "To, co naturalne,",
+    "titlePrefix": "To, co wygląda naturalnie,",
     "titleEmphasis": "jest dobrze zaprojektowane.",
     "titleSuffix": "",
     "subtitle": "Cyfrowe planowanie i minimalna ingerencja w stomatologii estetycznej i rekonstrukcyjnej. Dr Nurhan İnan.",
     "ctaPrimary": "Umów wizytę",
     "ctaWhatsapp": "Napisz na WhatsApp",
-    "imageAlt": "Portret dr Nurhan İnan",
+    "imageAlt": "Wnętrze kliniki",
     "trustBar": {
       "rating": "4,9 w Google",
       "experience": "Ponad 20 lat doświadczenia",
       "languages": "Obsługa w wielu językach"
     },
-    "trustBarNote": "PRZYKŁADOWE DANE — prawdziwa ocena Google zostanie dodana (liczba lat doświadczenia jest aktualna)"
+    "trustBarNote": "PRZYKŁADOWE DANE — prawdziwa ocena Google zostanie dodana (liczba lat doświadczenia jest aktualna)",
+    "sliderDotLabel": "Slajd"
   },
   "Trust": {
     "kicker": "Dlaczego dr İnan?",
@@ -166,7 +167,6 @@
     },
     "info": {
       "addressTitle": "Adres",
-      "addressNote": "Do uzupełnienia: zostanie dodana ulica/dzielnica",
       "hoursTitle": "Godziny Otwarcia",
       "hoursValue": "Dni robocze 10:00–19:00 · Sobota 10:00–15:00 · Niedziela nieczynne",
       "phoneTitle": "Telefon i WhatsApp"

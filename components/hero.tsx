@@ -1,8 +1,15 @@
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { MessageCircle, Star, Sparkles as SparklesIcon, Globe2 } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 import { Reveal } from "@/components/reveal";
+import { HeroSlider } from "@/components/hero-slider";
+
+const clinicImagePaths = [
+  "/images/clinic/clinic-1.jpg",
+  "/images/clinic/clinic-2.jpg",
+  "/images/clinic/clinic-3.jpg",
+  "/images/clinic/clinic-4.jpg",
+];
 
 export function Hero() {
   const t = useTranslations("Hero");
@@ -59,14 +66,13 @@ export function Hero() {
         </Reveal>
 
         <Reveal delay={150}>
-          <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-t-[7rem] rounded-b-[20px] border border-line bg-primary-tint shadow-[var(--shadow-medium)]">
-            <Image
-              src="/images/n_photo.png"
-              alt={t("imageAlt")}
-              fill
-              priority
-              sizes="(min-width: 768px) 24rem, 100vw"
-              className="object-cover object-top"
+          <div className="relative aspect-video w-full overflow-hidden rounded-t-[7rem] rounded-b-[20px] border border-line bg-primary-tint shadow-[var(--shadow-medium)]">
+            <HeroSlider
+              slides={clinicImagePaths.map((src) => ({
+                src,
+                alt: t("imageAlt"),
+              }))}
+              dotLabel={t("sliderDotLabel")}
             />
           </div>
         </Reveal>

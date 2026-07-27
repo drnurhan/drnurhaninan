@@ -33,19 +33,20 @@
   },
   "Hero": {
     "kicker": "Dr. Nurhan İnan",
-    "titlePrefix": "Det naturlige,",
+    "titlePrefix": "Det som ser naturlig ut,",
     "titleEmphasis": "er godt designet.",
     "titleSuffix": "",
     "subtitle": "Digital planlegging og minimal inngripen innen estetisk og restaurativ tannbehandling. Dr. Nurhan İnan.",
     "ctaPrimary": "Be om time",
     "ctaWhatsapp": "Send melding på WhatsApp",
-    "imageAlt": "Portrett av dr. Nurhan İnan",
+    "imageAlt": "Klinikkens interiør",
     "trustBar": {
       "rating": "4,9 på Google",
       "experience": "20+ års erfaring",
       "languages": "Tjenester på flere språk"
     },
-    "trustBarNote": "EKSEMPELDATA — ekte Google-vurdering legges til (antall erfaringsår er oppdatert)"
+    "trustBarNote": "EKSEMPELDATA — ekte Google-vurdering legges til (antall erfaringsår er oppdatert)",
+    "sliderDotLabel": "Lysbilde"
   },
   "Trust": {
     "kicker": "Hvorfor dr. İnan?",
@@ -166,7 +167,6 @@
     },
     "info": {
       "addressTitle": "Adresse",
-      "addressNote": "TODO: gate/bydel legges til",
       "hoursTitle": "Åpningstider",
       "hoursValue": "Hverdager 10:00–19:00 · Lørdag 10:00–15:00 · Søndag stengt",
       "phoneTitle": "Telefon & WhatsApp"
