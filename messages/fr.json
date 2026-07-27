@@ -11,7 +11,8 @@
       "trust": "Pourquoi nous",
       "services": "Services",
       "about": "À propos",
-      "contact": "Contact"
+      "contact": "Contact",
+      "blog": "Blog"
     },
     "menuOpen": "Ouvrir le menu",
     "menuClose": "Fermer le menu",
@@ -200,5 +201,18 @@
       "6. Vos droits : en vertu de l'article 11 du KVKK, vous avez le droit de savoir si vos données sont traitées, et de demander leur rectification ou leur suppression. Vous pouvez adresser vos demandes à info@drnurhaninan.com."
     ],
     "metaDescription": "Notice d'information KVKK du Cabinet Dentaire Dr Nurhan İnan et informations sur la protection des données personnelles."
+  },
+  "Blog": {
+    "kicker": "Blog",
+    "title": "Le savoir installe la confiance.",
+    "subtitle": "Articles sur les traitements, la dentisterie esthétique et les questions les plus fréquentes des patients.",
+    "viewAllLabel": "Voir tous les articles",
+    "prevLabel": "Articles précédents",
+    "nextLabel": "Articles suivants",
+    "readMoreLabel": "Lire la suite",
+    "pageTitle": "Blog",
+    "backLabel": "Tous les articles",
+    "prevPostLabel": "Article précédent",
+    "nextPostLabel": "Article suivant"
   }
 }

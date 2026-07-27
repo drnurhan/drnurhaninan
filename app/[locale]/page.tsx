@@ -3,6 +3,7 @@ import { Hero } from "@/components/hero";
 import { Trust } from "@/components/trust";
 import { Services } from "@/components/services";
 import { About } from "@/components/about";
+import { BlogSection } from "@/components/blog-section";
 import { Contact } from "@/components/contact";
 import { getDentistSchema } from "@/lib/structured-data";
 
@@ -26,6 +27,7 @@ export default async function HomePage({
       <Trust />
       <Services />
       <About />
+      <BlogSection />
       <Contact />
     </main>
   );

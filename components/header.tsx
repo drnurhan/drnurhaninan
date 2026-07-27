@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Menu, Phone, X } from "lucide-react";
 import { InstagramIcon } from "@/components/instagram-icon";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { Link } from "@/i18n/navigation";
 import { siteConfig } from "@/lib/site-config";
 
 const navItems = ["trust", "services", "about", "contact"] as const;
@@ -41,6 +42,12 @@ export function Header() {
               {t(`nav.${item}`)}
             </a>
           ))}
+          <Link
+            href="/blog"
+            className="text-sm text-ink-soft transition-colors hover:text-primary"
+          >
+            {t("nav.blog")}
+          </Link>
         </nav>
 
         <div className="flex items-center gap-2">
@@ -77,6 +84,13 @@ export function Header() {
                 {t(`nav.${item}`)}
               </a>
             ))}
+            <Link
+              href="/blog"
+              onClick={() => setIsMenuOpen(false)}
+              className="text-base text-ink-soft transition-colors hover:text-primary"
+            >
+              {t("nav.blog")}
+            </Link>
           </nav>
           <a
             href={siteConfig.instagramUrl}

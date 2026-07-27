@@ -11,7 +11,8 @@
       "trust": "Hvorfor oss",
       "services": "Tjenester",
       "about": "Om oss",
-      "contact": "Kontakt"
+      "contact": "Kontakt",
+      "blog": "Blogg"
     },
     "menuOpen": "Åpne meny",
     "menuClose": "Lukk meny",
@@ -200,5 +201,18 @@
       "6. Dine Rettigheter: I henhold til KVKK art. 11 har du rett til å få vite om dine data blir behandlet, samt be om retting eller sletting. Du kan sende forespørsler til info@drnurhaninan.com."
     ],
     "metaDescription": "KVKK-personvernerklæring fra Dr. Nurhan İnan Tannklinikk og informasjon om beskyttelse av personopplysninger."
+  },
+  "Blog": {
+    "kicker": "Blogg",
+    "title": "Kunnskap bygger trygghet.",
+    "subtitle": "Artikler om behandlingsforløp, estetisk tannbehandling og det pasienter lurer mest på.",
+    "viewAllLabel": "Se alle innlegg",
+    "prevLabel": "Forrige innlegg",
+    "nextLabel": "Neste innlegg",
+    "readMoreLabel": "Les mer",
+    "pageTitle": "Blogg",
+    "backLabel": "Alle innlegg",
+    "prevPostLabel": "Forrige innlegg",
+    "nextPostLabel": "Neste innlegg"
   }
 }

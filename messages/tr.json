@@ -11,7 +11,8 @@
       "trust": "Neden Biz",
       "services": "Hizmetler",
       "about": "Hakkında",
-      "contact": "İletişim"
+      "contact": "İletişim",
+      "blog": "Blog"
     },
     "menuOpen": "Menüyü aç",
     "menuClose": "Menüyü kapat",
@@ -200,5 +201,18 @@
       "6. Haklarınız: KVKK m.11 kapsamında kişisel verilerinizin işlenip işlenmediğini öğrenme, düzeltilmesini veya silinmesini talep etme haklarına sahipsiniz. Taleplerinizi info@drnurhaninan.com adresine iletebilirsiniz."
     ],
     "metaDescription": "Uzm. Dr. Nurhan İnan Diş Kliniği KVKK aydınlatma metni ve kişisel verilerin korunmasına ilişkin bilgilendirme."
+  },
+  "Blog": {
+    "kicker": "Blog",
+    "title": "Bilgiye dayalı, güvenle.",
+    "subtitle": "Tedavi süreçleri, estetik diş hekimliği ve hasta merak ettikleri üzerine yazılar.",
+    "viewAllLabel": "Tüm Yazılar",
+    "prevLabel": "Önceki yazılar",
+    "nextLabel": "Sonraki yazılar",
+    "readMoreLabel": "Devamı",
+    "pageTitle": "Blog",
+    "backLabel": "Tüm Yazılar",
+    "prevPostLabel": "Önceki Yazı",
+    "nextPostLabel": "Sonraki Yazı"
   }
 }

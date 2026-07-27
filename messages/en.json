@@ -11,7 +11,8 @@
       "trust": "Why Us",
       "services": "Services",
       "about": "About",
-      "contact": "Contact"
+      "contact": "Contact",
+      "blog": "Blog"
     },
     "menuOpen": "Open menu",
     "menuClose": "Close menu",
@@ -200,5 +201,18 @@
       "6. Your Rights: Under KVKK Art. 11, you have the right to learn whether your data is processed, and to request correction or deletion. You may submit requests to info@drnurhaninan.com."
     ],
     "metaDescription": "Dr. Nurhan İnan Dental Clinic's KVKK privacy notice and information on the protection of personal data."
+  },
+  "Blog": {
+    "kicker": "Blog",
+    "title": "Grounded in knowledge.",
+    "subtitle": "Articles on treatment processes, aesthetic dentistry, and the questions patients ask most.",
+    "viewAllLabel": "View All Posts",
+    "prevLabel": "Previous posts",
+    "nextLabel": "Next posts",
+    "readMoreLabel": "Read more",
+    "pageTitle": "Blog",
+    "backLabel": "All Posts",
+    "prevPostLabel": "Previous Post",
+    "nextPostLabel": "Next Post"
   }
 }

@@ -11,7 +11,8 @@
       "trust": "Warum wir",
       "services": "Leistungen",
       "about": "Über uns",
-      "contact": "Kontakt"
+      "contact": "Kontakt",
+      "blog": "Blog"
     },
     "menuOpen": "Menü öffnen",
     "menuClose": "Menü schließen",
@@ -200,5 +201,18 @@
       "6. Ihre Rechte: Gemäß Art. 11 KVKK haben Sie das Recht zu erfahren, ob Ihre Daten verarbeitet werden, sowie deren Berichtigung oder Löschung zu verlangen. Anfragen können Sie an info@drnurhaninan.com richten."
     ],
     "metaDescription": "KVKK-Datenschutzhinweis der Zahnklinik Dr. Nurhan İnan und Informationen zum Schutz personenbezogener Daten."
+  },
+  "Blog": {
+    "kicker": "Blog",
+    "title": "Wissen schafft Vertrauen.",
+    "subtitle": "Beiträge zu Behandlungsabläufen, ästhetischer Zahnheilkunde und häufigen Patientenfragen.",
+    "viewAllLabel": "Alle Beiträge",
+    "prevLabel": "Vorherige Beiträge",
+    "nextLabel": "Nächste Beiträge",
+    "readMoreLabel": "Weiterlesen",
+    "pageTitle": "Blog",
+    "backLabel": "Alle Beiträge",
+    "prevPostLabel": "Vorheriger Beitrag",
+    "nextPostLabel": "Nächster Beitrag"
   }
 }

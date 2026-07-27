@@ -1,5 +1,6 @@
 import { routing } from "@/i18n/routing";
 import { siteConfig } from "@/lib/site-config";
+import type { BlogPost } from "@/lib/blog";
 
 // schema.org Dentist (LocalBusiness) yapısal verisi — Google'ın yerel işletme
 // zengin sonuçları (rich results) için kullanılır. Sadece doğrulanmış gerçek
@@ -47,5 +48,29 @@ export function getDentistSchema(locale: string) {
     inLanguage: routing.locales,
     availableLanguage: routing.locales,
     hasMap: siteConfig.mapEmbedUrl,
+  };
+}
+
+// Blog yazıları için schema.org BlogPosting verisi — Google'da makale
+// zengin sonuçları (yazar, tarih) için kullanılır.
+export function getBlogPostingSchema(post: BlogPost, locale: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    dateModified: post.date,
+    url: `${siteConfig.url}/${locale}/blog/${post.slug}`,
+    author: {
+      "@type": "Person",
+      name: "Dr. Nurhan İnan",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Dr. Nurhan İnan",
+      url: siteConfig.url,
+    },
+    mainEntityOfPage: `${siteConfig.url}/${locale}/blog/${post.slug}`,
   };
 }
