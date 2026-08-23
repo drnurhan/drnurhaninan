@@ -48,7 +48,7 @@ function readAllFiles() {
         slug: (data.slug as string) || slugFromFileName(fileName),
         title: data.title as string,
         excerpt: (data.excerpt as string) ?? (data.description as string),
-        date: String(data.date),
+        date: new Date(data.date).toISOString().slice(0, 10),
         content: stripLeadingH1(content),
       };
     });
