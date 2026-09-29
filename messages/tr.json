@@ -60,19 +60,15 @@
       {
         "value": "20+",
         "label": "Yıl Deneyim"
-      },
-      {
-        "value": "1.000+",
-        "label": "Gülüş Tasarımı"
-      },
-      {
-        "value": "%100",
-        "label": "Hasta Memnuniyeti",
-        "note": "(tedavi sonrası geri bildirimlerin tümünde)"
       }
     ],
     "previousLabel": "Önceki yorum",
-    "nextLabel": "Sonraki yorum"
+    "nextLabel": "Sonraki yorum",
+    "googleLabel": "Google değerlendirmeleri",
+    "googleCount": "{count} değerlendirme",
+    "googleRate": "Siz de puan verin",
+    "googleRead": "Yorumları okuyun",
+    "googleStarsAria": "5 üzerinden {rating} yıldız"
   },
   "Services": {
     "kicker": "Uzmanlık Alanları",

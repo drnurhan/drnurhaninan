@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Reveal } from "@/components/reveal";
-import { TestimonialsCarousel } from "@/components/testimonials-carousel";
+import { GoogleRating } from "@/components/google-rating";
 
 type Stat = { value: string; label: string; note?: string };
 
@@ -21,7 +21,7 @@ export function Trust() {
         </Reveal>
 
         <Reveal delay={100}>
-          <dl className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-8">
+          <dl className="mt-12 mx-auto grid max-w-xs grid-cols-1 gap-6">
             {stats.map((stat) => (
               <div
                 key={stat.label}
@@ -41,7 +41,7 @@ export function Trust() {
 
         <Reveal delay={200}>
           <div className="mt-10">
-            <TestimonialsCarousel />
+            <GoogleRating />
           </div>
         </Reveal>
       </div>

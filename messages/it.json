@@ -60,19 +60,15 @@
       {
         "value": "20+",
         "label": "Anni di Esperienza"
-      },
-      {
-        "value": "1.000+",
-        "label": "Progetti di Sorriso"
-      },
-      {
-        "value": "100%",
-        "label": "Soddisfazione dei Pazienti",
-        "note": "(su tutti i feedback post-trattamento)"
       }
     ],
     "previousLabel": "Recensione precedente",
-    "nextLabel": "Recensione successiva"
+    "nextLabel": "Recensione successiva",
+    "googleLabel": "Recensioni Google",
+    "googleCount": "{count, plural, one {# recensione} other {# recensioni}}",
+    "googleRate": "Lascia una valutazione",
+    "googleRead": "Leggi le recensioni",
+    "googleStarsAria": "{rating} su 5 stelle"
   },
   "Services": {
     "kicker": "Aree di Competenza",

@@ -60,19 +60,15 @@
       {
         "value": "20+",
         "label": "Años de Experiencia"
-      },
-      {
-        "value": "1.000+",
-        "label": "Diseños de Sonrisa"
-      },
-      {
-        "value": "100%",
-        "label": "Satisfacción del Paciente",
-        "note": "(en todos los comentarios posteriores al tratamiento)"
       }
     ],
     "previousLabel": "Reseña anterior",
-    "nextLabel": "Reseña siguiente"
+    "nextLabel": "Reseña siguiente",
+    "googleLabel": "Reseñas de Google",
+    "googleCount": "{count, plural, one {# reseña} other {# reseñas}}",
+    "googleRate": "Deje su valoración",
+    "googleRead": "Leer reseñas",
+    "googleStarsAria": "{rating} de 5 estrellas"
   },
   "Services": {
     "kicker": "Áreas de Especialización",

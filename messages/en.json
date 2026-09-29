@@ -60,19 +60,15 @@
       {
         "value": "20+",
         "label": "Years of Experience"
-      },
-      {
-        "value": "1,000+",
-        "label": "Smile Designs"
-      },
-      {
-        "value": "100%",
-        "label": "Patient Satisfaction",
-        "note": "(across all post-treatment feedback)"
       }
     ],
     "previousLabel": "Previous review",
-    "nextLabel": "Next review"
+    "nextLabel": "Next review",
+    "googleLabel": "Google reviews",
+    "googleCount": "{count, plural, one {# review} other {# reviews}}",
+    "googleRate": "Leave a rating",
+    "googleRead": "Read reviews",
+    "googleStarsAria": "{rating} out of 5 stars"
   },
   "Services": {
     "kicker": "Areas of Expertise",

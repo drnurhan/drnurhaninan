@@ -60,19 +60,15 @@
       {
         "value": "20+",
         "label": "Лет Опыта"
-      },
-      {
-        "value": "1000+",
-        "label": "Дизайнов Улыбки"
-      },
-      {
-        "value": "100%",
-        "label": "Удовлетворённость Пациентов",
-        "note": "(по всем отзывам после лечения)"
       }
     ],
     "previousLabel": "Предыдущий отзыв",
-    "nextLabel": "Следующий отзыв"
+    "nextLabel": "Следующий отзыв",
+    "googleLabel": "Отзывы в Google",
+    "googleCount": "{count, plural, one {# отзыв} few {# отзыва} many {# отзывов} other {# отзыва}}",
+    "googleRate": "Оставить оценку",
+    "googleRead": "Читать отзывы",
+    "googleStarsAria": "{rating} из 5 звёзд"
   },
   "Services": {
     "kicker": "Направления Специализации",

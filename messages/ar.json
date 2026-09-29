@@ -60,19 +60,15 @@
       {
         "value": "+20",
         "label": "سنوات خبرة"
-      },
-      {
-        "value": "+1,000",
-        "label": "تصميم ابتسامة"
-      },
-      {
-        "value": "100%",
-        "label": "رضا المرضى",
-        "note": "(في جميع التقييمات بعد العلاج)"
       }
     ],
     "previousLabel": "التقييم السابق",
-    "nextLabel": "التقييم التالي"
+    "nextLabel": "التقييم التالي",
+    "googleLabel": "تقييمات Google",
+    "googleCount": "عدد التقييمات: {count}",
+    "googleRate": "أضف تقييمك",
+    "googleRead": "اقرأ التقييمات",
+    "googleStarsAria": "{rating} من 5 نجوم"
   },
   "Services": {
     "kicker": "مجالات الخبرة",

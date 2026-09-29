@@ -60,19 +60,15 @@
       {
         "value": "20+",
         "label": "Jahre Erfahrung"
-      },
-      {
-        "value": "1.000+",
-        "label": "Lächeln-Designs"
-      },
-      {
-        "value": "100%",
-        "label": "Patientenzufriedenheit",
-        "note": "(basierend auf allen Rückmeldungen nach der Behandlung)"
       }
     ],
     "previousLabel": "Vorherige Bewertung",
-    "nextLabel": "Nächste Bewertung"
+    "nextLabel": "Nächste Bewertung",
+    "googleLabel": "Google-Bewertungen",
+    "googleCount": "{count, plural, one {# Bewertung} other {# Bewertungen}}",
+    "googleRate": "Jetzt bewerten",
+    "googleRead": "Bewertungen lesen",
+    "googleStarsAria": "{rating} von 5 Sternen"
   },
   "Services": {
     "kicker": "Leistungsschwerpunkte",

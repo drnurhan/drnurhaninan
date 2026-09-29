@@ -60,19 +60,15 @@
       {
         "value": "20+",
         "label": "Års Erfaring"
-      },
-      {
-        "value": "1000+",
-        "label": "Smiledesign"
-      },
-      {
-        "value": "100%",
-        "label": "Pasienttilfredshet",
-        "note": "(blant alle tilbakemeldinger etter behandling)"
       }
     ],
     "previousLabel": "Forrige omtale",
-    "nextLabel": "Neste omtale"
+    "nextLabel": "Neste omtale",
+    "googleLabel": "Google-omtaler",
+    "googleCount": "{count, plural, one {# omtale} other {# omtaler}}",
+    "googleRate": "Gi en vurdering",
+    "googleRead": "Les omtalene",
+    "googleStarsAria": "{rating} av 5 stjerner"
   },
   "Services": {
     "kicker": "Fagområder",

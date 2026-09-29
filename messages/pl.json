@@ -60,19 +60,15 @@
       {
         "value": "20+",
         "label": "Lat Doświadczenia"
-      },
-      {
-        "value": "1000+",
-        "label": "Projektów Uśmiechu"
-      },
-      {
-        "value": "100%",
-        "label": "Zadowolenie Pacjentów",
-        "note": "(we wszystkich opiniach po zabiegu)"
       }
     ],
     "previousLabel": "Poprzednia opinia",
-    "nextLabel": "Następna opinia"
+    "nextLabel": "Następna opinia",
+    "googleLabel": "Opinie Google",
+    "googleCount": "{count, plural, one {# opinia} few {# opinie} many {# opinii} other {# opinii}}",
+    "googleRate": "Wystaw ocenę",
+    "googleRead": "Przeczytaj opinie",
+    "googleStarsAria": "{rating} na 5 gwiazdek"
   },
   "Services": {
     "kicker": "Obszary Specjalizacji",

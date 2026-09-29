@@ -60,19 +60,15 @@
       {
         "value": "20+",
         "label": "Ans d'expérience"
-      },
-      {
-        "value": "1 000+",
-        "label": "Sourires conçus"
-      },
-      {
-        "value": "100 %",
-        "label": "Satisfaction des patients",
-        "note": "(sur l'ensemble des retours après traitement)"
       }
     ],
     "previousLabel": "Avis précédent",
-    "nextLabel": "Avis suivant"
+    "nextLabel": "Avis suivant",
+    "googleLabel": "Avis Google",
+    "googleCount": "{count, plural, one {# avis} other {# avis}}",
+    "googleRate": "Donner mon avis",
+    "googleRead": "Lire les avis",
+    "googleStarsAria": "{rating} sur 5 étoiles"
   },
   "Services": {
     "kicker": "Domaines d'expertise",

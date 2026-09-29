@@ -60,19 +60,15 @@
       {
         "value": "20+",
         "label": "Χρόνια Εμπειρίας"
-      },
-      {
-        "value": "1.000+",
-        "label": "Σχέδια Χαμόγελου"
-      },
-      {
-        "value": "100%",
-        "label": "Ικανοποίηση Ασθενών",
-        "note": "(σε όλα τα σχόλια μετά τη θεραπεία)"
       }
     ],
     "previousLabel": "Προηγούμενη κριτική",
-    "nextLabel": "Επόμενη κριτική"
+    "nextLabel": "Επόμενη κριτική",
+    "googleLabel": "Κριτικές Google",
+    "googleCount": "{count, plural, one {# κριτική} other {# κριτικές}}",
+    "googleRate": "Αφήστε βαθμολογία",
+    "googleRead": "Διαβάστε τις κριτικές",
+    "googleStarsAria": "{rating} από 5 αστέρια"
   },
   "Services": {
     "kicker": "Τομείς Εξειδίκευσης",
