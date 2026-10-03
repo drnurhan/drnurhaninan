@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
       "Bursa Nilüfer'de estetik ve restoratif diş hekimliği — uluslararası hasta deneyimi.",
     start_url: "/tr",
     display: "standalone",
-    background_color: "#faf7f1",
-    theme_color: "#0e4e4a",
+    background_color: "#f1efed",
+    theme_color: "#151515",
     icons: [
       {
         src: "/icon.png",

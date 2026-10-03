@@ -6,30 +6,30 @@
 @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
 :root {
-  --color-bg: #faf7f1;
+  --color-bg: #f1efed;
   --color-surface: #ffffff;
-  --color-ink: #22302c;
-  --color-ink-soft: #5f6e68;
+  --color-ink: #151515;
+  --color-ink-soft: #5c5b59;
   /* primary/primary-deep/primary-tint SADECE arkaplan olarak kullanılır
      (bg-primary + text-white gibi sabit marka bantları: Trust, Blog,
      Footer, CTA butonları). Bu yüzden temaya göre DEĞİŞMEZ — koyu modda
      bile üzerlerindeki beyaz metin zaten yeterli kontrasta sahip. */
-  --color-primary: #0e4e4a;
-  --color-primary-deep: #0a3a37;
-  --color-primary-tint: #e8f0ee;
-  --color-accent: #c2a05c;
-  --color-accent-soft: #f3ebdc;
-  --color-line: #e9e2d4;
+  --color-primary: #151515;
+  --color-primary-deep: #0c0c0c;
+  --color-primary-tint: #e5e1dc;
+  --color-accent: #8f8d8b;
+  --color-accent-soft: #e5e1dc;
+  --color-line: #ceccca;
   /* accent (#C2A05C) altın rengi metin olarak açık zeminde WCAG AA kontrastını
      geçmiyor (2.3:1). accent-strong (açık zemin) ve accent-light (koyu zemin)
      yalnızca gerçek metinlerde kullanılır; ikon/dekoratif öğelerde accent kalır. */
-  --color-accent-strong: #8a6d2e;
-  --color-accent-light: #d9bc7e;
+  --color-accent-strong: #151515;
+  --color-accent-light: #ceccca;
   /* primary'nin, sayfanın KENDİ (temaya göre değişen) zemininde metin/ikon
      rengi olarak kullanılan hali (hero vurgusu, ikon rozetleri, linkler).
      Açık modda mevcut primary ile birebir aynı — görsel fark yok. */
-  --color-primary-ink: #0e4e4a;
-  --color-primary-ink-deep: #0a3a37;
+  --color-primary-ink: #151515;
+  --color-primary-ink-deep: #0c0c0c;
   /* Form input zemini: açık modda surface ile aynı (görsel fark yok).
      Contact bölümünün kendisi zaten bg-surface olduğu için koyu modda
      inputlar surface'dan ayrı, bir tık daha açık yeşil bir tona sahip
@@ -39,25 +39,27 @@
   --radius-card: 20px;
   --radius-input: 12px;
 
-  --shadow-soft: 0 8px 30px rgba(14, 78, 74, 0.08);
-  --shadow-medium: 0 16px 45px rgba(14, 78, 74, 0.14);
+  --shadow-soft: 0 8px 30px rgba(21, 21, 21, 0.08);
+  --shadow-medium: 0 16px 45px rgba(21, 21, 21, 0.14);
 }
 
 /* Koyu tema — değerler WCAG AA için hesaplanıp doğrulandı (bkz. proje
    development log). Sadece sayfanın kendi zeminiyle birlikte değişmesi
    gereken tokenlar burada tanımlı. */
 :root[data-theme="dark"] {
-  --color-bg: #0b1613;
-  --color-surface: #213730;
-  --color-ink: #edebe3;
-  --color-ink-soft: #a9b6ad;
-  --color-line: #32473f;
-  --color-primary-tint: #16261f;
-  --color-accent-soft: #2e2415;
-  --color-accent-strong: #d9bc7e;
-  --color-primary-ink: #45b8ab;
-  --color-primary-ink-deep: #6fd0c2;
-  --color-input-bg: #33544a;
+  --color-bg: #151515;
+  --color-primary: #2a2a2a;
+  --color-primary-deep: #3a3938;
+  --color-surface: #202020;
+  --color-ink: #f1efed;
+  --color-ink-soft: #a9a7a5;
+  --color-line: #3a3938;
+  --color-primary-tint: #202020;
+  --color-accent-soft: #2a2a2a;
+  --color-accent-strong: #f1efed;
+  --color-primary-ink: #f1efed;
+  --color-primary-ink-deep: #ffffff;
+  --color-input-bg: #2a2a2a;
 
   --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.25);
   --shadow-medium: 0 16px 45px rgba(0, 0, 0, 0.35);
@@ -86,10 +88,10 @@
   --shadow-soft: var(--shadow-soft);
   --shadow-medium: var(--shadow-medium);
 
-  --font-serif: var(--font-fraunces), serif;
+  --font-serif: var(--font-space-grotesk), var(--font-inter), sans-serif;
   --font-sans: var(--font-inter), sans-serif;
   --font-arabic: var(--font-plex-arabic), sans-serif;
-  --font-urbanist: var(--font-urbanist), sans-serif;
+  --font-urbanist: var(--font-space-grotesk), var(--font-inter), sans-serif;
 }
 
 html {
@@ -114,6 +116,17 @@ body {
 [dir="rtl"] h3,
 [dir="rtl"] h4 {
   font-family: var(--font-plex-arabic), sans-serif;
+}
+
+/* Başlıklar: Space Grotesk sıkı harf aralığı (ufukyilmaz.com tipografisi). */
+.font-serif,
+.font-urbanist {
+  letter-spacing: -0.02em;
+}
+
+[dir="rtl"] .font-serif,
+[dir="rtl"] .font-urbanist {
+  letter-spacing: normal;
 }
 
 /* Logo: siyah çizim PNG'yi maskeleyip marka rengiyle boyar (dosyayı değiştirmeye gerek kalmadan). */
@@ -147,10 +160,10 @@ body {
 @keyframes whatsapp-pulse {
   0%,
   100% {
-    box-shadow: 0 0 0 0 rgba(14, 78, 74, 0.45);
+    box-shadow: 0 0 0 0 rgba(21, 21, 21, 0.45);
   }
   50% {
-    box-shadow: 0 0 0 10px rgba(14, 78, 74, 0);
+    box-shadow: 0 0 0 10px rgba(21, 21, 21, 0);
   }
 }
 
