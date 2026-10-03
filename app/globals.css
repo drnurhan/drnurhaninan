@@ -6,30 +6,30 @@
 @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
 :root {
-  --color-bg: #f1efed;
+  --color-bg: #ffffff;
   --color-surface: #ffffff;
-  --color-ink: #151515;
+  --color-ink: #222222;
   --color-ink-soft: #5c5b59;
   /* primary/primary-deep/primary-tint SADECE arkaplan olarak kullanılır
      (bg-primary + text-white gibi sabit marka bantları: Trust, Blog,
      Footer, CTA butonları). Bu yüzden temaya göre DEĞİŞMEZ — koyu modda
      bile üzerlerindeki beyaz metin zaten yeterli kontrasta sahip. */
-  --color-primary: #151515;
-  --color-primary-deep: #0c0c0c;
-  --color-primary-tint: #e5e1dc;
-  --color-accent: #8f8d8b;
-  --color-accent-soft: #e5e1dc;
-  --color-line: #ceccca;
+  --color-primary: #333333;
+  --color-primary-deep: #222222;
+  --color-primary-tint: #f4f4f3;
+  --color-accent: #4a8f92;
+  --color-accent-soft: #eef4f4;
+  --color-line: #e5e5e3;
   /* accent (#C2A05C) altın rengi metin olarak açık zeminde WCAG AA kontrastını
      geçmiyor (2.3:1). accent-strong (açık zemin) ve accent-light (koyu zemin)
      yalnızca gerçek metinlerde kullanılır; ikon/dekoratif öğelerde accent kalır. */
-  --color-accent-strong: #151515;
-  --color-accent-light: #ceccca;
+  --color-accent-strong: #2f6f72;
+  --color-accent-light: #7cc4be;
   /* primary'nin, sayfanın KENDİ (temaya göre değişen) zemininde metin/ikon
      rengi olarak kullanılan hali (hero vurgusu, ikon rozetleri, linkler).
      Açık modda mevcut primary ile birebir aynı — görsel fark yok. */
-  --color-primary-ink: #151515;
-  --color-primary-ink-deep: #0c0c0c;
+  --color-primary-ink: #222222;
+  --color-primary-ink-deep: #000000;
   /* Form input zemini: açık modda surface ile aynı (görsel fark yok).
      Contact bölümünün kendisi zaten bg-surface olduğu için koyu modda
      inputlar surface'dan ayrı, bir tık daha açık yeşil bir tona sahip
@@ -55,8 +55,8 @@
   --color-ink-soft: #a9a7a5;
   --color-line: #3a3938;
   --color-primary-tint: #202020;
-  --color-accent-soft: #2a2a2a;
-  --color-accent-strong: #f1efed;
+  --color-accent-soft: #1d2b2c;
+  --color-accent-strong: #7cc4be;
   --color-primary-ink: #f1efed;
   --color-primary-ink-deep: #ffffff;
   --color-input-bg: #2a2a2a;
@@ -127,6 +127,59 @@ body {
 [dir="rtl"] .font-serif,
 [dir="rtl"] .font-urbanist {
   letter-spacing: normal;
+}
+
+/* Tam beyaz tasarım: eskiden koyu olan bantlar (Trust, Blog, Footer) artık
+   sayfa zeminiyle aynı. İçlerindeki text-white / bg-white/5 gibi sınıflar
+   --color-white üzerinden çalıştığı için burada mürekkep rengine çevrilir;
+   böylece bileşen dosyalarına dokunmadan yazılar okunur kalır. */
+section.bg-primary,
+footer.bg-primary-deep {
+  background-color: var(--color-bg);
+  border-top: 1px solid var(--color-line);
+  --color-white: var(--color-ink);
+  --color-accent-light: var(--color-accent-strong);
+}
+
+/* İletişim formu paneli: beyaz sayfa içinde yeşil (petrol) dokulu kutu,
+   koyu yarı saydam alanlar ve beyaz yazılar (ufukyilmaz.com iletişim
+   bölümündeki görünüm). Renk tokenları yalnızca panel içinde değişir. */
+.contact-panel {
+  padding: 1.5rem;
+  border-radius: var(--radius-card);
+  color: #ffffff;
+  background:
+    radial-gradient(120% 60% at 85% 100%, rgba(8, 14, 15, 0.85) 0%, rgba(8, 14, 15, 0) 60%),
+    radial-gradient(80% 50% at 10% 0%, rgba(120, 178, 176, 0.45) 0%, rgba(120, 178, 176, 0) 70%),
+    linear-gradient(165deg, #4f8a8c 0%, #3d7175 45%, #244a4e 100%);
+  --color-ink: #ffffff;
+  --color-ink-soft: #d5e3e2;
+  --color-line: rgba(255, 255, 255, 0.28);
+  --color-bg: rgba(16, 26, 28, 0.45);
+  --color-surface: rgba(16, 26, 28, 0.45);
+  --color-input-bg: rgba(16, 26, 28, 0.78);
+  --color-primary-ink: #ffffff;
+  --color-primary-ink-deep: #ffffff;
+  --color-primary-tint: rgba(255, 255, 255, 0.14);
+  --color-accent-strong: #bfe5e0;
+  /* Gönder butonu ve seçili çipler: açık zemin + koyu yazı */
+  --color-primary: #f1efed;
+  --color-primary-deep: #ffffff;
+  --color-white: #151515;
+}
+
+.contact-panel option {
+  color: #151515;
+}
+
+.contact-panel .text-red-700 {
+  color: #ffd0d0;
+}
+
+@media (min-width: 640px) {
+  .contact-panel {
+    padding: 2rem;
+  }
 }
 
 /* Logo: siyah çizim PNG'yi maskeleyip marka rengiyle boyar (dosyayı değiştirmeye gerek kalmadan). */

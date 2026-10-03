@@ -224,7 +224,7 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
+    <form onSubmit={handleSubmit} className="contact-panel space-y-5">
       <div
         onDragOver={(e) => e.preventDefault()}
         onDrop={handleDrop}
