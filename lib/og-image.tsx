@@ -57,7 +57,7 @@ export async function renderDentistOgImage(locale: string) {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "#151515",
+          backgroundColor: "#0E4E4A",
           position: "relative",
         }}
       >
@@ -65,7 +65,7 @@ export async function renderDentistOgImage(locale: string) {
           style={{
             position: "absolute",
             inset: 0,
-            border: "18px solid rgba(241,239,237,0.25)",
+            border: "18px solid rgba(217,188,126,0.35)",
           }}
         />
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -85,7 +85,7 @@ export async function renderDentistOgImage(locale: string) {
           style={{
             marginTop: 16,
             fontSize: 32,
-            color: "#CECCCA",
+            color: "#D9BC7E",
             fontFamily: fontData ? "brand" : undefined,
           }}
         >

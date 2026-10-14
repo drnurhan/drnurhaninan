@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Inter, IBM_Plex_Sans_Arabic } from "next/font/google";
+import { Fraunces, Inter, IBM_Plex_Sans_Arabic, Urbanist } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -11,9 +11,9 @@ import { WhatsappBubble } from "@/components/whatsapp-bubble";
 import { themeInitScript } from "@/lib/theme-script";
 import "../globals.css";
 
-const spaceGrotesk = Space_Grotesk({
+const fraunces = Fraunces({
   subsets: ["latin", "latin-ext"],
-  variable: "--font-space-grotesk",
+  variable: "--font-fraunces",
   display: "swap",
 });
 
@@ -27,6 +27,13 @@ const plexArabic = IBM_Plex_Sans_Arabic({
   subsets: ["arabic"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-plex-arabic",
+  display: "swap",
+});
+
+const urbanist = Urbanist({
+  subsets: ["latin", "latin-ext"],
+  weight: ["500", "600", "700"],
+  variable: "--font-urbanist",
   display: "swap",
 });
 
@@ -108,7 +115,7 @@ export default async function LocaleLayout({
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
       <body
-        className={`${spaceGrotesk.variable} ${inter.variable} ${plexArabic.variable} bg-bg text-ink font-sans antialiased pb-6 md:pb-0`}
+        className={`${fraunces.variable} ${inter.variable} ${plexArabic.variable} ${urbanist.variable} bg-bg text-ink font-sans antialiased pb-6 md:pb-0`}
       >
         <NextIntlClientProvider>
           <Header />
